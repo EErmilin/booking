@@ -1,0 +1,54 @@
+@import "../../../../commonStyle/variable";
+
+.main_image_button{
+  &:hover{
+    .main_image_button_help{
+      display: block !important;
+    }
+  }
+  & > button{
+    background: center/contain no-repeat url('../../../../assets/svg/icons/main-image-gray.svg');
+    border-radius: 14px;
+    width: 24px;
+    height: 24px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+  }
+}
+.main_image_button_active{
+  background: $green;
+  border-radius: 14px;
+  padding: 4px 8px;
+  white-space: nowrap;
+  & > button{
+    background: center/contain no-repeat url('../../../../assets/svg/icons/main-image-white.svg');
+    width: 13px;
+    height: 13px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+  &_text{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 135%;
+    color: $white;
+    margin-left: 4px;
+  }
+}
+.main_image_button_help{
+  display: none;
+  position: absolute;
+  top: -32px;
+  left:-115px;
+  background: $gray400;
+  color: $white;
+  height: 24px;
+  padding: 4px;
+  font-size: 12px;
+  line-height: 135%;
+  white-space: nowrap;
+  border-radius: 4px;
+}

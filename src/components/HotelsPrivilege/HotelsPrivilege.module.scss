@@ -1,0 +1,33 @@
+.hotel_privilege{
+  display: flex;
+  align-items: center;
+}
+.icon{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+  &:last-child{
+    margin-right: 0px;
+  }
+}
+.accessible{
+  background-image: url("../../assets/svg/icons/accessible.svg");
+}
+.music{
+  background-image: url("../../assets/svg/icons/headphones.svg");
+}
+.parking{
+  background-image: url("../../assets/svg/icons/parking.svg");
+}
+.pool{
+  background-image: url("../../assets/svg/icons/water.svg");
+}
+.car{
+  background-image: url("../../assets/svg/icons/car.svg");
+}
+.wifi{
+  background-image: url("../../assets/svg/icons/wifi.svg");
+}

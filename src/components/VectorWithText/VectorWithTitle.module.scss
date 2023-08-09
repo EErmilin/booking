@@ -1,0 +1,18 @@
+.vector_with_text{
+  display: flex;
+  gap: 16px;
+  &_icon{
+    width: 14px;
+    height: 16px;
+    background-image: url("../../assets/svg/icons/vector.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    flex-shrink: 0;
+  }
+  &_txt{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+}

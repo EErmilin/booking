@@ -1,0 +1,15 @@
+.progress_bar{
+  width: 100%;
+  background: #F0F6F9;
+  border-radius: 10px;
+  height: 48px;
+  position: relative;
+}
+.progress{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  background: linear-gradient(212.87deg, #4EBFFF 0.16%, rgba(78, 191, 255, 0) 90.64%), radial-gradient(75.86% 89.48% at -9.93% 34.38%, #A2EF73 0%, rgba(162, 239, 115, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  border-radius: 10px;
+}

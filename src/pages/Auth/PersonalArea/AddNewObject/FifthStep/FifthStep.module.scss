@@ -1,0 +1,76 @@
+@import "../../../../../commonStyle/variable";
+
+.forth_step {
+  max-width: 814px;
+  margin: 0 auto;
+
+  &_title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    margin: 0 0 8px;
+    @media(min-width: 992px) {
+      font-size: 24px;
+    }
+  }
+
+  &_subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+    margin: 0 0 10px;
+    @media(min-width: 992px) {
+      font-size: 16px;
+    }
+  }
+
+  &_form {
+    margin: 24px -16px 0 -16px;
+    background: $white;
+    @media(min-width: 576px) {
+      margin: 24px -30px 0 -30px;
+    }
+    @media(min-width: 768px) {
+      margin: 28px auto 0 auto;
+      border-radius: 20px;
+    }
+
+    &_title {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 150%;
+      margin: 0 0 22px 0;
+    }
+
+    &_block {
+      border-bottom: 1px solid $gray200;
+      padding: 24px 16px 32px 16px;
+      @media(min-width: 576px) {
+        padding: 24px 32px 32px 32px;
+      }
+      @media(min-width: 768px) {
+        padding: 24px 20px 32px 20px;
+      }
+
+      &:last-child {
+        padding: 24px 16px;
+        border-bottom: none;
+        @media(min-width: 576px) {
+          padding: 24px 32px;
+        }
+        @media(min-width: 768px) {
+          padding: 24px 20px;
+        }
+      }
+    }
+  }
+
+  &_buttons {
+    margin: 24px 0 0;
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 12px;
+  }
+}

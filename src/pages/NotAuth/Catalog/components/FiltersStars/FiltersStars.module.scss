@@ -1,0 +1,15 @@
+@import "../../../../../commonStyle/variable";
+
+.filter_stars {
+  &_checkboxes {
+    margin-top: 13px;
+
+    &_label {
+      &>span {
+        font-weight: 400;
+        font-size: 14px;
+        color: $black !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,866 @@
+{
+  "en-EN": {
+    "translation": {
+      "common": {
+        "submit": "Submit"
+      },
+      "lockRoom": {
+        "title": "На указанные даты доступные номера отсутствуют.",
+        "partnerTitle": "Для бронирования номера войдите или зарегистрируйте учетную запись Клиента.",
+        "btnPartner": "Войти как клиент",
+        "btn": "Вернуться на страницу отеля"
+      },
+      "errorPages": {
+        "404": {
+          "num": "404",
+          "title": "Page not found",
+          "description": "The page you are visiting does not exist",
+          "backButtonText": "Go back to the main page"
+        }
+      },
+      "validation": {
+        "confirmPassword": "Пороли не свопадают"
+      },
+      "addPhoto": {
+        "btn": "Прикрепить файл",
+        "help": "Не более 5 файлов"
+      },
+      "addFile": {
+        "text": "Общий размер файлов не должен превышать 10 Мб"
+      },
+      "rooms": {
+        "title": "Номерной фонд",
+        "active": "Активные",
+        "nonActive": "Неактивные",
+        "hotel": "Отель"
+      },
+      "booking": {
+        "name": "Имя",
+        "email": "Почта",
+        "lastName": "Фамилия",
+        "title": "Бронирование номера",
+        "return": "Вернутсья к выбору номеров",
+        "wait": "Подождите пожалуйста, идет подтверждение брони",
+        "duration": "Длительность проживания",
+        "nights": "Number of nights",
+        "checkIn": "Заезд",
+        "leave": "Отъезд",
+        "price": "Стоимость",
+        "request": "Связываемся с отелем...",
+        "info": "Укажите свои данные",
+        "mainName": "Ваше имя (основной гость)*",
+        "mainLastName": "Ваша фамилия (основной гость)*",
+        "confirmEmail": "Подтвердите e-mail",
+        "phone": "Телефон",
+        "addGuest": "Указать имена всех гостей",
+        "wishes": "Ваши пожелания",
+        "transfer": "Запросить трансфер?",
+        "addWishes": "Укажите ваши пожелания",
+        "wishesPlaceholder": "Если у Вас есть какие либо пожелания, опишите их и мы постараемся учесть  их  при наличии такой возможности",
+        "bed": "Кровать",
+        "arrived": "Примерное время прибытия",
+        "pay": "Способ оплаты",
+        "card": "Банковской картой",
+        "cash": "Наличными на месте",
+        "personalData": "Нажимая на кнопку «Забронировать», я принимаю условия бронирования и соглашаюсь с политикой обработки персональных данных.",
+        "booking": "Забронировать",
+        "cancel": "Отмена",
+        "nameNotification": "Необязательно, но может потребоваться при заселении",
+        "smsNotification": "На этот номер Вы получите SMS с номером брони, а на почту Вам придет подтвержение бронирования",
+        "cardPay": {
+          "number": "Номер карты",
+          "date": "Действует до",
+          "name": "Имя на карте",
+          "save": "Сохранить карту для будущих броней"
+        }
+      },
+      "comment": {
+        "edit": "Редактировать ответ",
+        "title": "Отзывы",
+        "photoTitle": "Фотографии от гостя",
+        "reply": "Ответить",
+        "expandComment": "Развернуть отзыв",
+        "collapseComment": "Свернуть отзыв",
+        "allPhoto": "Все фото",
+        "waitingReview": "Ожидает ответа",
+        "empty": "Вы ещё не оставили ни одного отзыва",
+        "titles": {
+          "new": "Новые",
+          "published": "Опубликованные",
+          "responsesOnModeration": "Ответы на модерации"
+        },
+        "status": {
+          "moderation": "отзыв на модерации",
+          "published": "отзыв опубликован"
+        },
+        "hotelCard": {
+          "btn": "Оставить отзыв"
+        },
+        "clientTitles": {
+          "my": "Мои отзывы",
+          "orderOnComment": "Запросы на отзыв",
+          "moderation": "Модерация отзывов"
+        },
+        "modal": {
+          "titleClient": "Оставить отзыв",
+          "title": "Ответ на отзыв",
+          "label": "Напишите Ваш ответ гостю",
+          "send": "Отправить",
+          "cancel": "Отмена",
+          "success": "Отлично",
+          "moderation": "Ваш ответ отправлен на модерацию",
+          "rating": "Ваша оценка",
+          "yourComment": "Ваш отзыв"
+        }
+      },
+      "rating": {
+        "title": "Данный рейтинг составлен на основе анализа средней оценки отеля на сторонних интернет ресурсах. В дальнейшем рейтинг будет формироваться на основе отзывов, оставленных в сервисе CheckIn."
+      },
+      "statusHotel": {
+        "sent": "Sent",
+        "placed": "Placed",
+        "moderation": "Moderation",
+        "canceled": "Rejected",
+        "withdraw": "Revoked",
+        "draft": "Draft",
+        "notConfirmed": "Not confirmed",
+        "approved": "Approved",
+        "canceledHotel": "Canceled by hotel",
+        "canseledClient": "Canceled by customer",
+        "cancelPublication": "Refusal to publish",
+        "onModeration": "Moderation",
+        "requestClosed": "Закрыта",
+        "requestOnReview": "На расмотрении",
+        "requestInWork": "Взята в работу",
+        "mainGuest": "Основной гость"
+      },
+      "validate": {
+        "emptyField": "Поле не должно быть пустым"
+      },
+      "favorites": {
+        "title": "Избранное",
+        "noted": "Отмеченно"
+      },
+      "objects": {
+        "name": "Name",
+        "location": "Location",
+        "type": "Type",
+        "rating": "Stars",
+        "status": "Status",
+        "title": "Objects",
+        "nonObjects": "У Вас пока нет зарегистрированных объектов",
+        "nonRooms": "У Вас пока нет зарегистрированных номеров",
+        "addNewObject": "Add new object",
+        "addNewRoom": "Добавить новый номер",
+        "revoke": "Revoke",
+        "delete": "Delete",
+        "edit": "Edit",
+        "preview": "Previous watch"
+      },
+      "fromToSelect": {
+        "from": "С",
+        "to": "до"
+      },
+      "paymentType":{
+        "cash": "Оплата наличкой на месте",
+        "card": "Оплата картой на месте"
+      },
+      "reservations": {
+        "needTransfer": "Требуется трансфер",
+        "new": "Новые",
+        "return": "Назад к списку бронирований",
+        "requests": "Запросы на бронь",
+        "title": "Вы точно хотите отменить бронь?",
+        "partner": {
+          "title":"У вас пока нету броней"
+        },
+        "client": {
+          "cencelPrice": "Стоимость отмены бронирования",
+          "cancelBtn":"Отменить бронирование",
+          "title": "Мои бронирования",
+          "empty": "Вы ещё ничего не бронировали, но это легко исправить",
+          "emptyButton": "Найти отель",
+          "active": "Активные",
+          "completed": "Завершенные",
+          "cancel": "Отмена бронирования",
+          "canceled": "Отмененные",
+          "checkIn": "Заселение",
+          "checkOut": "Отъезд",
+          "sender": "получателя",
+          "whoCancel": {
+            "you": "Вами",
+            "hotel": "отелем"
+          },
+          "statusPartner": {
+            "2": "Подтвержден",
+            "1": "Ожидает",
+            "5": "Завершено",
+            "3": "Отмена клиентом",
+            "4": "Отмена отелем"
+          },
+          "status": {
+            "2": "Подтверждено",
+            "1": "Ожидает подтверждения",
+            "5": "Завершено",
+            "3": "Бронирование отменено",
+            "4": "Отмена бронирования отелем",
+            "canceledHotel": "Бронирование отменено отелем"
+          },
+          "menu": {
+            "again": "Забронировать заново",
+            "delete": "Удалить"
+          },
+          "namber": "Номер бронирования",
+          "time": "Примерное время прибытия",
+          "food": "Питание",
+          "terms": "Условия заселения",
+          "print": "Распечатать подтверждение",
+          "send": "Переслать подтверждение",
+          "sendSeccsess": "Подтвержение отправлено на почту"
+        },
+        "cancelReservation": {
+          "title": "Отмена бронирования",
+          "reason": "Укажите причину отмены бронирования",
+          "illness": "В связи с болезнью",
+          "cheaperOptionCheckIn": "Я нашел вариант дешевле на CHECK in",
+          "cheaperOptionOther": "Я нашел вариант дешевле на другом сервисе",
+          "changePlan": "Изменились планы",
+          "Other": "Другое (уточните пожалуйста)",
+          "tell": "Расскажите почему отменяете бронирование",
+          "canceled": "Ваше бронирование успешно отменено"
+        },
+        "hotel": "Отель",
+        "reservation": "Бронирование",
+        "reservations": "Бронирования",
+        "availableRooms": "Свободные номера",
+        "back": "Назад",
+        "all": "Все",
+        "approve": "Подтвердить",
+        "approved": "Подтвержденные",
+        "canseledClient": "Отмененные клиентом",
+        "canseledHotel": "Отмененные отелем",
+        "type": "Тип номера",
+        "checkIn": "Заезд",
+        "notCheckIn": "Отметить как незаезд",
+        "cancel": "Отмена",
+        "leaving": "Отъезд",
+        "guests": "Гости",
+        "guest": "Гость",
+        "status": "Статус",
+        "pay": "Оплата",
+        "price": "Стоимость",
+        "info": "Информация о бронировании",
+        "phone": "Телефон",
+        "number": "Номер брони",
+        "nights": "Кол-во ночей",
+        "additionalInfo": "Дополнительная информация",
+        "arrival": "Примерное время прибытия:",
+        "collapse": "Свернуть",
+        "excellent": "Отлично",
+        "sendEmail": "Клиенту будет отправлено письмо с уведомлением о подтверждении",
+        "pity": "Очень жаль",
+        "canceledEmail": "Клиенту будет отправлено письмо с уведомлением об отмене",
+        "notArrivePity": "Жаль что гость не приехал",
+        "notArriveEmail": "Клиенту будет отправлено письмо с уведомлением",
+        "cancelReservations": "Отмена бронирования",
+        "cancelReason": "Tell us why you are canceling your booking",
+        "send": "Отправить",
+        "email": "Почта",
+        "transfer": "Трансфер",
+        "tariffName": "Tariff name",
+        "roomName": "Room name"
+      },
+      "addNewObjects": {
+        "breadCrumbs": "Добавьте новый объект",
+        "welcome": "Добро пожаловать,",
+        "subTitle": "Регистрация объекта",
+        "editSubTitle": "Редактирование объекта",
+        "steps": {
+          "firstStep": "Основная информация",
+          "secondStep": "Номера и цены",
+          "thirdStep": "Удобства и услуги",
+          "fourthStep": "Фотографии",
+          "fifthStep": "Порядок проживания",
+          "sixthStep": "Оплата"
+        },
+        "thirdStep": {
+          "title": "Удобства и услуги в отеле",
+          "subTitle": "Укажите общую информацию о своем объекте (например, удобства, услуги, интернет, парковка и языки, на которых говорит ваш персонал).",
+          "form": {
+            "parking": "Парковка",
+            "thereIs": "Есть",
+            "yes": "Да",
+            "no": "Нет",
+            "guestParking": "Гостям предоставляется парковка?",
+            "bookingParking": "Нужно ли заранее бронировать место на парковке?",
+            "parkingPrice": "Цена за парковочное место (в день)",
+            "contactTitle": "Укажите контактные данные",
+            "food": "Питание",
+            "foodPrice": "Цена за завтрак",
+            "guestFood": "Для гостей предоставляется завтрак?",
+            "typeFood": "Какого типа предоставляется завтрак",
+            "complimentTitle": "Комплимент от отеля",
+            "complimentInfo": "Укажите наличие комплимента для Ваших гостей при бронировании на сервисе CHECK in, наличие данного пункта поможет поднять отель выше по списку при отображении в каталоге.",
+            "compliment": "Опишите Ваш комплимент",
+            "language": "Язык",
+            "personalLanguage": "На каких языках говорит ваш персонал",
+            "addLanguage": "Добавить еще один язык",
+            "extraBeds": "Дополнительные кровати",
+            "addExtraBeds": "Вы предоставляете дополнительные кровати?",
+            "countOfBeds": "Выберите возможное количество дополнительных кроватей.",
+            "youngСhildrenBed": "Дети до 2 лет в детских кроватках",
+            "childrenPrice": "Цена за ночь для ребенка",
+            "bedInfo": "Поставьте галочку, если можете разместить гостей нижеследующих категорий на дополнительных кроватях.",
+            "children": "Дети",
+            "age": "Возраст",
+            "adults": "Взрослые",
+            "services": {
+              "popularServices": "Популярные услуги и удобства среди гостей",
+              "searchServices": "При поиске места размещения, гости ищут чаще всего эти услуги.",
+              "wi-fi": "Бесплатный Wi-Fi",
+              "restaurant": "Ресторан",
+              "delivery": "Доставка еды и напитков в номер",
+              "24FrontDesk": "Круглосуточная стойка регистрации",
+              "bar": "Бар",
+              "sauna": "Сауна",
+              "nonSmokers": "Номера для некурящих",
+              "transfer": "Трансфер от/до аэропорта",
+              "familyRooms": "Семейные номера",
+              "spa": "Спа и оздоровительный центр",
+              "jacuzzi": "Гидромассажная ванна/джакузи",
+              "cleaning": "Химчистка",
+              "garden": "Сад",
+              "aquapark": "Аквапарк",
+              "swimmingPool": "Бассейн",
+              "otherServices": "Остальные услуги и удобства",
+              "general": "Общие",
+              "lounge": "Общий лаундж",
+              "smokingAreas": "Места для курения",
+              "conditioner": "Кондиционер",
+              "carsharing": "Прокат автомобилей",
+              "elevator": "Лифт",
+              "fitnessCentre": "Фитнес-центр",
+              "atm": "Банкомат на территории отеля",
+              "luggageStorage": "Камера хранения багажа",
+              "dailyHousekeeping": "Ежедневная уборка номера",
+              "technology": "Медиа и технологии",
+              "television": "Телевизор с плоским экраном",
+              "satelliteChannels": "Спутниковые каналы",
+              "radio": "Радио",
+              "phone": "Телефон",
+              "food": "Питание и напитки",
+              "coffeeHouse": "Кофейня (на территории)",
+              "snackBar": "Снэк-бар",
+              "breakfast": "Завтрак в номер",
+              "miniBar": "Мини-бар",
+              "businessCenterServices": "Услуги бизнес-центра",
+              "fax": "Факс/ксерокопирование",
+              "businessCenter": "Бизнес-центр",
+              "health": "Оздоровительные услуги",
+              "fitness": "Фитнес",
+              "sunLoungers": "Шезлонги/пляжные кресла",
+              "solarium": "Солярий",
+              "fitnessCenter": "Фитнес-центр",
+              "pool": "Бассейн",
+              "security": "Безопасность",
+              "cctv": "Видеонаблюдение в местах общего пользования",
+              "24security": "Круглосуточная охрана",
+              "safe": "Сейф"
+            }
+          },
+          "btnSave": "Продолжить",
+          "btnCancel": "Отмена"
+        },
+        "sixthStep": {
+          "title": "Оплата",
+          "subTitle": "Укажите доступные виды оплаты.",
+          "typePayment": "Тип оплаты",
+          "ready": "Готово",
+          "cash": "Наличными на месте",
+          "card": "Оплата картой на месте",
+          "check": "Выставление счета на месте",
+          "modal": {
+            "title": "Отлично! Вы создали объект",
+            "btnSuccess": "Отправить на модерацию и разместить",
+            "btnCancel": "Сохранить в черновиках",
+            "ready": "Готово!",
+            "text": "Ваш объект отправлен на модерацию"
+          }
+        },
+        "fourthStep": {
+          "title": "Фотографии объекта размещения",
+          "subtitle": "Загрузите изображения, позволяющие увидеть особенности Вашего объекта и номерного фонда.",
+          "galleryTitle": "Галерея фотографий"
+        },
+        "fifthStep": {
+          "title": "Порядок проживания",
+          "subTitle": "Укажите базовые правила (например, в отношении отмены бронирований или проживания с домашними животными).",
+          "cancelBookTitle": "Отмена бронирований",
+          "cancelBookLabel": "За сколько дней гости могут отменить бронирование?",
+          "cancelBookHelp": "Гость должен отменить бронирование",
+          "cancelBookHelpNote": "Примечание: вы всегда сможете изменить правила отмены бронирования, если это потребуется.",
+          "option": {
+            "default": "В день заезда (до 18:00)",
+            "oneDay": "За 1 день до даты заезда",
+            "twoDay": "За 2 дня до даты заезда",
+            "threeDay": "За 3 дня до даты заезда",
+            "fiveDay": "За 5 дней до даты заезда",
+            "defaultHelp": "до 18:00 в день заезда"
+          },
+          "childAllowed": {
+            "title": "Размещение детей разрешено?",
+            "age": "Возраст",
+            "yes": "Да",
+            "no": "Нет",
+            "upTo": "До"
+          },
+          "register": {
+            "title": "Регистрация",
+            "from": "Заезд",
+            "to": "Выезд"
+          },
+          "children": {
+            "title": "Дети"
+          },
+          "pet": {
+            "title": "Домашние животные"
+          }
+        },
+        "firstStep": {
+          "title": "Общая информация",
+          "subTitle": "Добавьте название, контактные данные и местоположение Вашего объекта",
+          "form": {
+            "name": "Укажите название Вашего объекта",
+            "nameHelp": "Это название будут видеть пользователи при поиске",
+            "rating": "Укажите звездность объекта",
+            "typeHotel": "Тип объекта",
+            "typeHotelPlaceholder": "Выберите тип объекта",
+            "contactTitle": "Укажите контактные данные",
+            "contactFace": "Контактное лицо",
+            "contactNumber": "Контактный номер телефона",
+            "additionalNumber": "Доп. контактный номер телефона (необязательно)",
+            "description": "Описание отеля",
+            "radio1": "Владелец",
+            "radio2": "Представитель",
+            "location": {
+              "title": "Укажите местоположение Вашего объекта*",
+              "address": "Адрес",
+              "country": "Страна",
+              "city": "Город",
+              "location": "Улица и номер строения",
+              "index": "Почтовый индекс"
+            }
+          },
+          "btnSave": "Продолжить",
+          "btnCancel": "Отмена"
+        },
+        "secondStep": {
+          "title": "Номера и цены",
+          "subTitle": "Заполните информацию о Ваших номерах",
+          "buttons": {
+            "save": "Продолжить",
+            "back": "Назад",
+            "addRoom": "Добавить номер"
+          },
+          "roomModal": {
+            "titlePost": "Снять с публикации?",
+            "titleDelete": "Удалить",
+            "yes": "Да",
+            "cancel": "Отмена"
+          },
+          "menu": {
+            "preWatch": "Пред. просмотр",
+            "edit": "Редактировать",
+            "add": "Добавить тариф",
+            "duplicate": "Дублировать",
+            "delete": "Удалить",
+            "nonPosted": "Снять с публикации"
+          },
+          "form": {
+            "title": "Номер",
+            "typeRoom": "Тип номера",
+            "nameRoom": "Название номера",
+            "nameRoomHelp": "Это название будете видеть Вы только в личном кабинете",
+            "quantityRoom": "Кол-во номеров этого типа",
+            "descriptionTitle": "Описание номера",
+            "descriptionLabel": "Опишите номер",
+            "sizeRoom": "Размер номера (кв. м)",
+            "smoking": "Курение",
+            "availability": "Доступность",
+            "bedsTitle": "Кровати",
+            "quantityGuest": "Кол-во гостей могут разместиться в номере",
+            "photoTitle": "Фотографии номера",
+            "serviceTitle": "Удобства и услуги в номере",
+            "uploadPhotos": "Upload photos",
+            "bedLine": {
+              "bedLabel": "Тип кровати",
+              "quantityBed": "Кол-во",
+              "bedButton": "Добавить еще один тип кровати"
+            },
+            "photos": {
+              "selected": "Выбрано",
+              "photo": "фотографий",
+              "of": "из",
+              "selectAll": "Выбрать все",
+              "cancelSelect": "Отменить выбор для всех",
+              "delete": "Удалить"
+            },
+            "tariff": {
+              "tariff": "ТАРИФ",
+              "title": "Стоимость за ночь",
+              "tariffHelp": "Укажите тарифный план, включен в стоимость завтрак или нет, на какое колличество гостей рассчитан тариф.",
+              "guestLabel": "На сколько гостей рассчитан тариф",
+              "breakfastLabel": "Завтрак включен в стоимость",
+              "nightLabel": "Цена за ночь",
+              "btnAdd": "Добавить тариф"
+            },
+            "beds": {
+              "typeBed": "Тип кровати",
+              "quantityBed": "Кол-во",
+              "addBtn": "Добавить еще один тип кровати",
+              "quantityGuest": "Кол-во гостей могут разместиться в номере"
+            },
+            "services": {
+              "serviceTitle": "Услуги",
+              "comfortTitle": "Удобства",
+              "wifi": "Бесплатный Wi-Fi",
+              "tv": "Телевизор с плоским экраном",
+              "conditioner": "Кондиционер",
+              "bath": "Ванна",
+              "iron": "Утюг",
+              "ironingAccessories": "Гладильные принадлежности",
+              "soundproofing": "Звукоизоляция",
+              "linen": "Белье",
+              "towels": "Полотенца",
+              "safe": "Сейф",
+              "woodenFloor": "Деревянный или паркетный пол",
+              "workSpace": "Рабочий стол",
+              "hypoallergenic": "Гипоаллергенный",
+              "blankets": "Одеяла с электроподогревом",
+              "mosquito": "Москитная сетка",
+              "heating": "Отопление",
+              "freeToiletries": "Бесплатные туалетно-косметические принадлежности",
+              "electricKettle": "Электрический чайник",
+              "clothesHanger": "Вешалка для одежды",
+              "clothesDryer": "Сушилка для одежды",
+              "sofaBed": "Диван-кровать",
+              "wardrobe": "Шкаф или гардероб",
+              "carpetCovering": "Ковровое покрытие",
+              "longBeds": "Удлиненные кровати (более 2 метров)",
+              "fan": "Вентилятор",
+              "fireplace": "Камин",
+              "executiveLounge": "Доступ в представительский лаундж",
+              "alarm": "Будильник",
+              "wakeUpService": "Услуга «звонок-будильник»"
+            }
+          }
+        }
+      },
+      "support": {
+        "support": "Поддержка",
+        "moderation": "Модерация",
+        "requests": "Ваши обращения",
+        "supportModalTitle": "Обращение в техподдержку",
+        "topic": "Укажите тему Вашей проблемы",
+        "faq": "Частые вопросы",
+        "problem": "Опишите проблему",
+        "file": "Прикрепить файл",
+        "send": "Отправить",
+        "cancel": "Отмена",
+        "reply": "Ответить",
+        "closeRequest": "Закрыть заявку",
+        "addObjects": "Как добавлять объекты?",
+        "checkBookings": "Как проверить бронирования?",
+        "badComments": "Не понравился отзыв, что делать?",
+        "addNumberFund": "Как добавлять номерной фонд?",
+        "problems": "Возникли проблемы?",
+        "excellent": "Отлично",
+        "sended": "Сообщение отправлено, ожидайте ответа поддержки.",
+        "writeSupport": "Написать в техподдержку",
+        "moderationList": {
+          "from": "из",
+          "edit": "Редактировать",
+          "withdraw": "Отозвать с размещения",
+          "delete": "Удалить",
+          "name": "Название",
+          "status": "Статус",
+          "accepted": "Одобрено номеров"
+        },
+        "hotelModeration": {
+          "title": "Модерация",
+          "back": "Назад",
+          "acceptedRooms": "Одобрено номеров:",
+          "from": "из",
+          "hotelTitle": "Отель",
+          "rooms": "Номерной фонд",
+          "reply": "Ответить",
+          "name": "Название",
+          "status": "Статус",
+          "successMessage": "Сообщение отправлено, ожидайте ответа модератора.",
+          "successTitle": "Ответ отправлен",
+          "modalTitle": "Ответ модератору",
+          "label": "Ответ модератору"
+        }
+      },
+      "personalArea": {
+        "navBar": {
+          "profile": "profile",
+          "objects": "objects",
+          "reservations": "reservations",
+          "my-reservations": "my reservations",
+          "comments": "Reviews",
+          "notifications": "Notifications",
+          "support": "Support and moderation",
+          "exit": "Exit",
+          "client": {
+            "profile": "Profile settings",
+            "reservations": "My bookings",
+            "favorites": "Favorites",
+            "notifications": "Notifications",
+            "support": "Support"
+          }
+        },
+        "breadCrumbsTitle": "Профиль партнера",
+        "main": "Главная"
+      },
+      "auth": {
+        "changeSuccess": "Your data has been successfully saved",
+        "login": {
+          "title": "Partner authorization",
+          "titleClient": "Guest authorization",
+          "phoneLabel": "Phone number",
+          "problems": "Any problems? Visit section ",
+          "getCode": "Get code",
+          "email": "E-mail address",
+          "password": "Enter password",
+          "forgotPassword": "Forgot your password?",
+          "signIn": "Sign in",
+          "noAccount": "Don't have an account?",
+          "isAccountExists": "Already have an account?",
+          "signUp": " Sign up",
+          "emailError": "The user with the specified e-mail does not exist",
+          "phoneError": "User with specified phone number\ndoes not exist",
+          "passwordError": "Invalid password",
+          "recoveryPassword": "Restore password?",
+          "enterSmsCode": "Enter code from SMS",
+          "sendSmsCode": "Send code"
+        }
+      },
+      "header": {
+        "login": "sign in",
+        "register": "sign up",
+        "favorite": "favorite"
+      },
+      "profile": {
+        "objects": "objects",
+        "booking": "booking",
+        "comments": "Reviews",
+        "notifications": "Notifications",
+        "support": "Support and moderation",
+        "settings": "Profile settings",
+        "myBooking": "My bookings",
+        "title": "Profile",
+        "changePassword": {
+          "oldPassword": "Enter your old password",
+          "newPassword": "Enter a new password",
+          "confirmNewPassword": "Repeat new password"
+        },
+        "successChangeEmail": "Check your email and follow the link to confirm your new email address.",
+        "personalData": "Personal data",
+        "account": "Account",
+        "uploadAvatar": "Upload a photo",
+        "closeAllSessions": "End all sessions",
+        "deleteAccount": "Delete account",
+        "change": "Change",
+        "modalChangeAvatar": {
+          "cut": "Обрезать",
+          "cancel": "Отменить",
+          "title": "Фото профиля",
+          "selectFile": "Выберите файл"
+        },
+        "orgForm": "Организационно-правовая форма*",
+        "save": "Сохранить",
+        "nationality": "Гражданство",
+        "cancel": "Отмена",
+        "birthday": "День рождения",
+        "sex": {
+          "man": "М",
+          "woman": "Ж"
+        }
+      },
+      "filters": {
+        "search": "Where will we stop?",
+        "dateFrom": "check in",
+        "dateTo": "check out",
+        "btnSearch": "Check prices",
+        "guest": "Guest",
+        "adults": "adults",
+        "children": "children",
+        "adultsRange": "from 18 year",
+        "childrenRange": "before 17 year",
+        "apply": "apply",
+        "noOptionsMessage": "No matches found"
+      },
+      "mainPage": {
+        "lastSearch": "Last search",
+        "lastSearchHotel": "Recently viewed",
+        "priceFrom": "From",
+        "Moscow": "Popular in Moscow",
+        "Simferopol": "Popular in Simferopol",
+        "Ekaterinburg": "Popular in Ekaterinburg",
+        "Kaliningrad": "Popular in Kaliningrad",
+        "Karelia": "Popular in Karelia",
+        "Kazan": "Popular in Kazan",
+        "Krasnodar": "Popular in Krasnodar",
+        "Saint Peterburg": "Popular in Saint Petersburg",
+        "Sochi": "Popular in Sochi",
+        "Volgograd": "Popular in Volgograd",
+        "watchAll": "Watch all"
+      },
+      "footerMain": {
+        "footerTitle": "Stay up to date with all events",
+        "footerSubText": "Subscribe to the newsletter and receive notifications about discounts and special offers",
+        "emailPlaceholder": "E-mail",
+        "subscribe": "Subscribe",
+        "about": "About us",
+        "addObject": "Add a property",
+        "country": "Country",
+        "region": "Region",
+        "city": "City",
+        "contact": "Contact",
+        "hotels": "Hotels",
+        "support": "Support",
+        "comment": "Comment",
+        "manageBookings": "Manage bookings",
+        "FAQ": "FAQ",
+        "knowledgeBase": "Knowledge base",
+        "terms&Conditions": "Terms & Conditions",
+        "disputeResolution": "Dispute Resolution",
+        "howWeAreWorking": "How we are working",
+        "cookie": "Privacy & Cookies Statement",
+        "changeCookie": "Change cookie settings",
+        "corporateContacts": "Corporate contacts",
+        "socialMedias": "Social medias",
+        "service": "Service",
+        "users": "Users",
+        "copyRight": "Copyright © 2022. All rights reserved.",
+        "serviceRules": "Service rules for clients",
+        "platformRules": "Terms of use of the platform",
+        "cookiesAgreement": "Cookies Agreement",
+        "offer": "Contract-offer"
+      },
+      "bestDirection": {
+        "title":"Best directions"
+      },
+      "ourPartners": {
+        "title":"Our partners"
+      },
+      "filterCatalog": {
+        "search": {
+          "title": "Search",
+          "place": "Location / hotel name",
+          "dateFrom": "Arrival date",
+          "dateTo": "Departure date",
+          "guest": "Guest",
+          "travelForWork": "I travel for work",
+          "findOffers": "Find offers",
+          "allFilters": "All filters:",
+          "priceForNight": "Price per night ($)",
+          "rating": "Review rating",
+          "compliment": "Compliment from the hotel",
+          "buttonMap": "See on the map"
+        }
+      },
+      "hotelCard": {
+        "comment": "Comments",
+        "excellent": "Excellent",
+        "prefect": "Prefect",
+        "veryGood": "Very good",
+        "good": "Good",
+        "notBad": "Not bad",
+        "bad": "Bad",
+        "showAllRooms": "Show all rooms",
+        "compliment": "Compliment from the hotel",
+        "titles": {
+          "aboutHotel": "About hotel",
+          "pricesAndRooms": "Prices and rooms",
+          "comfort": "comfort",
+          "comfortAndOffers": "Comfort and offers",
+          "location": "Location",
+          "comment": "Comment",
+          "typeHotel": "Type hotel"
+        },
+        "body": {
+          "photos": "Photos",
+          "priceFor1": "Price for 1 night from",
+          "comfort": "Main amenities of the hotel"
+        },
+        "comfort": {
+          "wifi": "Free wifi",
+          "parking": "Parking",
+          "headPhone": "Good sound insulation",
+          "pool": "Pool",
+          "accessible": "For guests with disabilities"
+        },
+        "description": {
+          "about": "About hotel",
+          "directions":"Travel to the hotel",
+          "room": "Room details",
+          "livingSmoking": "Smoking accommodation",
+          "travelWithAnimal": "Travelers with animals",
+          "internet": "Internet",
+          "openBtn": "expand",
+          "hideBtn": "collapse",
+          "settlement": "Settlement conditions",
+          "checkIn": "Check-in and check-out",
+          "paymentType": "Paid locally",
+          "payment": "Payment",
+          "checkInText": "Settlement",
+          "checkOutText": "Departure",
+          "compliment": "Compliment from the hotel"
+        },
+        "prices":{
+          "btn": "Change search options",
+          "sameOffer": "Similar offers",
+          "moreAboutRoom": "More about the room",
+          "twoBed": "2 single beds",
+          "bigBed": "1 extra large double bed",
+          "singleBed": "single bed",
+          "doubleBed": "double bed",
+          "selectTypeBed": "Select bed type",
+          "breakfastNonInPrice":"Awesome breakfast for the price",
+          "breakfastInPrice": "BREAKFAST INCLUDED",
+          "book": "book"
+        },
+        "service": {
+          "cleaning": "Cleaning services",
+          "media": "Media and technology",
+          "drinkAndEat": "Food and drinks",
+          "security": "Safety",
+          "personalLanguage": "The staff speaks these languages",
+          "general": "General",
+          "wellnessServices": "Wellness services",
+          "serviceBusiness": "Business center services"
+        },
+        "checkedByExpert": "This hotel has been checked by a Check in expert"
+      },
+      "hotelRoom": {
+        "gallery": {
+          "restText": "Photo"
+        },
+        "titles": {
+          "services": "Services and amenities",
+          "reviews": "Reviews",
+          "tariff": "Tariff selection"
+        },
+        "tariff": {
+          "filterButtonName": "Update cost"
+        },
+        "discount": "Discount"
+      },
+      "swiper": {
+        "fractionOf": "of"
+      }
+    }
+  }
+}

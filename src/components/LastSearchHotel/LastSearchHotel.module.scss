@@ -1,0 +1,57 @@
+.wrap {
+  position: relative;
+  margin: 0 0 55px;
+  .swiper-wrapper {
+    color: #1d5d90;
+  }
+}
+
+.title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  margin: 0 0 20px;
+  padding-right: 80px;
+  @media(min-width: 576px) {
+    font-size: 24px;
+  }
+}
+
+.slide {
+  width: 290px;
+  height: auto;
+  @media(min-width: 1200px) {
+    width: auto;
+  }
+}
+
+.slider {
+  overflow: visible;
+  @media(min-width: 1200px) {
+    overflow: hidden;
+  }
+}
+
+.last_search_hotel {
+
+  &_bar {
+    position: relative;
+  }
+
+  &_navigation {
+    display: flex;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    @media(min-width: 992px){
+      right: 20px;
+    }
+
+    & > div {
+      &:first-child {
+        margin-right: 5px;
+      }
+    }
+  }
+}

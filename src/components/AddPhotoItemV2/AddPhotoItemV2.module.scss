@@ -1,0 +1,28 @@
+@import "../../commonStyle/variable";
+
+.add_photo_item {
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  padding-top: 100%;
+
+
+  &_button {
+    width: 20px;
+    height: 20px;
+    background: center/cover no-repeat url("../../assets/svg/icons/close-icon-blue.svg");
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    border: 0;
+    cursor: pointer;
+    display: block;
+  }
+  &_img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+  }
+}

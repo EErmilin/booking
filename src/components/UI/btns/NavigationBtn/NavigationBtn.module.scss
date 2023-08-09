@@ -1,0 +1,31 @@
+@import "../../../../commonStyle/variable";
+
+.navigation_btn {
+  width: 32px;
+  height: 32px;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  background: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .2s;
+  cursor: pointer;
+  @media(min-width: 992px) {
+    width: 36px;
+    height: 36px;
+  }
+
+  &:hover {
+    background: $blue;
+
+    & path {
+      fill: $white
+    }
+  }
+}
+
+.left {
+  transform: rotate(180deg);
+}

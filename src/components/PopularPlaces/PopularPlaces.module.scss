@@ -1,0 +1,97 @@
+.wrap {
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  @media(min-width: 1200px) {
+    border-radius: 20px;
+  }
+}
+
+.navigation {
+  position: absolute;
+  right: 16px;
+  top: 50px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  @media(min-width: 576px) {
+    right: 32px;
+  }
+  @media(min-width: 992px) {
+    right: 50px;
+  }
+
+  & > div {
+    position: static;
+    &:first-child {
+      margin-right: 16px;
+    }
+  }
+}
+
+.place {
+  &_slider {
+    width: 100%;
+  }
+
+  &_slide {
+    padding: 0;
+  }
+
+  &_card {
+    background-image: url("../../assets/image/Moscaw.webp");
+    min-height: 580px;
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media(min-width: 576px) {
+      padding: 28px 30px 32px 30px;
+    }
+    @media(min-width: 992px) {
+      min-height: 665px;
+      padding: 35px 30px 30px;
+    }
+    @media(min-width: 1200px) {
+      min-height: 740px;
+    }
+  }
+
+  &_title {
+    font-size: 28px;
+    line-height: 1.2;
+    color: #ffffff;
+    font-weight: 600;
+    margin: 0 0 20px;
+    padding-right: 100px;
+    @media(min-width: 576px) {
+      padding-right: 120px;
+      font-size: 32px;
+    }
+    @media(min-width: 992px) {
+      font-size: 56px;
+      padding-right: 140px;
+    }
+  }
+}
+
+.hotel {
+  &_slider_wrap {
+    width: 100%;
+  }
+
+  &_slider {
+    overflow: visible;
+    @media (min-width: 1200px) {
+      overflow: hidden;
+    }
+  }
+}
+
+.hotel_slide {
+  width: 290px;
+  @media(min-width: 1200px) {
+    width: auto;
+  }
+}
+

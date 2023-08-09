@@ -1,0 +1,55 @@
+@import "../../commonStyle/variable";
+
+
+.add_file {
+  &_button {
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    color: $blue;
+    background-color: #D9F1FF;
+    border: 1px solid;
+    width: 180px;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+  }
+  &_input{
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+    height: 37px;
+    width: 180px;
+  }
+  &_clipBtn {
+    width: 15px;
+    height: 15px;
+    background: center/cover no-repeat url('../../assets/svg/icons/clip.svg');
+  }
+  &_images{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin-top: 16px;
+    grid-column-gap: 13.5px;
+    margin-bottom: 28px;
+  }
+  &_files{
+    width: 40%;
+  }
+  &_wrap{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  &_text{
+    margin-left: 13px;
+    color: $gray400;
+    font-size: 12px;
+  }
+}

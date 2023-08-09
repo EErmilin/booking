@@ -1,0 +1,82 @@
+@import "../../../../commonStyle/variable";
+
+.confirm_code{
+  &_error{
+    margin-top: 12px;
+    color: $red;
+    display: block;
+  }
+  &_title{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 150%;
+    margin: 0px;
+    text-align: center;
+  }
+  &_txt{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    margin: 14px 0px 0px 0px;
+    text-align: center;
+  }
+  &_btn{
+    margin-top: 36px;
+    width: 100%;
+  }
+  &_wrp{
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+  }
+  &_line{
+    display: flex;
+    align-items: center;
+    margin-left: -6px;
+    margin-right: 12px;
+  }
+  &_timer{
+    cursor: pointer;
+    margin-top: 12px;
+    text-align: center;
+    text-decoration-line: underline;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: $blue;
+  }
+  &_input{
+    width: 40px;
+    height: 56px;
+    border: 1px solid $border-area;
+    padding: 8px 12px;
+    background: $white;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    &_flex{
+      display: flex;
+    }
+    &_withLine{
+      display: flex;
+    }
+    &_err {
+      &_input{
+        border:1px solid $red !important;
+        color: $red !important;
+      }
+    }
+    & input{
+      width: 40px;
+      height: 56px;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 160%;
+      padding: 12px 0px 12px 14px;
+    }
+
+  }
+}

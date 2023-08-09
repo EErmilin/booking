@@ -1,0 +1,29 @@
+.wrapper {
+  max-width: 1290px;
+  margin: 0 auto;
+  @media(min-width: 992px) {
+    padding: 0 30px;
+  }
+}
+
+.content {
+  margin-top: 15px;
+  margin-bottom: 60px;
+  &>p {
+    font-weight: 400;
+    line-height: 25.6px;
+    font-size: 16px;
+  }
+  &>ol {
+    &>li {
+      font-weight: 400;
+      line-height: 25.6px;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.img {
+  width: 100%;
+}

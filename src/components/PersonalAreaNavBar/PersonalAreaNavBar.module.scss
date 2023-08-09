@@ -1,0 +1,172 @@
+@import "../../commonStyle/variable";
+
+.wrap {
+  min-height: 480px;
+  background: $gradient-nav-bar;
+  border-radius: 20px;
+  padding: 18px 20px 23px 20px;
+  display: flex;
+  flex-direction: column;
+  @media(min-width: 1200px) {
+    position: sticky;
+    top: 20px;
+  }
+}
+
+.header {
+  display: flex;
+  column-gap: 6px;
+  flex-shrink: 0;
+  align-items: center;
+}
+
+.info {
+  width: 100%;
+
+  & p {
+    margin: 0;
+  }
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid $white;
+  background: #dde7ed;
+  flex-shrink: 0;
+}
+
+.links {
+  margin-top: 20px;
+  flex: 1 1 auto;
+}
+
+.list {
+  margin: 0;
+  padding: 0 0 0 12px;
+  list-style: none;
+
+  &_item {
+    margin-bottom: 10px;
+
+    &::marker {
+      color: #ffffff;
+      font-size: 1.5em;
+      line-height: 1;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &_active {
+      list-style-type: disc;
+    }
+  }
+}
+
+.link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: $white;
+  transition: 0.2s;
+
+  &:hover {
+    color: #ffffff;
+    opacity: 0.5;
+  }
+}
+
+.name {
+  font-weight: 500;
+  font-size: 16px;
+  color: $white;
+  line-height: 1.3;
+}
+
+.email {
+  display: block;
+  max-width: 197px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: $white;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.key {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: $white;
+  margin: 5px 0 0;
+  display: flex;
+  &_hint {
+    margin: 0 0 0 4px;
+    &_text {
+      min-width: 340px;
+    }
+  }
+  &_disabled {
+    span {
+      opacity: 0.5;
+    }
+  }
+}
+
+.bottom {
+  flex-shrink: 0;
+}
+
+.logout_button {
+  color: $white;
+  border: 1px solid $white;
+  display: inline-flex;
+  width: 100%;
+  height: 36px;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  padding: 0 16px;
+  border-radius: 18px;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    color: $green;
+    background: white;
+    border-color: white;
+  }
+}
+
+.active_book {
+  height: 24px;
+  width: 24px;
+  color: $blue;
+  background: $white;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book {
+  height: 24px;
+  color: $blue;
+  padding: 4px;
+  background: $white;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+
+  &_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

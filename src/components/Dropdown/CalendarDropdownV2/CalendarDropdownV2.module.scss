@@ -1,0 +1,48 @@
+@import "../../../commonStyle/variable";
+
+.calendar{
+  margin-top: 10px;
+  &_header{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    padding-bottom: 3px;
+  }
+  &_label{
+    color: $gray;
+    padding-left: 17px;
+    text-align: start;
+    font-size: 12px;
+    margin-bottom: 2px;
+    &:first-child{
+      position: relative;
+      &:after{
+        content: ' ';
+        position: absolute;
+        height: 34px;
+        z-index: 1;
+        border-right: 1px solid $gray;
+        top: 0px;
+        right: -1px;
+      }
+
+    }
+  }
+}
+.date_wrp{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  &:first-child{
+    border-right: 1px solid $gray;
+  }
+  padding: 0px 17px;
+  box-sizing: border-box;
+}
+.date_label{
+  color: $gray;
+  font-size: 12px;
+  font-weight: 400;
+}

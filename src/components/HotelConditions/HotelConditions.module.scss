@@ -1,0 +1,50 @@
+.conditions {
+  display: grid;
+  grid-gap: 10px;
+  @media(min-width: 992px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &_icon {
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    &_wrp {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &_text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+.bed{
+  background-image: url("../../assets/svg/icons/bed-green.svg");
+  &_text{
+    margin: 0px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+  }
+  &_wrap{
+    align-items: flex-start;
+    grid-column: 1/4;
+  }
+}
+.smoking{
+  background-image: url("../../assets/svg/icons/smoking.svg");
+}
+.ruler{
+  background-image: url("../../assets/svg/icons/ruler.svg");
+}
+.kitchen{
+  background-image: url("../../assets/svg/icons/kitchen.svg");
+}
+
+

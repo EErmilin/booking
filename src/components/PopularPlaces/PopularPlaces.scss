@@ -1,0 +1,19 @@
+.popular-places-swiper {
+  .swiper-wrapper {
+    height: auto;
+  }
+}
+
+.popular-places-swiper {
+  .swiper-slide {
+    height: auto;
+  }
+}
+
+
+.hotel-slider {
+  overflow: visible;
+  @media(min-width: 1200px) {
+    overflow: hidden;
+  }
+}

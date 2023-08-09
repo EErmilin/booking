@@ -1,0 +1,24 @@
+---
+
+version: "3.3"
+services:
+  app:
+    image: local/checkin-react:latest
+    build:
+      context: .
+      dockerfile: .deploy/docker/Dockerfile
+    command: sh -c "nginx -g 'daemon off;'"
+    ports:
+      - "${PORT}:${PORT}"
+    environment:
+      - REACT_APP_BACKEND_ENDPOINT=${REACT_APP_BACKEND_ENDPOINT}
+      - REACT_APP_CLIENT_ENDPOINT=${REACT_APP_CLIENT_ENDPOINT}
+      - REACT_APP_PARTNER_ENDPOINT=${REACT_APP_PARTNER_ENDPOINT}
+
+    networks:
+      - checkin-react
+    restart: unless-stopped
+
+networks:
+  checkin-react:
+#    external: true

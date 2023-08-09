@@ -1,0 +1,30 @@
+@import "../../commonStyle/variable";
+
+.social_media_item{
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border-radius: 50%;
+  cursor: pointer;
+  background: $blue;
+}
+.default{
+  background: $blue;
+}
+.vk{
+  background: center/cover no-repeat url('../../assets/svg/icons/vk.svg');
+}
+.telegram{
+  background: center/cover no-repeat url('../../assets/svg/icons/telegram.svg');
+}
+.tiktok{
+  background: center/cover no-repeat url('../../assets/svg/icons/tiktok.svg');
+}
+.rutube{
+  background: center/cover no-repeat url('../../assets/svg/icons/rutube.svg');
+}
+.odnoklassniki{
+  background: center/cover no-repeat url('../../assets/svg/icons/odnoklassniki.svg');
+}

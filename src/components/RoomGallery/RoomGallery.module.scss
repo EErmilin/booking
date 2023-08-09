@@ -1,0 +1,53 @@
+@import "../../commonStyle/variable";
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 4px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.item {
+  position: relative;
+  padding-top: 62%;
+  cursor: pointer;
+  &:first-child {
+    grid-column: 1/6;
+    grid-row: 1/4;
+  }
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rest {
+  position: absolute;
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid #FFFFFF;
+  border-radius: 39px;
+  left: 7px;
+  right: 7px;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  color: $white;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  @media(min-width: 1200px) {
+    font-size: 20px;
+  }
+}
+
+.rest_photos {
+  display: none;
+}

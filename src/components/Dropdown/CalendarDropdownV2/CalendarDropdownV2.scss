@@ -1,0 +1,268 @@
+@import "../../../commonStyle/variable";
+.DayPicker_transitionContainer{
+  height: 339px !important;
+}
+.CalendarDropDownV2 {
+  .DayPickerNavigation_leftButton__horizontalDefault {
+    background-image: url("../../../assets/svg/icons/arrow-left.svg");
+  }
+
+  .DayPickerNavigation_rightButton__horizontalDefault {
+    background-image: url("../../../assets/svg/icons/arrow-right.svg");
+  }
+
+  .DayPickerNavigation_svg__horizontal {
+    width: 11px !important;
+  }
+
+  .DateInput_input__focused {
+    border-bottom: none !important;
+  }
+
+  .DateInput_fang {
+    display: none;
+  }
+
+  .DateInput_input {
+    height: 40px;
+    font-size: 14px !important;
+    line-height: 1.2 !important;
+    color: $black !important;
+    padding: 0 0 0 37px !important;
+    border-radius: 8px;
+    background: $white;
+    position: relative;
+
+    &::placeholder {
+      color: $white;
+    }
+  }
+
+  .DateInput_screenReaderMessage {
+    font-size: 0;
+    position: relative;
+    overflow: unset;
+
+    &:before {
+      content: ' ';
+      background-image: url("../../../assets/svg/icons/calendar-blue.svg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: -29px;
+      left: 13px;
+      z-index: 1;
+    }
+  }
+
+  .DateRangePickerInput {
+    display: block;
+    background: inherit;
+  }
+
+  .DateInput {
+    width: auto;
+    display: block;
+    background: inherit;
+    border-radius: 8px;
+
+    &:first-child {
+      @media(min-width: 1024px) {
+        &:before {
+          display: inline-block;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 15px;
+          color: $white;
+          content: "Дата заезда";
+        }
+      }
+    }
+
+    &:last-child {
+      @media(min-width: 1024px) {
+        &:before {
+          display: inline-block;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 15px;
+          color: $white;
+          content: "Дата отъезда";
+        }
+      }
+    }
+
+    &::after {
+      content: ' ';
+      background-image: url("../../../assets/svg/icons/arrow-select.svg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 5px;
+      height: 3px;
+      position: absolute;
+      top: 50%;
+      right: 18px;
+      @media(min-width: 1024px) {
+        top: 40px;
+      }
+    }
+  }
+
+  .DateRangePickerInput_arrow {
+    & > svg {
+      display: none;
+    }
+  }
+
+  .DayPickerNavigation_button__default {
+    border: none !important;
+    width: 11px !important;
+    height: 6px !important;
+    top: 24px !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    & > svg {
+      display: none;
+    }
+  }
+
+  .DayPicker_weekHeader_li > small {
+    font-size: 14px;
+    line-height: 20px;
+    color: $blue;
+  }
+
+  .CalendarMonth_table {
+    margin-top: 23px;
+  }
+
+  .CalendarDay__selected_span {
+    background: $blue-lighter !important;
+    color: $black !important;
+    border: none;
+
+  }
+
+  .CalendarDay__selected_start {
+    box-shadow: 10px 0 0 1px $blue-lighter;
+  }
+
+  .CalendarDay__selected_end {
+    box-shadow: -10px 0px 0px 1px $blue-lighter;
+  }
+
+  .CalendarDay__hovered_span {
+    background: $blue-lighter !important;
+    color: $black !important;
+
+    &:hover {
+      color: $white !important;
+      background: $blue !important;
+      border-radius: 50px;
+    }
+  }
+
+  .DayPicker__withBorder {
+    box-shadow: none !important;
+    border-radius: 20px;
+  }
+
+  .CalendarDay {
+    &__default {
+      border: none !important;
+      background: $white;
+      color: $black;
+      font-size: 14px;
+      margin-bottom: 3px !important;
+
+      &:hover {
+        background: $blue !important;
+        border-radius: 50%;
+        color: $white !important;
+      }
+    }
+
+    &__selected {
+      color: $white !important;
+      background: $blue !important;
+      border-radius: 50%;
+    }
+
+    &__blocked_out_of_range {
+      opacity: 0.3;
+
+      &:hover {
+        background: none !important;
+        border-radius: 50%;
+        color: $black !important;
+      }
+    }
+
+    &__today {
+      background: $blue-lighter;
+      border-radius: 50%;
+    }
+  }
+
+  .DateRangePicker_picker {
+    z-index: 999;
+  }
+
+  .DateRangePicker_picker div div:not(.calendar_info) {
+    border-radius: 20px !important;
+  }
+
+  .DayPickerKeyboardShortcuts_show__bottomRight {
+    display: none !important;
+  }
+
+  .DateRangePicker {
+    font-family: 'Inter', Arial, sans-serif !important;
+    margin-top: 4px;
+    width: 100%;
+
+    &_picker {
+      box-shadow: 0 0 20px rgba(8, 121, 184, 0.2);
+      border-radius: 20px;
+      border: 0;
+      padding: 2px 0 10px;
+      &__portal {
+        border-radius: 0;
+        z-index: 50;
+      }
+    }
+  }
+}
+
+.calendar_info{
+  background: $blue-lighter;
+  padding: 8px 14px;
+  border-radius: 4px !important;
+  &_wrap{
+    margin-top: 11px;
+    padding:0px 20px 10px 20px;
+  }
+  &_text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: $blue-200;
+    display: flex;
+    align-items: center;
+
+    &:before{
+      content: '';
+      background: center/contain no-repeat url("../../../assets/svg/icons/help-blue.svg");
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      margin-right: 8px;
+    }
+  }
+}

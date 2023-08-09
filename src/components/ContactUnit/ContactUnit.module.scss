@@ -1,0 +1,31 @@
+.list {
+  @media(min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.item {
+  margin: 0 0 30px;
+  @media(min-width: 768px) {
+    min-width: 50%;
+  }
+}
+
+.label {
+  font-size: 16px;
+}
+
+.values {
+  font-weight: 700;
+  font-size: 20px;
+
+  span {
+    display: block;
+    line-height: 1.6;
+  }
+
+  a {
+    color: inherit;
+  }
+}

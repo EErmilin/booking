@@ -1,0 +1,56 @@
+.FilterCatalogRooms {
+  margin-top: 0;
+  width: 100%;
+  @media (min-width: 768px) {
+    width: auto;
+    grid-column: 1/3;
+  }
+
+  .DateRangePickerInput {
+    display: grid !important;
+    grid-gap: 10px;
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .DateRangePickerInput_arrow {
+    display: none;
+  }
+
+  .DateRangePicker {
+    margin-top: 0 !important;
+  }
+
+  .DateInput_input {
+    height: 48px !important;
+  }
+
+  .DateInput {
+    display: block;
+    background: inherit;
+    border-radius: 8px;
+
+    &:first-child {
+      &:before {
+        content: none !important;
+      }
+    }
+
+    &:last-child {
+      &:before {
+        content: none !important;
+      }
+    }
+
+    &:after {
+      top: 50% !important;
+    }
+
+    &_screenReaderMessage {
+      &:before {
+        top: -33px !important;
+      }
+    }
+  }
+}

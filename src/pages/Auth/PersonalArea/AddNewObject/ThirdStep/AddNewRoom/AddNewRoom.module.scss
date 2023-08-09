@@ -1,0 +1,281 @@
+@import "../../../../../../commonStyle/variable";
+
+.add_new_room {
+  margin: 35px 0 0;
+
+  &_service{
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    &_input{
+      & input {
+        width: 140px;
+        border-radius: 4px;
+      }
+    }
+    &_label {
+      color: $black;
+      font-weight: 400;
+
+    }
+    &_checkbox {
+      border: 1px solid $gray;
+    }
+  }
+
+
+
+  &_beds {
+    margin-top: 32px;
+
+    &_list {
+      margin-bottom: 16px;
+    }
+
+    &_input {
+      & input {
+        width: 110px;
+        border-radius: 4px;
+      }
+    }
+
+    &_icon {
+      display: flex;
+      align-items: center;
+      &:after {
+        margin-left: 11px;
+        content: '';
+        width: 30px;
+        height: 16px;
+        background: 0/contain repeat url("../../../../../../assets/svg/icons/man-blue.svg");
+        display: inline-block;
+      }
+    }
+  }
+  &_tariff{
+    width: 373px;
+    margin-right: 8px;
+    &_breakfast{
+      color: $gray400;
+    }
+    &_wrap{
+      display: flex;
+      align-items: flex-end;
+      margin-top: 12px;
+      &:first-child{
+        margin-top: 0px;
+      }
+    }
+  }
+  &_help{
+    justify-content: flex-start;
+  }
+  &_label{
+    display: inline-block;
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-size: 14px;
+    color: $black;
+  }
+  &_tariff {
+    &_list {
+      margin-top: 22px;
+      margin-bottom: 16px;
+    }
+
+    &_btns {
+      display: flex;
+      align-items: center;
+      font-weight: 400;
+      font-size: 14px;
+
+      &:before {
+        content: '+';
+        background: $blue-400;
+        border-radius: 50%;
+        height: 28px;
+        width: 28px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $blue-200;
+        margin-right: 12px;
+      }
+    }
+  }
+
+  &_link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $black;
+
+    &:before {
+      content: '';
+      background-image: url("../../../../../../assets/svg/icons/black-arrow.svg");
+      width: 4px;
+      height: 7px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: inline-block;
+      margin-right: 8px;
+    }
+  }
+
+  &_form {
+    background: $white;
+    margin: 24px -16px 0 -16px;
+    @media(min-width: 576px) {
+      margin: 24px -30px 0 -30px;
+    }
+    @media(min-width: 768px) {
+      margin: 28px 0 0;
+      border-radius: 20px;
+    }
+    &_error{
+      color: $red;
+      font-size: 14px;
+      margin-top: 12px;
+      display: block;
+    }
+    &_wrap{
+      display: flex;
+    }
+    &_block {
+      border-bottom: 1px solid $gray200;
+      padding: 24px 16px 32px 16px;
+      @media(min-width: 576px) {
+        padding: 24px 32px 32px 32px;
+      }
+      @media(min-width: 768px) {
+        padding: 24px 20px 32px 20px;
+      }
+
+      &:last-child {
+        padding: 24px 16px;
+        border-bottom: none;
+        @media(min-width: 576px) {
+          padding: 24px 32px;
+        }
+        @media(min-width: 768px) {
+          padding: 24px 20px;
+        }
+      }
+    }
+
+    &_title {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 150%;
+      margin: 0 0 12px 0;
+    }
+  }
+
+  &_field {
+    display: grid;
+    margin-bottom: 16px;
+    @media(min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &_flex2{
+      margin-bottom: 19px;
+      @media(min-width: 768px) {
+        display: flex;
+        align-items: center;
+        column-gap: 24px;
+      }
+      &_select{
+        width: 148px;
+      }
+      &_label{
+        margin-bottom: 4px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+      }
+      &_input{
+        width: 148px;
+      }
+    }
+    &_flex {
+      margin-bottom: 16px;
+      @media(min-width: 768px) {
+        display: flex;
+        align-items: flex-start;
+
+        column-gap: 24px;
+      }
+      &_select{
+        width: 318px;
+      }
+      &_input {
+        & input {
+          width: 110px;
+        }
+      }
+
+      &_child {
+        display: grid;
+        grid-gap: 19px;
+        @media(min-width: 768px) {
+          width: 75%;
+          grid-template-columns: repeat(2, 1fr);
+        }
+        @media(min-width: 992px) {
+          grid-column-gap: 36px;
+        }
+      }
+
+      & > div {
+        margin: 0 0 16px;
+        @media(min-width: 768px) {
+          margin: 0;
+        }
+      }
+    }
+
+    &_textarea {
+      grid-column: 1/3;
+
+      & textarea {
+        height: 165px;
+      }
+    }
+
+    &_name {
+      margin-bottom: 16px;
+      @media(min-width: 768px) {
+        width: 50%;
+      }
+    }
+
+    &_input {
+      & input {
+        width: 80px;
+      }
+    }
+
+    &_help {
+      margin: 4px 0 0 0;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      color: $gray-dark;
+    }
+  }
+
+  &_buttons {
+    margin: 24px 0 0;
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 12px;
+  }
+}
+.select_item{
+  color: $area-font-placeholder;
+}

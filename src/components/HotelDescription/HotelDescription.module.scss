@@ -1,0 +1,120 @@
+@import "../../commonStyle/variable";
+
+.description {
+  & > h1 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    margin: 0 0 9px;
+    @media(min-width: 992px) {
+      font-size: 24px;
+    }
+  }
+
+  & > p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0 0 20px;
+    @media(min-width: 992px) {
+      font-size: 16px;
+    }
+  }
+
+  * {
+    font-family: 'Inter', Arial, sans-serif !important;
+  }
+}
+
+.hotel_description {
+  margin-bottom: 0;
+
+  &_long {
+    z-index: 1;
+    height: 500px;
+    transition: .5s;
+    margin-bottom: 40px;
+
+    .hotel_description_wrap {
+      &:before {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(0deg, #F0F5F9 0%, rgba(240, 245, 249, 0) 89.29%);
+        height: 112px;
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.2s;
+      }
+    }
+  }
+
+  &_active {
+    .hotel_description_wrap {
+      &:before {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  }
+
+  &_title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    margin: 0 0 9px 0;
+    @media(min-width: 992px) {
+      font-size: 24px;
+    }
+  }
+
+  &_wrap {
+    overflow-y: hidden;
+    height: 100%;
+    position: relative;
+  }
+
+  &_subtitle {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0 0 6px;
+  }
+
+  &_text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    margin-bottom: 20px;
+    @media(min-width: 992px) {
+      font-size: 16px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &_btn {
+    margin-top: 9px;
+    border: 1px solid $blue;
+    background: inherit;
+    border-radius: 27px;
+    color: $blue;
+    height: 40px;
+    padding: 8px 19px;
+
+    &:hover {
+      background: $blue;
+      color: $white;
+    }
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100% !important;
+    max-width: 100%;
+  }
+}

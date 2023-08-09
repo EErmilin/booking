@@ -1,0 +1,105 @@
+@import "../../../../../../commonStyle/variable";
+
+.ant-picker-range-custom {
+  &_invalid {
+    & > div {
+      border: 1px solid $red-400;
+    }
+
+    & > span {
+      display: inline-block;
+      margin-top: 8px;
+
+      color: $red;
+      font-size: 14px;
+    }
+  }
+
+  width: 252px;
+
+  .ant-picker-cell {
+    color: $gray;
+  }
+
+  .ant-picker-range-separator {
+    & > span {
+      display: none;
+    }
+
+    &:before {
+      content: '—';
+    }
+  }
+}
+
+.ant-picker-popup-custom {
+  @media(max-width: 767px) {
+    .ant-picker-panels > *:first-child button.ant-picker-header-next-btn {
+      visibility: visible !important;
+    }
+
+    .ant-picker-panels > *:first-child button.ant-picker-header-super-next-btn {
+      visibility: visible !important;
+    }
+
+    .ant-picker-panels > *:last-child {
+      display: none;
+    }
+
+    .ant-picker-panel-container, .ant-picker-footer {
+      width: 280px !important;
+    }
+
+    .ant-picker-footer-extra > div {
+      flex-wrap: wrap !important;
+    }
+  }
+
+  .ant-picker-cell-inner {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  .ant-picker-panel-container {
+    border-radius: 20px;
+  }
+
+  .ant-picker-panels {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+  }
+
+  .ant-picker-cell-range-start,
+  .ant-picker-cell-range-end {
+    &:before {
+      background: $blue-lighter !important;
+    }
+
+    & div {
+      background: $blue !important;
+      border-radius: 14px !important;
+    }
+  }
+
+  .ant-picker-cell-in-range {
+    &:before {
+      background: $blue-lighter !important;
+    }
+  }
+
+  .ant-picker-cell-today {
+    & div {
+      &:before {
+        border: 1px solid $blue-400 !important;
+        border-radius: 14px !important;
+      }
+    }
+  }
+
+  .ant-picker-cell-range-hover {
+    &:before {
+      border-color: $blue-lighter !important;
+    }
+  }
+}

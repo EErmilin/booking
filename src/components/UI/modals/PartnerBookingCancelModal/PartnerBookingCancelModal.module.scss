@@ -1,0 +1,18 @@
+@import "../../../../commonStyle/variable";
+.reasons {
+  margin: 0 0 20px;
+}
+
+.textarea {
+  textarea {
+    height: 150px;
+  }
+}
+
+.buttons {
+  width: 250px;
+}
+.valid{
+  color: $red;
+  margin-top: 8px;
+}

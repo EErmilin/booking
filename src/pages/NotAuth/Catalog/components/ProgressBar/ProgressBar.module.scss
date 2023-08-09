@@ -1,0 +1,50 @@
+@import "../../../../../commonStyle/variable";
+
+.progress_bar_map{
+  width: 50%;
+  background: $white;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  padding: 14px 20px;
+  position: absolute;
+  z-index: 2;
+  top: 20px;
+  left: 20px;
+  &_city{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 130%;
+    margin-bottom: 8px;
+  }
+  &_wrp{
+    height: 8px;
+    border-radius: 15px;
+    background: $gray200;
+    overflow: hidden;
+  }
+  &_progress{
+    background: $progress;
+    border-radius: 15px;
+    transition: 0.5s;
+    height: 8px;
+    animation: progress 0.4s ease-in-out infinite;
+  }
+}
+
+@keyframes  progress{
+  0%{
+    background: linear-gradient(90deg, #B9F396 0%, #B4E8DC 12.98%, #54C1FF 24.47%);
+  }
+  25%{
+    background: linear-gradient(90deg, #B9F396 25.2%, #B4E8DC 38.13%, #54C1FF 49.74%);
+  }
+  50%{
+    background: linear-gradient(90deg, #B9F396 50.59%, #B4E8DC 63.52%, #54C1FF 75.13%);
+  }
+  75%{
+    background: linear-gradient(90deg, #B9F396 75.86%, #B4E8DC 87.82%, #54C1FF 100%);
+  }
+  100%{
+    background: linear-gradient(90deg, #B9F396 99.96%, #B4E8DC 99.99%, #54C1FF 100%);
+  }
+}

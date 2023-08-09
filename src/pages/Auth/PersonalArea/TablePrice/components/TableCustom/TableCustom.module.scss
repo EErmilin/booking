@@ -1,0 +1,7 @@
+.table{
+  overflow: scroll;
+  & td,
+  & thead>tr>th{
+    padding: 0px !important;
+  }
+}

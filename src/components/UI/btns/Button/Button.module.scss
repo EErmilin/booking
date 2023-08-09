@@ -1,0 +1,249 @@
+@import "../../../../commonStyle/variable";
+
+.Button {
+  background: white;
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 18px;
+  height: 36px;
+  font-size: 14px;
+  font-weight: 400;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 10px;
+  justify-content: center;
+  line-height: 1;
+
+  &:not(:disabled) {
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  a {
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    color: inherit;
+    &:hover {
+      color: inherit;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}
+
+.white {
+  height: 48px;
+  color: #000000;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 17px rgba(255, 255, 255, 0.5);
+  &:hover {
+    box-shadow: none;
+  }
+}
+
+.outline_blue {
+  border: 1px solid $blue;
+  color: $blue;
+  &:not(:disabled) {
+    &:hover {
+      background: $blue-lighter;
+    }
+  }
+}
+
+.outline_red {
+  border: 1px solid $red;
+  color: $red;
+  &:not(:disabled) {
+    &:hover {
+      background: $red-100;
+    }
+  }
+}
+
+.green {
+  background: $green;
+  color: $white;
+
+  &:not(:disabled) {
+    &:hover {
+      background: $green-plus200;
+      color: $green-200;
+    }
+  }
+}
+
+.blue {
+  background: $blue;
+  color: $white;
+  border-radius: 8px;
+  &:not(:disabled) {
+    &:hover {
+      background: $blue-200;
+      color: $blue-400;
+    }
+  }
+}
+
+.purple {
+  background: $purple;
+  color: white;
+  box-shadow: 0 0 4px rgba(86, 194, 254, 0.2), 0 0 20px rgba(86, 194, 254, 0.5);
+  &:not(:disabled) {
+    &:hover {
+      background: $purple-dark;
+    }
+  }
+}
+
+.peach {
+  background: $peach;
+  color: white;
+  box-shadow: 0 0 4px rgba(86, 194, 254, 0.2), 0 0 20px rgba(86, 194, 254, 0.5);
+  &:not(:disabled) {
+    &:hover {
+      background: $peach-dark;
+    }
+  }
+}
+
+.back {
+  &:before{
+    content: ' ';
+    background-image: url("../../../../assets/svg/icons/arrow-rigth-blue.svg");
+    transform: rotate(180deg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 7px;
+    height: 11px;
+    display: inline-block;
+    margin-right: 8px;
+  }
+}
+
+.large {
+  height: 48px;
+  padding: 0 24px;
+  border-radius: 8px;
+}
+
+.Button2 {
+  background: $white;
+  outline: none;
+  border: 1px solid transparent;
+  padding: 9px 16px 10px;
+  border-radius: 18px;
+  min-height: 36px;
+  font-size: 14px;
+  font-weight: 500;
+
+  &:not(:disabled) {
+    cursor: pointer;
+    &:hover {
+      transition: 0.5s;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}
+
+.WithoutBorder {
+  border: none !important;
+}
+
+.ButtonGreen {
+  background: $green;
+  color: $white;
+  transition: 0.5s;
+
+  &:not(:disabled) {
+    &:hover {
+      background: $green-plus200;
+      color: $green-200;
+    }
+  }
+
+  a {
+    color: inherit;
+  }
+}
+
+.blueBorderButton {
+  border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  color: $blue;
+  border: 1px solid $blue;
+  width: fit-content;
+  align-items: center;
+
+  &:disabled {
+    opacity: 0.5;
+  }
+
+  &:not(:disabled) {
+    &:hover {
+      transition: 0.5s;
+      background: $blue;
+      border: 1px solid $blue;
+      color: $white;
+    }
+  }
+}
+
+.ButtonGray {
+  background-color: $gray200;
+  color: $gray-dark;
+}
+
+.ButtonGradient {
+  background: $gradient-green;
+  border-radius: 18px;
+  color: $white;
+}
+
+.ButtonWhite {
+  height: 48px;
+  padding: 16px 24px;
+  color: $blue;
+  border: none;
+  border-radius: 8px;
+
+  &:not(:disabled) {
+    &:hover {
+      transition: 0.5s;
+      background: $blue;
+      color: $white;
+    }
+  }
+}
+
+.ButtonRed {
+  border: 1px solid $red;
+  background: $white;
+  color: $red;
+  &:not(:disabled) {
+    &:hover {
+      transition: 0.5s;
+      background: $red;
+      color: $white;
+    }
+  }
+}
+
+.ButtonBlue {
+  height: 48px;
+  padding: 16px 24px;
+  background: $blue;
+  color: $white;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.2s;
+}

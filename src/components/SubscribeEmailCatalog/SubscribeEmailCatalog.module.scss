@@ -1,0 +1,112 @@
+@import "../../commonStyle/variable";
+
+.place {
+  background: $blue;
+  padding: 30px 0;
+  margin: 0 0 25px;
+  @media(min-width: 992px) {
+    padding: 50px 0;
+  }
+}
+
+.wrap {
+  margin: 0 auto;
+  max-width: 1290px;
+  padding: 0 16px;
+  @media(min-width: 576px) {
+    padding: 0 30px;
+  }
+}
+
+.content {
+  display: grid;
+  grid-gap: 30px;
+  @media(min-width: 992px) {
+    grid-gap: 50px;
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+.info {
+  @media(min-width: 992px) {
+    grid-column: 1/8;
+  }
+}
+
+.error {
+font-size: 16px;
+font-weight: 400;
+color:white;
+}
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media(min-width: 992px) {
+    grid-column: 8/13;
+    justify-content: center;
+  }
+}
+
+.title {
+  color: $white;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.2;
+  margin: 0 0 12px;
+  @media(min-width: 992px) {
+    font-size: 28px;
+  }
+  @media(min-width: 1200px) {
+    font-size: 36px;
+  }
+}
+
+.description {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  color: $white;
+  @media(min-width: 992px) {
+    font-size: 20px;
+  }
+  @media(min-width: 1200px) {
+    font-size: 24px;
+  }
+}
+
+.input {
+  & input {
+    border-radius: 30px !important;
+    height: 60px !important;
+    padding: 4px 27px 4px 0;
+  }
+}
+
+.subscribe_email {
+  height: 220px;
+  background: $blue;
+  mix-blend-mode: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &_wrap {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  &_btn {
+    top: 4px;
+    bottom: 4px;
+    right: 4px;
+    height: 52px !important;
+    border-radius: 26px !important;
+    background: $blue !important;
+  }
+}

@@ -1,0 +1,136 @@
+@import "../../commonStyle/variable";
+
+.hotel_item {
+  display: flex;
+  flex-direction: column;
+
+  &_header {
+    position: relative;
+    height: 240px;
+    width: 100%;
+    border-radius: 30px 30px 30px 0;
+    overflow: hidden;
+  }
+
+  &_header2 {
+    background-color: $gray200;
+    position: relative;
+    flex: 0 0 84px;
+    width: 84px;
+    height: 84px;
+    border-radius: 8px;
+    overflow: hidden;
+
+    .hotel_item {
+      &_img {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &_wrap2 {
+    display: flex;
+    width: 100%;
+    gap: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+
+  &_body2 {
+    width: calc(100% - 84px);
+
+  }
+
+  &_title2 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 0 0 5px;
+
+    &_loading {
+      background-color: $gray200;
+      color: $gray200;
+      border-radius: 18px;
+      width: 120px;
+      height: 14px;
+      margin-top: 2px;
+      overflow: hidden;
+    }
+  }
+
+  &_btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+  }
+
+  &_img {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  &_price {
+    bottom: 12px;
+    right: 12px;
+    position: absolute;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    background: $white;
+    border-radius: 20px;
+    padding: 6px 8px 7px;
+  }
+
+  &_price2 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 13px;
+    &_loading {
+      background-color: $gray200;
+      color: $gray200;
+      border-radius: 18px;
+      width: 83px;
+      height: 14px;
+      margin-top: 13px;
+    }
+  }
+
+  &_body {
+
+  }
+
+  &_city {
+    color: $gray-dark;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    margin: 10px 0px 0px 0px;
+  }
+
+  &_name {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0px 0px 8px 0px;
+  }
+
+  &_rating {
+    margin-bottom: 15px;
+  }
+
+  &_mg_top {
+    margin-top: 15px;
+
+    &:first-child {
+      margin-top: 0px;
+    }
+  }
+}

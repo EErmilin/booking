@@ -1,0 +1,23 @@
+@import "../../../commonStyle/variable";
+
+.title {
+  display: flex;
+  flex-direction: row;
+  margin-left: 21px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button {
+  background-image: url("../../../assets/svg/icons/arrow-rigth-blue.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 20px;
+  transform:rotate(90deg);
+  transition: .5s;
+  &_active{
+    transform:rotate(270deg);
+  }
+}

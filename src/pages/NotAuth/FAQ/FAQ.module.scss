@@ -1,0 +1,370 @@
+@import "../../../commonStyle/variable";
+@import "../../../commonStyle/mediaQuires";
+
+.hero {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+  max-width: 1920px;
+  @media(min-width: 992px) {
+    margin-bottom: 45px;
+  }
+  @media(min-width: 1366px) {
+    padding: 0 40px;
+  }
+
+  &_inner {
+    position: relative;
+    background-color: #F0F6F9;
+    @media(min-width: 1366px) {
+      border-radius: 40px;
+      overflow: hidden;
+    }
+  }
+
+  &_container {
+    margin: 0 auto;
+    max-width: 1290px;
+    padding: 20px 16px;
+    @media(min-width: 576px) {
+      padding: 20px 30px;
+    }
+  }
+
+  &_background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    &_image {
+      display: none;
+      @media(min-width: 576px) {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &_info {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    min-height: 250px;
+    @media(min-width: 576px) {
+      min-height: 340px;
+    }
+    @media(min-width: 992px) {
+      min-height: 500px
+    }
+  }
+
+  &_title {
+    margin: 0;
+    font-size: 24px;
+    line-height: 1.2;
+    @media(min-width: 576px) {
+      max-width: 350px;
+    }
+    @media(min-width: 992px) {
+      font-size: 48px;
+      max-width: 570px;
+    }
+  }
+
+  &_text {
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 400;
+    margin: 20px 0 0;
+    @media(min-width: 576px) {
+      max-width: 350px;
+    }
+    @media(min-width: 992px) {
+      font-size: 20px;
+      max-width: 570px;
+    }
+  }
+
+  &_bottom {
+    margin: 30px 0 0;
+    @media(min-width: 576px) {
+      margin: 40px 0 0;
+    }
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1290px;
+  padding: 0 16px;
+  @media(min-width: 576px) {
+    padding: 0 30px;
+  }
+}
+
+.content {
+  margin: 0 0 50px;
+  @media(min-width: 992px) {
+    display: flex;
+    column-gap: 50px;
+    flex-direction: row;
+  }
+  @media(min-width: 1200px) {
+    column-gap: 100px;
+  }
+}
+
+.categories {
+  margin: 0 0 30px;
+  position: sticky;
+  top: 10px;
+  z-index: 2;
+  @media(min-width: 992px) {
+    flex: 0 0 300px;
+    margin: 0;
+  }
+
+  &_list {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #DDE7ED;
+    border-radius: 16px;
+    overflow: hidden;
+    position: static;
+    top: auto;
+    @media(min-width: 992px) {
+      flex-direction: column;
+      position: sticky;
+      top: 15px;
+    }
+  }
+}
+
+.answers {
+  @media(min-width: 992px) {
+    flex: 1 1 auto;
+  }
+
+  &_list {
+    margin: 0 0 40px;
+  }
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.6;
+  color: $gray300;
+  margin: 0;
+  padding: 6px 10px;
+  transition: 0.2s;
+  border-radius: 0;
+  white-space: initial;
+  flex: 0 0 33.33%;
+  align-items: center;
+  min-height: 45px;
+  @media(min-width: 576px) {
+    font-size: 16px;
+    min-height: 56px;
+  }
+  @media(min-width: 768px) {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  @media(min-width: 992px) {
+    font-size: 20px;
+    padding: 14px 20px;
+    flex: initial;
+    align-items: flex-start;
+  }
+
+  &:not(:last-child) {
+    border-right: 1px solid #DDE7ED;
+    @media(min-width: 992px) {
+      border-bottom: 1px solid #DDE7ED;
+      border-right: none;
+    }
+  }
+
+  &:not(.category_active) {
+    &:hover {
+      background: #F0F6F9;
+    }
+  }
+
+  &_active {
+    color: $blue-200;
+    background: #D9F1FF;
+  }
+}
+
+.faq {
+  &_group {
+    &_question {
+      display: flex;
+      flex-direction: column;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 180%;
+      color: black;
+
+      &:hover {
+        color: $blue-200;
+      }
+    }
+
+    &_active {
+      color: $blue-200;
+    }
+
+    &_questions {
+      padding-left: 20px;
+    }
+  }
+}
+
+.question {
+  &_title {
+    border-bottom: 1px solid $gray200;
+    width: 100%;
+    justify-content: space-between;
+    padding: 16px 0;
+    transition: 0s;
+    text-align: left;
+    border-radius: 0;
+
+    &:first-child {
+      border-top: 1px solid $gray200;
+    }
+
+    & h2 {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.6;
+      @media(min-width: 992px) {
+        font-size: 20px;
+      }
+    }
+
+    &_active {
+      border-bottom: none;
+    }
+  }
+
+  &_body {
+    word-break: break-all;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  &_wrap {
+    width: 100%;
+    border-bottom: 1px solid $gray200;
+    padding: 0 0 15px;
+    line-height: 1.4;
+    font-size: 14px;
+    @media(min-width: 992px) {
+      font-size: 16px;
+    }
+
+    & p {
+      margin: 0 0 1rem;
+    }
+  }
+}
+
+.btn {
+  border-radius: 28px;
+  box-shadow: 0 0 10px rgba(86, 194, 254, 0.5), 0 0 20px rgba(86, 194, 254, 0.5);
+  transition: all 0.2s;
+  height: 36px;
+  padding: 12px 25px;
+  width: 100%;
+  @media(min-width: 540px) {
+    width: auto;
+  }
+  @media(min-width: 992px) {
+    font-size: 16px;
+    height: 56px;
+  }
+
+  &:hover {
+    background: $blue;
+    color: white;
+    box-shadow: none;
+  }
+}
+
+.titleDrop {
+  justify-content: space-between;
+  padding: 0;
+  display: flex;
+}
+
+.titleDropActive {
+  color: $blue-200;
+}
+
+.support {
+  color: #19ACFE;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #D9F1FF;
+  border-radius: 20px;
+  padding: 25px;
+  margin: 20px 0 20px;
+
+  &_title {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 0 0 15px;
+    text-align: center;
+  }
+}
+
+.breadcrumbs {
+  position: relative;
+  margin: 0;
+}
+
+.wrap {
+  background-color: white;
+}
+
+.text {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+  margin: 0;
+  max-width: 550px;
+}
+
+.title {
+  line-height: 56px;
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.group_title {
+  display: none;
+  @media(min-width: 992px) {
+    display: block;
+    font-weight: 600;
+    font-size: 34px;
+    margin: 0 0 25px;
+  }
+}

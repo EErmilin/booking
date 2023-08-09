@@ -1,0 +1,52 @@
+@import "../../../../commonStyle/variable";
+
+.DarkBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 15;
+
+  overflow: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+
+  width: 100vw;
+  height: calc(var(--vh, 1vh) * 100);
+
+  padding: 15px;
+
+  background-color: rgba(17, 54, 86, .8);
+  animation: toggleDarkBackground .2s ease-in;
+}
+
+
+.BlueBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+
+  overflow: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+
+  width: 100vw;
+  height: calc(var(--vh, 1vh) * 100);
+
+  padding: 15px;
+  background-color: rgba(86,194,254,.7);
+  animation: toggleDarkBackground .2s ease-in;
+}
+
+@keyframes toggleDarkBackground {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}

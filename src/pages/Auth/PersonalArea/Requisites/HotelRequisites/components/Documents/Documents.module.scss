@@ -1,0 +1,109 @@
+.documents {
+  background-color: white;
+  border-radius: 20px;
+  margin-top: 48px;
+
+  &_shipping_method {
+    margin: 0 0 30px;
+  }
+
+  &_form {
+    &_input {
+      margin-top: 12px;
+      max-width: 470px;
+
+      &_edo {
+        margin-top: 12px;
+        max-width: 470px;
+      }
+    }
+
+    &_modal_success {
+      border-radius: 20px;
+      max-width: 390px;
+
+      &_title {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+        margin: 0 0 8px 0;
+      }
+
+      &_text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25.6px;
+        margin: 0;
+      }
+    }
+
+    &_address {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      max-width: 470px;
+      margin-top: 16px;
+      column-gap: 16px;
+      row-gap: 16px;
+      @media(min-width: 640px) {
+        flex-direction: row;
+      }
+
+      &_street {
+        @media(min-width: 640px) {
+          max-width: 210px;
+        }
+
+        &_house {
+          @media(min-width: 640px) {
+            max-width: 100px;
+          }
+        }
+      }
+    }
+  }
+
+  &_wrp {
+    width: 100%;
+  }
+
+  &_radio {
+    &_wrp {
+      margin-bottom: 20px;
+
+      &_label {
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 500;
+        margin-bottom: 12px;
+        letter-spacing: 0.15px;
+        @media(min-width: 576px) {
+          font-size: 20px;
+          font-weight: 600;
+        }
+      }
+    }
+
+    &_label {
+      font-size: 14px;
+      line-height: 1.2;
+      font-weight: 500;
+      letter-spacing: 0.15px;
+      @media(min-width: 576px) {
+        font-weight: 400;
+        font-size: 20px;
+        margin-top: -4px;
+      }
+    }
+  }
+
+  &_select {
+    margin-bottom: 20px;
+  }
+
+  &_confirm_btn {
+    margin-top: 76px;
+    max-height: 36px;
+    padding: 0 16px;
+  }
+}

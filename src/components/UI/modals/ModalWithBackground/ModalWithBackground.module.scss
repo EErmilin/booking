@@ -1,0 +1,41 @@
+@import '../../../../commonStyle/variable';
+
+.Modal {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  -webkit-overflow-scrolling: touch;
+  max-width: 370px;
+  width: 100%;
+  height: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 24px;
+  background-color: $white;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(52, 138, 196, 0.08);
+  z-index: 1;
+  @media (min-width: 480px) {
+    padding: 35px;
+  }
+
+  h2 {
+    font-size: 24px;
+    font-weight: normal;
+    @media (min-width: 480px) {
+      font-size: 26px;
+    }
+  }
+}
+
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  outline: none;
+  border: none;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background: center/cover no-repeat url('../../../../assets/svg/icons/close-icon-blue.svg');
+}

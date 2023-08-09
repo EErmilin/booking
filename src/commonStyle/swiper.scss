@@ -1,0 +1,59 @@
+@import "../commonStyle/variable";
+
+.swiper-pagination {
+  position: absolute;
+  text-align: center;
+  transition: .3s opacity;
+  transform: translate3d(0,0,0);
+  z-index: 10;
+}
+
+.swiper-pagination-fraction {
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .swiper-pagination-current,
+  .swiper-pagination-total {
+    margin: 0 4px;
+  }
+}
+
+.swiper-pagination-fraction-wrapper {
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.1;
+  padding: 5px;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  width: 36px;
+  height: 36px;
+  background: rgba(30, 30, 30, 0.3);
+  border-radius: 50%;
+  &::after {
+    font-size: 14px;
+    color: #ffffff;
+  }
+  &.swiper-button {
+    &--white {
+      background: #ffffff;
+      transition: all 0.2s;
+      &::after {
+        font-size: 14px;
+        color: $blue;
+      }
+      &:hover {
+        background: $blue;
+        &::after {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}

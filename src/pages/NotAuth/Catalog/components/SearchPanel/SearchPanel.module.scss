@@ -1,0 +1,41 @@
+@import "../../../../../commonStyle/variable";
+
+.wrap {
+  padding: 15px;
+  background: linear-gradient(218.1deg, #4EBFFF 2.66%, rgba(78, 191, 255, 0) 78.32%), radial-gradient(202.34% 363.43% at 0% 100%, #6DDB6D 0%, #A2EF73 100%);
+}
+
+.content {
+  background: #ffffff;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 14px 12px 10px;
+}
+
+.top {
+  padding: 0 0 9px;
+  border-bottom: 1px solid $gray200;
+  height: 30px;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 8px 0 0;
+}
+
+.search {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.option {
+  font-size: 14px;
+  color: $gray400;
+  line-height: 1.2;
+}

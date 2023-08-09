@@ -1,0 +1,78 @@
+@import "../../../../commonStyle/variable";
+
+.login_form {
+  padding: 24px 16px;
+  background: $white;
+  width: 100%;
+  margin: auto;
+  @media(min-width: 576px) {
+    width: 420px;
+    border-radius: 20px;
+    padding: 36px 40px;
+  }
+  &_modal{
+    border-radius: 20px;
+  }
+
+  &_title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    margin: 0;
+  }
+
+  &_field {
+    margin-top: 18px;
+
+    & input {
+      height: 36px;
+      border-radius: 4px;
+      border: 1px solid #DCDCE4;
+    }
+  }
+
+  &_recovery {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 16px 0 0 0;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  &_register {
+    color: $blue;
+    text-decoration: underline;
+    padding: 0;
+
+    &_txt {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 140%;
+      margin: 16px 0 0 0;
+      text-align: center;
+    }
+  }
+}
+
+.button {
+  margin-top: 19px;
+  width: 100%;
+}
+
+.success_modal {
+  &_title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    margin: 0;
+  }
+
+  &_txt {
+    margin: 8px 0 0 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+  }
+}

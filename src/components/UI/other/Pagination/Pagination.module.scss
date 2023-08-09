@@ -1,0 +1,61 @@
+@import '../../../../commonStyle/variable';
+
+.Pagination {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  font-size: 14px;
+  line-height: 1.2;
+  color: $black;
+}
+
+.prev,
+.next {
+  position: relative;
+  cursor: pointer;
+  width: 22px;
+  height: 22px;
+  background:center/cover no-repeat url('../../../../assets/svg/icons/pagination-arraow-gray.svg');
+}
+
+.next {
+  transform: rotate(180deg);
+}
+
+.nums {
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.num {
+  cursor: pointer;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  transition: .2s;
+  &:hover{
+    border-radius: 50%;
+    background: $blue;
+    color: $white;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &.active {
+    font-weight: 500;
+    background: $blue;
+    border-radius: 50%;
+    color: $white;
+  }
+}
+
+.dot {
+  margin-right: 15px;
+}

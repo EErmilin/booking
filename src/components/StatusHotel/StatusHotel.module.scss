@@ -1,0 +1,63 @@
+@import "../../commonStyle/variable";
+
+.status_hotel{
+  border: 1px solid;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  padding: 2px 6px;
+  font-size: 10px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  line-height: 1;
+  height: 20px;
+  letter-spacing: 0.06em;
+}
+
+.status {
+  &_sent {
+    background-color: $orange200;
+    color: $orange;
+    border-color: $orange400;
+  }
+
+  &_placed {
+    background-color: $green-200;
+    color: $green-plus200;
+    border-color:$green-400;
+  }
+
+  &_moderation {
+    background-color: $blue-lighter;
+    color: $blue-200;
+    border-color: $blue-200;
+  }
+
+  &_canceled {
+    background-color: $red-200;
+    color: $red;
+    border-color: $red;
+  }
+
+  &_withdrawn {
+    background-color: $orange200;
+    color: $orange;
+    border-color: $orange;
+  }
+
+  &_draft {
+    background-color: $gray-lighter;
+    color: $gray-dark;
+    border-color: $gray-dark;
+  }
+  &_mainGuest {
+    background-color: $orange;
+    color: $white;
+    border-color: $orange;
+    text-transform: none;
+    font-size: 12px;
+    font-weight: 400;
+  }
+}

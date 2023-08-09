@@ -1,0 +1,61 @@
+@import "../../../../../commonStyle/variable";
+
+.list_moderation {
+  margin-top: 32px;
+  &_empty {
+    background: $white;
+    border-radius: 50%;
+    margin: 48px auto;
+    width: 312px;
+    height: 312px;
+    padding: 97px 21px 74px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &_title {
+      text-align: center;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 1.2;
+      margin: 0 0 20px;
+    }
+  }
+  &_list {
+    margin-top: 8px;
+  }
+
+  &_header {
+    display: none;
+    @media(min-width: 768px) {
+      display: grid;
+      grid-template-columns: .5fr .2fr .3fr;
+      padding: 14px 18px 14px 40px;
+    }
+  }
+
+  &_title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 160%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &_pagination {
+    margin-top: 24px;
+  }
+
+  &_sort {
+    background-image: url("../../../../../assets/svg/icons/sort.svg");
+    width: 5px;
+    height: 7px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 4px;
+  }
+}

@@ -1,0 +1,28 @@
+.favorite_btn_card{
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  width: 32px;
+  height: 32px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.heart{
+  background-image: url("../../../../assets/svg/icons/heart-red.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 18px;
+  height: 16px;
+}
+.default_heart{
+  background-image: url("../../../../assets/svg/icons/heart-gray.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 18px;
+  height: 16px;
+}

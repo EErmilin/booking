@@ -1,0 +1,86 @@
+@import "../../../../../commonStyle/variable";
+
+.rooms {
+  &_title {
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 130%;
+    margin: 0 0 11px;
+  }
+
+  &_list {
+    margin-top: 16px;
+  }
+
+  &_link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $black;
+
+    &:before {
+      content: '';
+      background-image: url("../../../../../assets/svg/icons/black-arrow.svg");
+      width: 4px;
+      height: 7px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: inline-block;
+      margin-right: 8px;
+    }
+  }
+
+  &_hotel_title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 160%;
+    margin: 16px 0 12px;
+  }
+
+  &_blocks {
+    justify-content: flex-start;
+    border-bottom: 1px solid $gray200;
+
+    &_title {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 160%;
+    }
+  }
+
+  &_block {
+    margin: 20px 0;
+  }
+
+  &_buttons_cancel {
+    margin-top: 20px;
+
+    &_link {
+      color: $blue;
+    }
+  }
+}
+
+.period{
+  background: $green-200;
+  border-radius: 4px;
+  height: 52px;
+  padding: 16px 14px;
+  margin-top: 16px;
+  &_text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    &:before{
+      content: '';
+      display: inline-block;
+      background: center/contain no-repeat url("../../../../../assets/svg/icons/gift-green.svg");
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+    }
+  }
+}

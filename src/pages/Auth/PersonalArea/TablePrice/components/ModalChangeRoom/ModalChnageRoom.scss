@@ -1,0 +1,33 @@
+@import "../../../../../../commonStyle/variable";
+
+.modal-change-room-selector{
+    & .custom-select{
+        &__single-value{
+            &>div{
+                display: flex;
+                column-gap: 4px;
+                & p {
+                    &:last-child{
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        overflow: hidden;
+                    }
+                }
+            }
+        }
+        &__option {
+            font-size: 14px;
+            font-weight: 300;
+            color: $black !important;
+
+            &:hover {
+                background-color: $blue-lighter;
+                color: $blue-200 !important;
+                & p {
+                    color: $blue-200 !important;
+                }
+            }
+        }
+    }
+
+}

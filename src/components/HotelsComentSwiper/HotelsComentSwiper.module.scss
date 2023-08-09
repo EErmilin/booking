@@ -1,0 +1,26 @@
+.hotels_comment{
+  width: 100%;
+  display: block;
+  position: relative;
+  &_navigation{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+  }
+  &_navigation2{
+    position: absolute;
+    top: 40%;
+    left: -18px;
+    right: -18px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+  }
+}
+.comment_swiper{
+  width: 100%;
+}

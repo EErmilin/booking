@@ -1,0 +1,70 @@
+@import '../../../../commonStyle/variable';
+
+.CustomAsyncInput {
+
+  .custom-async-input {
+    &__menu{
+      z-index: 999;
+      position: absolute;
+    }
+    &__control {
+      z-index: 2;
+      cursor: pointer;
+      min-height: 34px;
+      background: #FFFFFF;
+      border: none !important;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 300;
+
+      &--is-focused {
+        outline: none;
+        background: $white;
+        box-shadow: 0 0 6px rgba(71, 164, 227, 0.08);
+        border: 1px solid $border-area-focus;
+      }
+    }
+
+    &__indicator {
+      color: #A4C1D6;
+      z-index: 2;
+      &:hover {
+        color: #A4C1D6;
+      }
+    }
+    &__indicator-separator {
+      display: none;
+    }
+
+    &__option {
+      font-size: 14px;
+      font-weight: 300;
+
+      &:hover {
+        color: $black;
+        background-color: $white;
+      }
+
+      &--is-focused {
+        background-color: transparent;
+      }
+
+      &--is-selected {
+        background: $white;
+        color: $black;
+        &:hover {
+          color: $black;
+          background: $gray;
+        }
+      }
+    }
+
+    &__placeholder {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1;
+      color: $area-font-placeholder;
+    }
+  }
+}
+

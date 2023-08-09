@@ -1,0 +1,194 @@
+@import "../../../commonStyle/variable";
+
+.DayPickerNavigation_leftButton__horizontalDefault {
+  background-image: url("../../../assets/svg/icons/arrow-left.svg");
+}
+.calendar_info{
+  background: $blue-lighter;
+  padding: 8px 14px;
+  border-radius: 4px !important;
+  &_wrap{
+    margin-top: 11px;
+    padding:0px 20px 10px 20px;
+  }
+  &_text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: $blue-200;
+    display: flex;
+    align-items: center;
+
+    &:before{
+      content: '';
+      background: center/contain no-repeat url("../../../assets/svg/icons/help-blue.svg");
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      margin-right: 8px;
+    }
+  }
+}
+.DayPickerNavigation_rightButton__horizontalDefault {
+  background-image: url("../../../assets/svg/icons/arrow-right.svg");
+}
+
+.DayPickerNavigation_svg__horizontal {
+  width: 11px !important;
+}
+
+.DateInput_input__focused {
+  border-bottom-color: transparent;
+}
+.DayPicker_transitionContainer{
+  height: 339px !important;
+}
+.DateInput_input {
+  font-size: 14px !important;
+  line-height: 17px !important;
+  color: $black !important;
+  padding: 0 0 0 10px !important;
+
+  &::placeholder {
+    color: $white;
+  }
+}
+
+.DateRangePickerInput_arrow {
+  & > svg {
+    display: none;
+  }
+}
+
+.DayPickerNavigation_button__default {
+  border: none !important;
+  width: 11px !important;
+  height: 6px !important;
+  top: 24px !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  & > svg {
+    display: none;
+  }
+}
+
+.DayPicker_weekHeader_li > small {
+  font-size: 14px;
+  line-height: 20px;
+  color: $blue;
+}
+
+.CalendarMonth_table {
+  margin-top: 23px;
+}
+
+.CalendarDay {
+  position: relative;
+
+  &__default {
+    border: none !important;
+    background: $white;
+    color: $black;
+    font-size: 14px;
+    margin-bottom: 3px !important;
+
+    &:hover {
+      background: $blue !important;
+      border-radius: 50%;
+      color: $white !important;
+    }
+  }
+
+  &__blocked_out_of_range {
+    opacity: 0.3;
+
+    &:hover {
+      background: none !important;
+      border-radius: 50%;
+      color: $black !important;
+    }
+  }
+
+  &__today {
+    opacity: 1;
+    background: $blue-lighter;
+    border-radius: 50%;
+    &:hover {
+      color: $white !important;
+      background: $blue !important;
+    }
+  }
+
+  &__selected {
+    color: $white !important;
+    background: $blue !important;
+    border-radius: 50%;
+
+    &_span {
+      background: $blue-lighter !important;
+      color: $black !important;
+      border: none;
+      &:hover {
+        box-shadow: 14px 0 0 1px $blue-lighter, -14px 0 0 1px $blue-lighter;
+      }
+    }
+
+    &_start {
+      box-shadow: 14px 0 0 1px $blue-lighter;
+      &:not(.CalendarDay__selected_start_no_selected_end) {
+        // box-shadow: none;
+      }
+    }
+
+    &_end {
+      box-shadow: -14px 0px 0px 1px $blue-lighter;
+    }
+  }
+
+  &__hovered {
+    &_span {
+      background: $blue-lighter !important;
+      color: $black !important;
+      box-shadow: -14px 0px 0px 1px $blue-lighter;
+
+      &:hover {
+        color: $white !important;
+        background: $blue !important;
+        border-radius: 50px;
+      }
+    }
+  }
+}
+
+
+.DayPicker__withBorder {
+  box-shadow: none !important;
+  border-radius: 20px;
+}
+
+.DateRangePicker_picker div div:not(.calendar_info) {
+  border-radius: 20px !important;
+}
+
+.DayPickerKeyboardShortcuts_show__bottomRight {
+  display: none !important;
+}
+
+.DateRangePicker {
+  font-family: 'Inter', Arial, sans-serif !important;
+  margin-top: -4px;
+
+  &_picker {
+    box-shadow: 0 0 20px rgba(8, 121, 184, 0.2);
+    border-radius: 20px;
+    border: 0;
+    padding: 2px 0 10px 0;
+
+    &__portal {
+      border-radius: 0;
+      z-index: 50;
+    }
+  }
+}

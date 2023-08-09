@@ -1,0 +1,36 @@
+@import "../../../../commonStyle/variable";
+
+.search_input {
+  display: flex;
+  border-bottom: 1px solid $white;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.search_icon {
+  background-image: url("../../../../assets/svg/icons/search-icon.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+  @media(min-width: 768px) {
+    width: 42px;
+    height: 42px;
+    margin-right: 10px;
+  }
+  @media(min-width: 992px) {
+    width: 62px;
+    height: 62px;
+  }
+}
+
+.input_wrap {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  //overflow: hidden;
+}

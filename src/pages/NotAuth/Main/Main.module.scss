@@ -1,0 +1,33 @@
+.hero {
+  padding: 0 16px;
+  margin: 0 0 40px;
+  position: relative;
+  z-index: 10;
+  @media(min-width: 576px) {
+    padding: 0 32px;
+  }
+  @media(min-width: 992px) {
+    padding: 0 40px;
+  }
+}
+
+.wrap {
+  overflow-x: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1290px;
+  padding: 0 16px;
+  @media(min-width: 576px) {
+    padding: 0 30px;
+  }
+}
+
+.popular {
+  margin: 0 auto 55px auto;
+  max-width: 1370px;
+  @media (min-width: 1200px) {
+    padding: 0 40px;
+  }
+}

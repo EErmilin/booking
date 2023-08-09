@@ -1,0 +1,61 @@
+---
+
+include:
+  - local: .deploy/lint.yaml
+  - local: .deploy/build.yaml
+  - local: .deploy/build_docker.yaml
+  - local: .deploy/deploy-by-ansible.yaml
+
+stages:
+  - lint
+  - build
+  - release
+  - deploy
+
+lint_app:
+  rules:
+    - if: '$CI_COMMIT_TAG =~ /^release.*/'
+    - if: $CI_MERGE_REQUEST_IID
+  extends: .lint_by_eslint
+
+build_app_prod:
+  variables:
+    DEPLOYMENT_ENV: prod
+  rules:
+    - if: '$CI_COMMIT_TAG =~ /^release.*/'
+  extends: .build
+
+deploy_app_prod:
+  variables:
+    DEPLOYMENT_ENV: prod
+  rules:
+    - if: '$CI_COMMIT_TAG =~ /^release.*/'
+      when: manual
+  extends: .deploy_by_ansible
+
+build_image_test:
+  variables:
+    DOCKERFILE: .deploy/docker/Dockerfile
+    DEPLOYMENT_ENV: test
+  rules:
+    - if: $CI_COMMIT_BRANCH == "staging"
+    - if: '$CI_COMMIT_TAG =~ /^release.*/'
+  extends: .build_docker_image
+
+release_image_test:
+  variables:
+    DEPLOYMENT_ENV: test
+  rules:
+    - if: $CI_COMMIT_BRANCH == "staging"
+    - if: '$CI_COMMIT_TAG =~ /^release.*/'
+  extends: .release_docker_image
+
+deploy_docker_test:
+  variables:
+    DEPLOYMENT_ENV: test
+  rules:
+    - if: $CI_COMMIT_BRANCH == "staging"
+      when: manual
+    - if: '$CI_COMMIT_TAG =~ /^release.*/'
+      when: manual
+  extends: .deploy_docker_by_ansible

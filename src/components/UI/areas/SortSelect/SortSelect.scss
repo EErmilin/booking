@@ -1,0 +1,170 @@
+@import '../../../../commonStyle/variable';
+
+.SortSelect {
+  .sort-select {
+    &__menu{
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      background: $white !important;
+      border: 1px solid #DDE7ED;
+      border-radius: 8px;
+      z-index: 999;
+      background: inherit;
+      position: absolute;
+
+      @media (min-width: 1024px) {
+        left: -50px;
+        width: 235px;
+      }
+
+      &-notice{
+        color: $black;
+      }
+    }
+    &__input-container{
+      color: $white;
+    }
+    &__control {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      z-index: 2;
+      cursor: pointer;
+      min-height: 34px;
+      background: inherit;
+      border: none !important;
+      border-radius: 8px;
+      &--is-focused {
+        color: $white;
+        outline: none;
+        background: inherit;
+        box-shadow: 0 0 6px rgba(71, 164, 227, 0.08);
+        border: 1px solid $border-area-focus;
+      }
+    }
+    &__input-container{
+      background: inherit;
+    }
+    &__indicator {
+      color: $white;
+      z-index: 2;
+      &:hover {
+        color: #A4C1D6;
+      }
+    }
+    &__indicator-separator {
+      display: none;
+    }
+
+    &__option {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      background: inherit;
+      cursor: pointer;
+      &:hover {
+        color: $blue-200;
+        background-color: $blue-lighter;
+      }
+
+      &--is-focused {
+        background-color: transparent;
+      }
+
+      &--is-selected {
+        color: $black;
+        &:hover {
+          color: $blue-200;
+        }
+      }
+    }
+
+    &__placeholder {
+      font-weight: 600;
+      line-height: 1;
+      color: $white;
+    }
+  }
+}
+
+.SearchAsyncInputField {
+  
+  .search-async-input-field {
+    
+    &__menu{
+      z-index: 999;
+      background: $white;
+      position: absolute;
+      box-shadow: none;
+      &-notice{
+        color: $black;
+      }
+    }
+    &__input-container{
+      color: $black;
+    }
+    &__input{
+      color: $black;
+    }
+    &__control {
+      font-size: 14px !important;
+      z-index: 2;
+      cursor: pointer;
+      min-height: 40px;
+      background: inherit;
+      border: none !important;
+      border-radius: 8px;
+      font-weight: 300;
+
+      &--is-focused {
+        color: $white;
+        outline: none;
+        background: inherit;
+        box-shadow: 0 0 6px rgba(71, 164, 227, 0.08);
+        border: 1px solid $border-area-focus;
+      }
+    }
+    &__input-container{
+      background: inherit;
+    }
+    &__indicator {
+      display: none;
+      color: $white;
+      z-index: 2;
+      &:hover {
+        color: #A4C1D6;
+      }
+    }
+    &__indicator-separator {
+      display: none;
+    }
+
+    &__option {
+      font-weight: 300;
+      background: inherit;
+      &:hover {
+        color: #19ACFE;
+        background-color: #D9F1FF;
+      }
+
+      &--is-focused {
+        background-color: transparent;
+      }
+
+      &--is-selected {
+        background: $white;
+        color: $white;
+        &:hover {
+          color: #19ACFE;
+          background-color: #D9F1FF;
+        }
+      }
+    }
+
+    &__placeholder {
+      font-weight: 600;
+      line-height: 1;
+      color: $white;
+    }
+  }
+}
+

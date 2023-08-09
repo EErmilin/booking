@@ -1,0 +1,59 @@
+.canceled {
+  margin-top: 8px;
+  display: flex;
+  padding: 10px;
+  background-color: #FFE8E8;
+  border-radius: 4px;
+  color: #FF4E4E;
+  &:before {
+    content: ' ';
+    margin-right: 6px;
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url("../../../../../../assets/svg/icons/close-red.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.approved {
+  color: #32CA32;
+  margin-top: 8px;
+  display: flex;
+  padding: 10px;
+  background-color: #CBF8CB;
+  border-radius: 4px;
+  &:before {
+    content: ' ';
+    margin-right: 6px;
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url("../../../../../../assets/svg/icons/moderation-scuccess.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.checking {
+  color: #FDB305;
+  margin-top: 8px;
+  display: flex;
+  padding: 10px;
+  background-color: #FEECB3;
+  border-radius: 4px;
+  &:before {
+    content: ' ';
+    margin-right: 6px;
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url("../../../../../../assets/svg/icons/warning.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}

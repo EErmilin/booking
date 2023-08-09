@@ -1,0 +1,81 @@
+@import "../../commonStyle/variable";
+
+.book_info {
+  padding: 17px 24px;
+  background: $background;
+  border-radius: 20px;
+
+  &_date {
+    text-transform: capitalize;
+
+  }
+
+  &_icon {
+    content: '';
+    width: 22px;
+    height: 17px;
+    display: inline-block;
+    margin-right: 13px;
+  }
+
+  &_text {
+    color: $gray-dark;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    white-space: break-spaces;
+    &_big {
+      font-size: 16px;
+    }
+  }
+
+  &_line {
+    display: grid;
+    grid-template-columns: 24px calc(100% - 24px);
+    grid-column-gap: 13px;
+  }
+
+  &_icon {
+    width: 24px;
+    height: 24px;
+    display: block;
+  }
+
+  &_calendar {
+    margin-top: -2px;
+    background: center/contain no-repeat url("../../assets/svg/icons/calendar-gray.svg");
+  }
+
+  &_guest {
+    background: center/cover no-repeat url("../../assets/svg/icons/users-gray.svg");
+  }
+
+  &_beds {
+    background: center/cover no-repeat url("../../assets/svg/icons/bed-gray.svg");
+  }
+
+  &_city {
+    margin: 0;
+    color: $gray-dark;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: left;
+    white-space: break-spaces;
+  }
+}
+
+.mg_17 {
+  margin: 0 0 17px;
+}
+
+.mg_23 {
+  margin: 0 0 23px;
+}
+
+.mg_0 {
+  margin: 0;
+}

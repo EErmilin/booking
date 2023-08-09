@@ -1,0 +1,60 @@
+@import "../../../../../commonStyle/variable";
+
+.nearby_attractions{
+  &_wrap{
+    display: grid;
+    grid-template-columns: 1fr;
+    @media(min-width: 992px) {
+      grid-template-columns: repeat(3,1fr);
+      grid-column-gap: 20px;
+    }
+  }
+  &_block_title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    margin: 0 0 16px;
+
+    @media(min-width: 992px) {
+      font-size: 24px;
+    }
+  }
+  &_sight_wrap{
+    display: grid;
+    grid-template-columns: 16px 1fr;
+    grid-column-gap: 12px;
+  }
+  &_text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    width: 100%;
+  }
+  &_distance{
+    color: $gray400;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    margin-left: 8px;
+  }
+  &_title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0px 0px 14px;
+    display: flex;
+    align-items: center;
+    &:before{
+      content: '';
+      width: 18px;
+      height: 20px;
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
+}
+.sights{
+  &:before{
+    background: center/contain no-repeat url('../../../../../assets/svg/icons/sight.svg');
+  }
+}

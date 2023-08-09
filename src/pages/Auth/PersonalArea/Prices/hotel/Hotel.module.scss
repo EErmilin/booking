@@ -1,0 +1,42 @@
+@import "../../../../../commonStyle/variable";
+
+.hotel_price{
+  &_title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.3;
+    margin: 0 0 20px;
+    @media(min-width: 992px) {
+      font-size: 34px;
+      margin: 0 0 34px;
+    }
+  }
+  &_hotel {
+    &_name {
+      margin: 0 0 25px;
+      line-height: 1.3;
+      font-size: 20px;
+      @media(min-width: 992px) {
+        font-size: 24px;
+      }
+    }
+  }
+  &_back {
+    display: flex;
+    flex-direction: row;
+    background-color: $background;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0 0 10px;
+  }
+  &_backArrow {
+    background-image: url("../../../../../assets/svg/icons/arrow-left.svg");
+    width: 8px;
+    height: 8px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 5px;
+  }
+}

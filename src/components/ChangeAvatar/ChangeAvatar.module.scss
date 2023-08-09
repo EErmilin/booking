@@ -1,0 +1,11 @@
+@import "../../commonStyle/variable";
+
+.change_avatar{
+  &_btn{
+    margin-top: 10px;
+    border: 1px solid $blue-400;
+    border-radius: 20px;
+    padding: 7px 16px !important;
+    height: 32px;
+  }
+}

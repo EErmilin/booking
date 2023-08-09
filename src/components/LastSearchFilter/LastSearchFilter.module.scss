@@ -1,0 +1,46 @@
+.wrap {
+  margin: 0 0 55px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  margin: 0 0 10px;
+  @media(min-width: 576px) {
+    font-size: 24px;
+  }
+}
+
+.last_search_wrp {
+  display: flex;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.last_search_scroll {
+  display: flex;
+  padding: 5px;
+  gap: 16px;
+  width: auto;
+  overflow-x: auto;
+  /* хром, сафари */
+  &::-webkit-scrollbar {
+    width: 0 !important;
+    height: 0 !important;
+  }
+
+  /* ie 10+ */
+  & {
+    -ms-overflow-style: none !important;
+  }
+
+  /* фф (свойство больше не работает, других способов тоже нет)*/
+  & {
+    overflow: -moz-scrollbars-none !important;
+  }
+}
+
+.slider {
+  opacity: 1;
+}

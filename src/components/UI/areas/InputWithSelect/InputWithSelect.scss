@@ -1,0 +1,85 @@
+@import "../../../../commonStyle/variable";
+
+.input_with_select {
+  position: relative;
+
+  label {
+    display: inline-block;
+    margin-bottom: 4px;
+    font-weight: normal;
+    font-size: 12px;
+    color: $black;
+    line-height: 1.3;
+  }
+
+  &_invalid {
+    & > div {
+      border: 1px solid $red-400;
+    }
+
+    & > span {
+      display: inline-block;
+      margin-top: 8px;
+
+      color: $red;
+      font-size: 14px;
+    }
+
+    & .custom-select__control {
+      border: none !important;
+      min-height: 34px;
+    }
+
+    & .CustomSelect {
+      height: 32px !important;
+    }
+  }
+
+  .input_wrap {
+    input {
+      border: none;
+      height: 33px;
+    }
+  }
+}
+
+.input_wrap {
+  display: grid;
+  grid-template-columns: 1fr 50px;
+  border-radius: 4px;
+  border: 1px solid $gray200;
+  & .custom-select__control {
+    border: none !important;
+    min-height: 32px !important;
+    display: flex;
+    align-items: flex-start;
+
+
+    &:hover {
+      border: none;
+    }
+  }
+  & .custom-select__value-container{
+    height: 33px;
+    overflow: hidden;
+  }
+  &_select {
+
+
+    & .custom-select__value-container {
+      padding: 0px 10px;
+    }
+
+    & .custom-select__placeholder {
+      display: none;
+    }
+
+    & .custom-select__dropdown-indicator:before {
+      right: 9px;
+    }
+  }
+
+  &_input {
+    border-right: 1px solid $gray200;
+  }
+}

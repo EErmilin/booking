@@ -1,0 +1,61 @@
+@import "../../commonStyle/variable";
+
+.comment_rating {
+  display: flex;
+  align-items: center;
+
+  &_loading {
+    height: 23px;
+    width: 35px;
+    border-radius: 16px;
+    background: $gray200;
+  }
+
+  &_number {
+    border-radius: 17px;
+    background: $blue;
+    color: $white;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 3px 9px;
+    margin-right: 9px;
+  }
+
+  &_number_small {
+    border-radius: 16px;
+    background: $blue;
+    color: $white;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 4px 8px;
+    margin-right: 9px;
+  }
+
+  &_new {
+    margin: 0;
+    padding: 0;
+    background: $orange200;
+    font-weight: 500;
+    border-radius: 16px;
+    color: $orange;
+    padding: 4px 8px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  &_txt {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: $gray-dark;
+  }
+
+  &_txt_small {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $gray-dark;
+  }
+}

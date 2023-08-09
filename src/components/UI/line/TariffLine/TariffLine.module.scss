@@ -1,0 +1,91 @@
+@import "../../../../commonStyle/variable";
+
+.room_line {
+  min-height: 76px;
+  background: $white;
+  border-radius: 20px;
+  margin-bottom: 8px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+  @media(min-width: 576px) {
+    flex-wrap: nowrap;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &_name_bar {
+    flex: 0 0 50%;
+    margin: 0 0 20px;
+    @media(min-width: 576px) {
+      flex: 1 1 auto;
+      margin: 0;
+    }
+  }
+
+  &_modal {
+    &_title {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 160%;
+    }
+  }
+
+  &_name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0 12px 0 0;
+  }
+
+  &_date {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: $gray-dark;
+    margin: 0;
+  }
+
+  &_graph {
+    &_title {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 135%;
+      margin: 0;
+      color: $gray-dark;
+    }
+
+    &_text {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.5;
+      margin: 0;
+      height: 24px;
+    }
+  }
+
+  &_price {
+    flex: 0 0 50%;
+    padding: 0 10px 0 0;
+  }
+
+  &_allotment {
+    flex: 0 0 100px;
+  }
+
+  &_menu {
+    position: absolute;
+    top: 20px;
+    right: 16px;
+    @media(min-width: 576px) {
+      position: static;
+      top: auto;
+      right: auto;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+@import 'variable';
+
+// export variables to JS
+:export {
+  primaryColor: $green;
+}

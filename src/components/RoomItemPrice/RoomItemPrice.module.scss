@@ -1,0 +1,200 @@
+@import "../../commonStyle/variable";
+
+
+.booking_room{
+  text-align: center;
+  font-size: 14px;
+}
+.wrap {
+  background: #F0F6F9;
+  border-radius: 8px;
+  padding: 20px 16px;
+
+  &:not(:last-child) {
+    margin: 0 0 7px;
+  }
+}
+
+.info {
+  flex-direction: column;
+  @media(min-width: 576px) {
+    flex-direction: row;
+  }
+  @media(min-width: 768px) {
+    flex: 1 1 auto;
+  }
+}
+
+.icon {
+  &_wrp {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &_count {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 160%;
+    color: $gray400;
+    margin-left: 4px;
+  }
+}
+
+.guest {
+  @media(min-width: 576px) {
+    display: flex;
+  }
+
+  &_wrap {
+    display: flex;
+    margin: 0 0 15px;
+    flex-shrink: 0;
+    padding: 0 0 0 5px;
+    @media(min-width: 576px) {
+      min-width: 60px;
+      flex: 0 0 60px;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &_icon {
+    width: 15px;
+    height: 17px;
+    background: url("../../assets/svg/icons/man-blue.svg") no-repeat center/contain;
+
+    &_single {
+      position: relative;
+
+      &::after {
+        content: "x" attr(data-count);
+        position: absolute;
+        left: 100%;
+        top: 0;
+        margin-left: 3px;
+        font-size: 16px;
+        color: $gray400;
+      }
+    }
+  }
+}
+
+.controls {
+  margin: 16px 0 0;
+  row-gap: 10px;
+  display: flex;
+  flex-direction: column;
+  @media(min-width: 375px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @media(min-width: 768px) {
+    flex: 0 0 auto;
+    flex-direction: column;
+    margin: 0 0 0 20px;
+    align-items: flex-start;
+    column-gap: 10px;
+  }
+}
+
+.price {
+  margin: 0 0 12px;
+  &_discount {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.2;
+    color: $gray-dark;
+    text-decoration-line: line-through;
+    margin: 0;
+    margin-bottom: 2px;
+  }
+  &_title {
+    margin: 0;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  &_subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    color: $gray-dark;
+    margin: 0;
+  }
+
+  &_button {
+    width: 100%;
+    @media(min-width: 375px) {
+      width: auto;
+    }
+
+    & a {
+      color: $white;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.tariff_name {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  margin: 0 0 25px;
+  color: $gray400;
+}
+
+.room_item_price {
+  display: flex;
+  flex-direction: column;
+  @media(min-width: 768px) {
+    flex-direction: row;
+  }
+
+  &:not(:last-child) {
+    border-bottom: 1px solid $gray200;
+    padding-bottom: 23px;
+    margin-bottom: 23px;
+  }
+
+  &_restaurant {
+
+    &_title {
+      margin: 0 0 16px;
+      text-align: start;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      display: flex;
+      align-items: center;
+
+      &:before {
+        display: inline-block;
+        content: '';
+        background-image: url("../../assets/svg/icons/restaurant.svg");
+        width: 24px;
+        height: 24px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-right: 12px;
+      }
+    }
+  }
+
+  &_conditions {
+    margin: 0 0 16px;
+    padding-left: 5px;
+
+    &_item {
+      margin-bottom: 8px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

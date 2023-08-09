@@ -1,0 +1,806 @@
+@import "../../../../commonStyle/variable";
+
+.notArriveModal {
+  border-radius: 20px;
+}
+
+.discount {
+  margin-top: 16px;
+}
+
+
+.reservations {
+  &_wrap {
+    margin-top: 64px;
+  }
+
+  &_title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.3;
+    margin: 0 0 20px;
+    @media(min-width: 992px) {
+      font-size: 34px;
+      margin: 0 0;
+    }
+  }
+
+  &_area {
+    margin-top: 24px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &_props_titles {
+    display: flex;
+    margin: 30px 10px 15px 45px;
+    width: 90%;
+    font-weight: bold;
+  }
+
+  &_hotel {
+    &_name {
+      margin: 0 0 25px;
+      line-height: 1.3;
+      font-size: 20px;
+      @media(min-width: 992px) {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+.button {
+  font-size: 12px;
+  height: 28px;
+  padding: 6px 12px;
+
+  &_collapse {
+    width: 100%;
+    justify-content: center;
+    @media(min-width: 992px) {
+      width: fit-content;
+    }
+  }
+}
+
+.room {
+  &_price {
+    font-size: 20px;
+    margin: 0;
+    line-height: 1.3;
+
+    &_area {
+      display: flex;
+      align-items: center;
+      color: $black;
+    }
+
+    &_sailplay {
+      margin-top: 4px;
+    }
+
+    &_old {
+      text-decoration: line-through;
+      color: $gray400;
+    }
+  }
+}
+
+.tabs {
+  margin: 0 0 20px;
+  @media(min-width: 992px) {
+    margin: 0 0 16px;
+  }
+}
+
+.title {
+  color: $gray400;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 0 2px;
+  line-height: 1.3;
+  flex: 1 1;
+}
+
+.filter {
+  font-size: 14px;
+  font-weight: 500;
+  justify-content: flex-start;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  @media(min-width: 992px) {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  &_titles {
+    font-size: 14px;
+    cursor: default !important;
+    @media(min-width: 1210px) {
+      font-weight: 400;
+      font-size: 12px;
+    }
+    @media(min-width: 1510px) {
+      font-weight: 400;
+      font-size: 16px;
+    }
+  }
+
+  &_wrap {
+    justify-content: flex-start;
+    border-bottom: 1px solid $gray200;
+    margin: 0 0 18px;
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+
+    &::-webkit-scrollbar-button {
+      display: none;
+    }
+
+    &::-webkit-scrollbar-track-piece {
+      background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $blue;
+      border-radius: 5px;
+    }
+
+    &::-webkit-scrollbar-corner {
+      background-color: transparent;
+    }
+
+    &::-webkit-resizer {
+      display: none;
+    }
+  }
+}
+
+.reservation {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: left;
+  margin: 0 0 8px;
+  padding: 16px 16px 8px 16px;
+  width: 100%;
+  background: $white;
+  border-radius: 25px;
+  position: relative;
+
+  &_arrow {
+    &:after {
+      content: '';
+      position: absolute;
+      right: 24px;
+      top: 32px;
+      bottom: 32px;
+      background: center/cover no-repeat url("../../../../assets/svg/icons/arrow-rigth-blue.svg");
+      width: 8px;
+      height: 14px;
+    }
+  }
+
+  h3 {
+    font-size: 20px;
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  &_cancelButton {
+    @media(min-width: 992px) {
+      margin-left: 10px;
+    }
+  }
+
+  &_link {
+    color: $black;
+  }
+
+  &_title {
+    flex: 0 0 100%;
+    color: black;
+    margin: 0 0 10px;
+    @media(min-width: 992px) {
+      flex: 2.3;
+    }
+
+    .title {
+      display: none;
+      @media(min-width: 992px) {
+        display: block;
+      }
+    }
+  }
+
+  &_props {
+    flex: 0 0 100%;
+    color: black;
+    margin: 0 0 10px;
+    @media(min-width: 375px) {
+      flex: 0 0 50%;
+    }
+    @media(min-width: 576px) {
+      flex: 1;
+    }
+  }
+}
+
+.modalCancel {
+  padding: 20px;
+}
+
+.modal {
+  &_textarea {
+    & textarea {
+      height: 150px;
+    }
+  }
+
+  &_buttons {
+    width: 250px;
+  }
+
+  &_cancel {
+    &_reasons {
+      margin: 0 0 20px;
+    }
+  }
+}
+
+.selected {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  &_section {
+    padding: 20px;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $gray200;
+    }
+
+    &_title {
+      color: $gray400;
+      font-weight: 500;
+      margin-bottom: 16px;
+      line-height: 1.2;
+      font-size: 14px;
+    }
+  }
+
+  &_main {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    row-gap: 10px;
+    @media(min-width: 768px) {
+      display: grid;
+      grid-template-columns: 1fr minmax(20%, auto) minmax(20%, auto);
+    }
+
+    &_value {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 1.4;
+      @media(min-width: 576px) {
+        font-size: 20px;
+      }
+    }
+  }
+
+  &_info {
+    display: grid;
+    grid-column-gap: 24px;
+    grid-row-gap: 16px;
+    @media(min-width: 768px) {
+      grid-template-columns: minmax(25%, auto) minmax(25%, auto) minmax(25%, auto);
+    }
+    @media(min-width: 992px) {
+      grid-template-columns: minmax(30%, auto) minmax(15%, auto) minmax(15%, auto) minmax(15%, auto);
+    }
+
+    &_cell {
+      opacity: 1;
+
+      &_item {
+        opacity: 1;
+      }
+
+      &_double {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      &_dates {
+        max-width: 220px;
+      }
+    }
+
+    &_label {
+      color: $gray400;
+      font-size: 14px;
+      font-weight: 400;
+      margin: 0 0 2px;
+      line-height: 1.3;
+    }
+
+    &_value {
+      display: flex;
+      flex-direction: column;
+      color: #000000;
+      row-gap: 8px;
+      &_email {
+        a, span {
+          overflow-x: hidden;
+          text-overflow: ellipsis;
+          width: 100%;
+          color: #000000;
+          text-decoration: none;
+          white-space: nowrap;
+        }
+        a {
+          &:hover {
+            color: #000000;
+          }
+        }
+      }
+      &_date {
+        white-space: nowrap;
+      }
+    }
+  }
+
+  &_cancel {
+    background: $red-100;
+    border-radius: 0 0 20px 20px;
+    padding: 20px;
+
+    &_title {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 150%;
+      margin: 0 0 13px;
+      color: $red;
+    }
+
+    &_subTitle {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 135%;
+      margin: 0 0 8px;
+      color: $red;
+    }
+
+    &_reason {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 135%;
+      color: $red;
+      margin-bottom: 20px;
+    }
+  }
+
+  &_header {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 8px;
+    grid-template-columns: minmax(90px, auto) minmax(90px, auto) minmax(90px, auto);
+    grid-template-areas:
+            "roomTypeArea roomTypeArea buttonsArea"
+            "arrivalArea departureArea guestsArea"
+            "statusArea statusArea statusArea";
+    border-bottom: 1px solid $gray200;
+    align-items: center;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    width: 100%;
+    padding: 14px 20px;
+    @media(min-width: 576px) {
+      grid-template-columns: minmax(90px, auto) minmax(90px, auto) minmax(90px, auto) 1fr;
+      grid-template-areas:
+            "roomTypeArea roomTypeArea roomTypeArea buttonsArea"
+            "arrivalArea departureArea guestsArea statusArea";
+    }
+    @media(min-width: 992px) {
+      grid-gap: 10px;
+      grid-template-columns: initial;
+      grid-template-areas: initial;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &_title {
+    color: #000000;
+    font-weight: 500;
+    display: flex;
+    flex: 0 0 110px;
+    font-size: 14px;
+
+    &_arrival {
+      grid-area: arrivalArea;
+      @media(992px) {
+        grid-area: initial;
+      }
+    }
+
+    &_departure {
+      grid-area: departureArea;
+      @media(992px) {
+        grid-area: initial;
+      }
+    }
+
+    &_guests {
+      grid-area: guestsArea;
+      @media(992px) {
+        grid-area: initial;
+      }
+    }
+
+    &_status {
+      grid-area: statusArea;
+      @media(min-width: 576px) {
+        text-align: right;
+      }
+      @media(992px) {
+        grid-area: initial;
+      }
+    }
+
+    &_type {
+      flex: 0 0 22%;
+    }
+
+    &_propsTitle {
+      flex: 0 0 100%;
+      font-size: 14px;
+      @media(min-width: 375px) {
+        flex: 0 0 30%;
+      }
+      @media(min-width: 640px) {
+        flex: 0 0 110px;
+      }
+      @media(min-width: 992px) {
+        margin: 0;
+      }
+
+      span {
+        display: block;
+      }
+
+      label {
+        color: $gray400;
+        display: block;
+        @media(min-width: 992px) {
+          display: none;
+        }
+      }
+    }
+
+    &_roomType {
+      display: flex;
+      flex: 0 0 100%;
+      padding-right: 10px;
+      font-size: 14px;
+      margin: 0 0 8px;
+      grid-area: roomTypeArea;
+      @media(min-width: 992px) {
+        flex: 0 0 22%;
+        margin: 0;
+        grid-area: initial;
+      }
+    }
+
+    &_buttonsArea {
+      display: flex;
+      justify-content: flex-end;
+      flex: 0 0 100%;
+      grid-area: buttonsArea;
+      @media(min-width: 992px) {
+        grid-area: initial;
+        flex: 1.1;
+        margin: 0;
+      }
+    }
+
+    &_area {
+      display: none;
+      @media(min-width: 992px) {
+        padding: 0 20px;
+        margin: 0 0 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        column-gap: 10px;
+      }
+    }
+  }
+
+  &_area {
+    display: flex;
+    margin-bottom: 15px;
+    width: 100%;
+    background: $white;
+    border-radius: 25px;
+    text-align: left;
+    flex-wrap: wrap;
+  }
+
+  &_guest_info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @media(min-width: 576px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    @media(min-width: 992px) {
+      grid-template-columns: repeat(4, 1fr);
+      grid-column-gap: 30px;
+    }
+
+    &_guest_time {
+      display: flex;
+      column-gap: 20px;
+    }
+  }
+
+  &_guest {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 10px;
+    margin: 0 0 15px;
+    @media(min-width: 768px) {
+      flex-direction: row;
+      column-gap: 30px;
+    }
+
+    &_name {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 4px;
+      row-gap: 2px;
+      font-size: 14px;
+      color: #000000;
+      line-height: 1.3;
+
+      span {
+        display: inline-flex;
+      }
+    }
+
+    &_column {
+      line-height: 24px;
+      display: flex;
+      flex-direction: column;
+      margin: 0 0 15px;
+    }
+
+    &_banBtnArea {
+      margin: 24px 0 0;
+
+      .reservation {
+        &_cancelButton {
+          margin: 0;
+          width: 100%;
+          padding: 6px 8px;
+          @media(min-width: 992px) {
+            margin-left: auto;
+            width: 170px;
+          }
+        }
+      }
+    }
+
+    &_numberArea {
+      display: flex;
+      flex: 3;
+      align-items: center;
+    }
+
+    &_item {
+      opacity: 1;
+    }
+
+    &_props {
+      font-size: 14px;
+      margin: 0 0 10px;
+    }
+
+    &_prop {
+      &_value {
+        line-height: 1.2;
+        margin: 0 0 8px;
+      }
+    }
+  }
+
+  &_additionalInfo {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    @media (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+    }
+
+    &_props {
+      display: flex;
+      flex: 1;
+      margin-bottom: 13px;
+      font-size: 14px;
+      line-height: 1.3;
+    }
+
+    &_comment {
+      margin-bottom: 20px;
+      font-size: 14px;
+      line-height: 1.4;
+      @media(min-width: 992px) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &_back {
+    display: flex;
+    flex-direction: row;
+    background-color: $background;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0 0 10px;
+  }
+
+  &_backArrow {
+    background-image: url("../../../../assets/svg/icons/arrow-left.svg");
+    width: 8px;
+    height: 8px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 5px;
+  }
+
+  &_greenArrow {
+    background-image: url("../../../../assets/svg/icons/vector.svg");
+    width: 15px;
+    height: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 10px;
+  }
+
+  &_blueArrow {
+    background-image: url("../../../../assets/svg/icons/arrow-rigth-blue.svg");
+    width: 10px;
+    height: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    margin-left: 5px;
+    transform: rotate(0.75turn);
+  }
+
+  &_sort {
+    background-image: url("../../../../assets/svg/icons/sort.svg");
+    width: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 6px;
+  }
+
+}
+
+.search {
+  height: 40px;
+  border-bottom: none;
+  background: $white;
+  border-radius: 8px;
+  padding: 12px 15px;
+  width: auto;
+  @media(min-width: 576px) {
+    width: 400px;
+  }
+
+  &_icon {
+    background-image: url("../../../../assets/svg/icons/search-blue.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.client {
+  &_empty {
+    background: $white;
+    border-radius: 50%;
+    margin: 48px auto;
+    width: 312px;
+    height: 312px;
+    padding: 97px 21px 74px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &_title {
+      text-align: center;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    &_btn {
+      width: 70%;
+    }
+  }
+}
+
+.pagination {
+  margin-top: 41px;
+}
+
+.support {
+  &_blocks {
+    &_wrap {
+      display: flex;
+      align-items: center;
+      column-gap: 4px;
+      white-space: nowrap;
+      cursor: pointer;
+      font-size: 14px;
+      @media(min-width: 1200px) {
+        font-weight: 400;
+        font-size: 12px;
+      }
+      @media(min-width: 1510px) {
+        font-weight: 400;
+        font-size: 16px;
+      }
+    }
+
+    &_notification {
+      background: $blue-background;
+      border-radius: 50%;
+      color: $blue;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 16px;
+      padding: 4px 8px;
+    }
+  }
+}
+
+.clickable {
+  z-index: 7;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-decoration: none;
+  pointer-events: auto;
+  cursor: pointer;
+  outline: none;
+}

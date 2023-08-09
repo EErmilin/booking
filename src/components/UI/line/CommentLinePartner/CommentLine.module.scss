@@ -1,0 +1,53 @@
+@import "../../../../commonStyle/variable";
+
+
+.comment_line{
+  display: grid;
+  grid-template-columns: .36fr .64fr;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid $gray200;
+  padding: 24px;
+  &_error{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    margin: 0px 0px 10px 0px;
+    display: flex;
+    align-items: center;
+    &:before{
+      content: ' ';
+      width: 20px;
+      height: 20px;
+      background:center/cover no-repeat url("../../../../assets/svg/icons/error.svg");
+      display: inline-block;
+      margin-right: 6px;
+    }
+  }
+  &_left{
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    &_name{
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 150%;
+      margin: 0px;
+    }
+    &_email{
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 140%;
+      margin: 0px;
+      color: $gray-dark;
+    }
+  }
+  &_right{
+    &_wrap{
+      display: flex;
+    }
+    & p {
+      margin: 0px;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+@import "../../../../commonStyle/variable";
+
+.date_item {
+  height: 128px;
+  border: 1px solid $gray200;
+  border-radius: 8px;
+  width: 200px;
+  margin-right: 8px !important;
+  padding: 12px;
+  cursor: pointer;
+  position: relative;
+
+  &_date {
+    color: $gray400;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 130%;
+  }
+
+  &_price {
+    font-weight: 600;
+    font-size: 20px;
+    padding: 0;
+    line-height: 20px;
+
+    &_wrp {
+      position: absolute;
+      bottom: 12px;
+    }
+
+    &_full {
+      margin-top: 16px;
+      font-size: 16px;
+      color: $gray400;
+      font-weight: 500;
+      text-decoration: line-through;
+      line-height: 24px;
+    }
+  }
+
+  &_availability {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 180%;
+  }
+}

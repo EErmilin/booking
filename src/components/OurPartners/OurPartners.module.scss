@@ -1,0 +1,78 @@
+@import "../../commonStyle/variable";
+
+.wrap {
+  margin: 0 auto;
+  max-width: 1290px;
+  overflow-x: hidden;
+}
+
+.wrapPartnerPage {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1237px;
+  justify-content: space-between;
+  align-items: center;
+  @media(max-width: 490px) {
+    justify-content: center;
+  }
+}
+
+.titleMain {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  margin: 0 0 20px;
+
+  @media(min-width: 576px) {
+    font-size: 24px;
+  }
+}
+
+.title {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  margin-left: 12px;
+  color: $gray-lighter;
+  margin-left: 0;
+}
+
+.slide {
+  margin: 10px;
+  width: 230px;
+
+  @media(min-width: 1200px) {
+    width: auto;
+  }
+}
+
+.item {
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 230px;
+margin-bottom: 15px;
+  &_link {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.partners {
+  &_title {}
+
+
+
+}

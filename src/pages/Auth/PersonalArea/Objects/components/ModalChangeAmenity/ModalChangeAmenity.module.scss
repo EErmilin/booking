@@ -1,0 +1,105 @@
+@import "../../../../../../commonStyle/variable";
+
+.modal_amenity{
+  padding: 20px;
+  &_subTitle{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    margin: 0px 0px 28px;
+  }
+  &_btns{
+    display: flex;
+    justify-content: flex-start;
+    & button{
+      @media (min-width: 480px) {
+        width: 136px;
+      }
+    }
+  }
+  &_title{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 160%;
+    margin: 0px;
+  }
+  &_form {
+    &_checkboxes {
+      margin-top: 19px;
+
+      &_result {
+        color: $blue;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        margin: 0;
+      }
+
+      &_check {
+        border: 1px solid #DDE7ED;
+        border-radius: 2px;
+      }
+
+      &_label {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: $black !important;
+      }
+    }
+
+    &_serviceTitle {
+      font-weight: 400;
+      color: $black !important;
+    }
+
+    &_serviceLayout {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      border-bottom: 1px solid $gray200;
+      padding: 0 0 10px;
+
+      & > label {
+        flex: 1 1 auto;
+      }
+    }
+
+    &_field {
+      display: grid;
+      margin-bottom: 20px;
+      grid-row-gap: 16px;
+      grid-column-gap: 20px;
+
+      @media(min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      &_dropdown {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  &_services_dropdown {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    border-top: 1px solid $gray200;
+    border-radius: 0;
+    height: auto;
+
+    &:first-child {
+      border-top: none;
+    }
+
+    h2 {
+      font-size: 16px;
+      font-weight: 500;
+      margin: 12px 0;
+      line-height: 1.5;
+    }
+  }
+}
+

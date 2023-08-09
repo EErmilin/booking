@@ -1,0 +1,50 @@
+@import "../../../../../commonStyle/variable";
+
+.filter_type_hotel{
+  &_checkboxes {
+    margin-top: 19px;
+
+    &_item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 12px;
+    }
+
+    &_result {
+      color: $blue;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      margin: 0;
+    }
+
+    &_check {
+      border: 1px solid #DDE7ED;
+      border-radius: 4px;
+    }
+
+    &_label {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: $black !important;
+    }
+  }
+  &_hide{
+    display: none;
+  }
+  &_shown{
+
+  }
+}
+.show_all{
+  background: none;
+  color: $blue-200;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  margin-top: 19px;
+  border-radius: 0px;
+  text-decoration: underline;
+  padding: 0px;
+}

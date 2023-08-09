@@ -1,0 +1,105 @@
+@import "../../../../commonStyle/variable";
+
+.moderation_hotel_line{
+  background: $white;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  &:last-child{
+    margin-bottom: 0px;
+  }
+  &_wrap{
+    padding: 24px 16px 24px;
+    border-bottom: 1px solid $gray200;
+    &:last-child{
+      border-bottom: none;
+    }
+  }
+  &_user{
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    &_info{
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 150%;
+      margin: 0px;
+    }
+    &_date{
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 140%;
+      color: $gray-dark;
+      margin: 0px;
+    }
+  }
+  &_content{
+    margin-top: 22px;
+    padding: 0px 6px 0px 42px;
+    &_photos{
+      margin-top: 16px;
+      display: flex;
+    }
+    &_error{
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 150%;
+      margin: 0px 0px 10px 0px;
+      display: flex;
+      align-items: center;
+      &:before{
+        content: ' ';
+        width: 20px;
+        height: 20px;
+        background:center/cover no-repeat url("../../../../assets/svg/icons/error.svg");
+        display: inline-block;
+        margin-right: 6px;
+      }
+    }
+    &_text{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 160%;
+    }
+  }
+  &_modal{
+    &_title{
+      margin: 0px 0px 20px 0px;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 150%;
+    }
+    &_titleSuccess{
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 140%;
+      margin: 0px 0px 12px 0px;
+    }
+    &_textarea{
+      & textarea{
+        height: 150px;
+      }
+    }
+    &_text{
+      margin: 0px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 160%;
+    }
+    &_wrap{
+      margin-top: 32px;
+      display: flex;
+      column-gap: 12px;
+      & button{
+        padding: 9px 16px;
+        height: 36px;
+      }
+      &_cancel{
+        border-radius: 18px;
+        border: 1px solid $blue-400;
+      }
+    }
+  }
+  &_photos{
+    margin-top: 16px;
+  }
+}

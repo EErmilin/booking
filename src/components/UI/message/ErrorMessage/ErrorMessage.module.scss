@@ -1,0 +1,31 @@
+.wrapper {
+  margin-top: 8px;
+  display: flex;
+  padding: 15px;
+  background-color: #FFE8E8;
+  border-radius: 5px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  background: url("../../../../assets/svg/icons/info-red.svg") center no-repeat;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.text {
+  font-size: 14px;
+  color: #FF4E4E;
+}
+.link{
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #FF4E4E;
+  text-decoration: underline;
+  &_wrap{
+    margin-top: 16px;
+  }
+}

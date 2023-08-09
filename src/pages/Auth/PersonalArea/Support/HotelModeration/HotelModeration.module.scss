@@ -1,0 +1,78 @@
+@import "../../../../../commonStyle/variable";
+
+.hotel_moderation {
+  &_title {
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 130%;
+    margin: 0 0 19px;
+  }
+
+  &_link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $black;
+
+    &:before {
+      content: '';
+      background-image: url("../../../../../assets/svg/icons/black-arrow.svg");
+      width: 4px;
+      height: 7px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: inline-block;
+      margin-right: 8px;
+    }
+  }
+
+  &_hotel {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    margin: 32px 0px 6px 0px;
+  }
+
+  &_wrap {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    margin-bottom: 22px;
+  }
+
+  &_accepted {
+    margin-top: 12px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 160%;
+    margin-bottom: 22px;
+  }
+
+  &_titles {
+    justify-content: flex-start;
+    column-gap: 24px;
+    border-bottom: 1px solid $gray200;
+
+    &_item {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 160%;
+      width: auto;
+    }
+  }
+
+  &_notification {
+    background: $blue-background;
+    border-radius: 50%;
+    color: $blue;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 4px 8px;
+  }
+
+  &_list {
+    margin-top: 20px;
+  }
+}

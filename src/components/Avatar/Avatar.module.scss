@@ -1,0 +1,17 @@
+@import "../../commonStyle/variable";
+
+.avatar{
+  border-radius: 50%;
+  overflow: hidden;
+  background: rgba(0,0,0,0.1);
+  &_img{
+    object-fit: cover;
+    width: 100%;
+  }
+  &_no_avatar{
+    background:center/cover no-repeat url("../../assets/svg/icons/noAvatars.svg");
+    background-color: $gray200;
+    width: 100%;
+    height: 100%;
+  }
+}

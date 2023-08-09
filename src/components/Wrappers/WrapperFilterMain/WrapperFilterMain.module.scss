@@ -1,0 +1,21 @@
+@import "../../../commonStyle/variable";
+
+.wrapper_filter_main{
+  position: relative;
+}
+.wrapper_background{
+  background: $blue-light;
+  opacity: 80%;
+  border-radius: 20px;
+  min-height: 224px;
+  width: 854px;
+}
+.wrapper_filter{
+  padding: 20px;
+  box-sizing: content-box;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}

@@ -1,0 +1,111 @@
+@import "../../commonStyle/variable";
+
+.wrap {
+  display: flex;
+  padding: 0 16px;
+  z-index: 20;
+  position: relative;
+  height: 76px;
+  @media(min-width: 576px) {
+    padding: 0 32px;
+  }
+  @media(min-width: 992px) {
+    padding: 0 40px;
+  }
+  &_white {
+    color: $white;
+  }
+
+  &_black {
+    color: $black;
+  }
+}
+
+.header {
+  &_white {
+    color: $white;
+  }
+
+  &_black {
+    color: $black;
+  }
+}
+
+.header_logo {
+  background-image: url("../../assets/svg/logo.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 30px;
+  width: 116px;
+  @media(min-width: 992px) {
+    height: 43px;
+    width: 166px;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.controls {
+  display: flex;
+}
+
+.auth_buttons {
+  display: none;
+  @media(min-width: 992px) {
+    display: flex;
+    column-gap: 20px;
+  }
+}
+
+.header_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login_button {
+  min-height: 36px;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 10px;
+  justify-content: center;
+  color: black;
+  transition: 0.2s;
+  &:hover {
+    color: $green;
+  }
+}
+
+.signup_button {
+  background: $green;
+  border-radius: 8px;
+  min-height: 36px;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 10px;
+  justify-content: center;
+  color: white;
+  transition: 0.2s;
+  min-width: 220px;
+  &:hover {
+    background: $green-plus200;
+    color: $green-200;
+  }
+}
+
+.language {
+  display: none;
+  @media(min-width: 992px) {
+    display: flex;
+  }
+}

@@ -1,0 +1,38 @@
+@import "../../../../commonStyle/variable";
+
+.moderation_room_line{
+  background: $white;
+  border-radius: 20px;
+  height: 48px;
+  margin-top: 8px;
+  overflow: hidden;
+  transition: .5s;
+  &_header{
+    padding: 14px 16px;
+    display: grid;
+    grid-template-columns: .5fr .4fr .1fr;
+    align-items: start;
+    cursor: pointer;
+    &_name{
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      margin: 0px;
+    }
+  }
+  &_wrap{
+    display: flex;
+    align-items: flex-start;
+  }
+  &_wrp{
+    display: flex;
+    justify-content: flex-end;
+    &_menu{
+      position: relative;
+      & button{transform: rotate(90deg);}
+    }
+  }
+  &_content{
+
+  }
+}

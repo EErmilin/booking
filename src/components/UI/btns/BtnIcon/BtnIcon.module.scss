@@ -1,0 +1,21 @@
+@import "../../../../commonStyle/variable";
+.btn_icon{
+  border: none;
+  outline: none;
+  background: inherit;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  & svg{
+    width: 24px;
+    height: 24px;
+  }
+}
+.active{
+  & svg path{
+    fill:$red;
+  }
+}

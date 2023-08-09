@@ -1,0 +1,89 @@
+@import '../../../../commonStyle/variable';
+
+.checkboxWrap {
+  cursor: pointer;
+  display: flex;
+  flex: 0 0 auto;
+  &:hover {
+    .checkboxFake {
+      border-color: $green;
+    }
+  }
+  &.disabled {
+    cursor: default;
+    .checkboxFake {
+      border-color: $gray200;
+      background: $gray100;
+      &:hover {
+        border-color: $gray200;
+      }
+    }
+    .checkboxText {
+      color: #000000;
+    }
+  }
+}
+
+.checkboxOriginal {
+  display: none;
+}
+
+.checkboxFake {
+  border: solid;
+  display: block;
+  background: $white;
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
+  margin-right: 8px;
+  border-radius: 4px;
+  border-color: #e4e1e1;
+  border-width: 1px;
+}
+
+.checkboxError {
+  border: solid;
+  display: block;
+  background: $white;
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
+  margin-right: 8px;
+  border-radius: 4px;
+  border-color: $red-400 !important;
+  border-width: 1px;
+}
+
+input:checked+.checkboxFake {
+  position: relative;
+  border-color: $green;
+  background-color: $green;
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 10px;
+    height: 8px;
+    background: url('../../../../assets/svg/icons/check.svg') center/contain no-repeat;
+  }
+}
+
+.checkboxText {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  color: $white;
+
+  &.blackText {
+    color: $black;
+  }
+}
+
+.disabled {
+
+}

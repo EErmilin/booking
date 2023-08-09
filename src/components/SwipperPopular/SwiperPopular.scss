@@ -1,0 +1,34 @@
+.swiper{
+  &-button{
+    &-prev{
+      position: absolute;
+      top: 64px;
+      right: 99px;
+      width: 36px;
+      height: 36px;
+      border: none;
+      outline: none;
+      background: #fff;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+    &-next{
+      position: absolute;
+      top: 64px;
+      right: 47px;
+      width: 36px;
+      height: 36px;
+      border: none;
+      outline: none;
+      background: #fff;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+}

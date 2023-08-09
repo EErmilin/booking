@@ -1,0 +1,65 @@
+@import "../../../../../../commonStyle/variable";
+
+.modal {
+  padding: 20px;
+
+  &_title {
+    font-weight: 600 !important;
+    font-size: 20px !important;
+    line-height: 160% !important;
+    letter-spacing: 0.15px;
+
+    &_error {
+      color: $red;
+    }
+  }
+
+  &_input {
+    & > input {
+      height: 36px;
+      padding: 8px 16px;
+    }
+  }
+
+  &_label {
+    color: $black;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+
+    & p {
+      margin: 0;
+    }
+
+    & a {
+      color: $blue;
+      margin: 0;
+    }
+
+  }
+
+  &_text {
+    margin-top: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+  }
+
+  &_button {
+    height: 36px;
+    margin-top: 32px;
+  }
+
+  &_checkbox {
+    &_wrp {
+      margin-top: 12px;
+    }
+
+    & > span {
+      &:nth-child(1) {
+        border: 1px solid $gray;
+      }
+    }
+
+  }
+}

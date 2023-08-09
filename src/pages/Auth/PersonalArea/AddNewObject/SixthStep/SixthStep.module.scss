@@ -1,0 +1,266 @@
+@import "../../../../../commonStyle/variable";
+
+.modal {
+  &_error_message {
+    margin: 0 0 20px;
+  }
+
+  &_content {
+    .errors_list {
+      font-weight: 500;
+      font-size: 16px;
+      padding: 0 0 0 30px;
+      margin: 0 0 8px;
+    }
+  }
+}
+
+.fifth_step {
+  max-width: 814px;
+  margin: 0 auto;
+  &_error{
+    color: $red;
+  }
+  &_title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    margin: 0 0 8px;
+    @media(min-width: 992px) {
+      font-size: 24px;
+    }
+  }
+  &_time{
+    &_label{
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 140%;
+    }
+    &_wrap{
+      margin-top: 12px;
+      display: flex;
+      column-gap: 10px;
+      align-items: center;
+    }
+  }
+  &_subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+    margin: 0 0 10px;
+    @media(min-width: 992px) {
+      font-size: 16px;
+    }
+  }
+
+  &_form {
+    margin: 24px -16px 0 -16px;
+    background: $white;
+    @media(min-width: 576px) {
+      margin: 24px -30px 0 -30px;
+    }
+    @media(min-width: 768px) {
+      margin: 28px auto 0 auto;
+      border-radius: 20px;
+    }
+
+    &_select {
+      width: 110px;
+    }
+
+    &_radio {
+      & > span {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+      }
+
+      & > div {
+        column-gap: 73px;
+      }
+    }
+
+    &_help {
+      margin-top: 20px;
+    }
+
+    &_title {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 150%;
+      margin: 0 0 22px;
+    }
+
+    &_block {
+      border-bottom: 1px solid $gray200;
+      padding: 24px 16px 32px 16px;
+      @media(min-width: 576px) {
+        padding: 24px 32px 32px 32px;
+      }
+      @media(min-width: 768px) {
+        padding: 24px 20px 32px 20px;
+      }
+
+      &:last-child {
+        padding: 24px 16px;
+        border-bottom: none;
+        @media(min-width: 576px) {
+          padding: 24px 32px;
+        }
+        @media(min-width: 768px) {
+          padding: 24px 20px;
+        }
+      }
+    }
+
+  &_buttons {
+    margin: 24px 0 0;
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 12px;
+  }
+
+  &_modal {
+    max-width: 347px !important;
+    padding: 24px 20px;
+    border-radius: 20px;
+
+    &_title2 {
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 150%;
+      margin: 0 0 8px 0;
+    }
+
+    &_text {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 160%;
+      margin: 0;
+      text-align: left;
+    }
+
+    &_title {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 1.2;
+      text-align: center;
+      margin-bottom: 3px;
+    }
+
+    &_sub_title {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 1.2;
+      text-align: center;
+      margin: 0 0 20px 0;
+    }
+
+    &_save {
+      padding: 9px 15px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      &_text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        padding: 0;
+        margin: 0;
+      }
+    }
+
+    &_cancel {
+      border: 1px solid $blue-400;
+      height: 36px;
+      padding: 9px 16px;
+      border-radius: 18px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    &_wrap {
+      display: flex;
+      justify-content: flex-start;
+      margin-top: 16px;
+    }
+  }
+
+    &_field {
+      display: grid;
+      margin-bottom: 20px;
+      grid-gap: 20px;
+      @media(min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      &_title {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 0 0 12px;
+      }
+    }
+
+    &_field2 {
+      display: flex;
+      column-gap: 50px;
+      row-gap: 20px;
+      flex-direction: column;
+      @media(min-width: 576px) {
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+    &_field3 {
+      display: flex;
+      column-gap: 26px;
+      justify-content: flex-start;
+    }
+
+    &_title {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+
+    &_sub_title {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 160%;
+      margin: 0 0 20px 0;
+    }
+  }
+
+  &_buttons {
+    margin: 24px 0 0;
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 12px;
+
+    &_cancel {
+      border: 1px solid $blue-400;
+      height: 36px;
+      padding: 9px 16px 10px;
+      border-radius: 18px;
+
+      &:before {
+        content: '';
+        background: center/cover no-repeat url("../../../../../assets/svg/icons/arrow-rigth-blue.svg");
+        transform: rotate(180deg);
+        display: inline-block;
+        width: 6px;
+        height: 11px;
+        margin-right: 8px;
+      }
+    }
+
+    &_save {
+
+    }
+  }
+}

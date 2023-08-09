@@ -1,0 +1,16 @@
+.link {
+  font-weight: 300;
+  font-size: 14px;
+  color: $blue;
+  text-decoration: none;
+
+  z-index: 1;
+
+  &_underline {
+    text-decoration: underline;
+  }
+
+  &_black {
+    color: $black;
+  }
+}

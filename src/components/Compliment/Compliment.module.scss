@@ -1,0 +1,25 @@
+@import "../../commonStyle/variable";
+
+.compliment {
+  border-radius: 20px;
+  background: $blue;
+  padding: 20px 22px 17px 27px;
+  background-image: url("../../assets/svg/icons/gift.svg");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+
+  &_title {
+    color: $white;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.2;
+    margin: 0 0 11px;
+  }
+
+  &_text {
+    color: $white;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+  }
+}

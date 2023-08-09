@@ -1,0 +1,44 @@
+textarea {
+  width: 100%;
+
+  padding: 10px 12px;
+
+  background: $white;
+  border: 1px solid $border-area;
+  border-radius: 8px;
+
+  font-weight: 300;
+  font-size: 14px;
+
+  &::placeholder {
+    color: $area-font-placeholder;
+  }
+
+  &:focus {
+    outline: none;
+    background: $white;
+    box-shadow: 0 0 6px rgba(71, 164, 227, 0.08);
+    border: 1px solid $border-area-focus;
+  }
+}
+
+textarea {
+  resize: none;
+}
+
+input:not([type=checkbox]):not([type=radio]),
+textarea,
+select {
+  appearance: none;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

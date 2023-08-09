@@ -1,0 +1,11 @@
+@import "../../../../commonStyle/variable";
+
+.PriceRangeSlider{
+  & .rc-slider-handle{
+    background-color:$blue;
+    border-color: $white;
+  }
+  & .rc-slider-track{
+    background-color: $blue;
+  }
+}

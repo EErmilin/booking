@@ -1,0 +1,47 @@
+@import "../../../../../../commonStyle/variable";
+
+.integration_type {
+  display: inline-block;
+  position: relative;
+
+  &:hover {
+    .integration_type_hint {
+      display: block;
+    }
+  }
+
+  &_hint {
+    position: absolute;
+    display: none;
+    background: $gray400;
+    color: $white;
+    border-radius: 4px;
+    padding: 4px 8px;
+    top: 0;
+    right: -50%;
+    transform: translateY(-110%);
+    line-height: 1.2;
+  }
+
+  &_icon {
+    cursor: pointer;
+  }
+}
+
+.travelLine {
+  width: 20px;
+  height: 20px;
+  background: center/contain no-repeat url("../../../../../../assets/svg/icons/travelLine.svg");
+}
+
+.checkIn {
+  width: 20px;
+  height: 20px;
+  background: center/contain no-repeat url("../../../../../../assets/svg/icons/check-in.svg");
+}
+
+.bnovo {
+  width: 20px;
+  height: 20px;
+  background: center/contain no-repeat url("../../../../../../assets/svg/icons/bnovo.svg");
+}

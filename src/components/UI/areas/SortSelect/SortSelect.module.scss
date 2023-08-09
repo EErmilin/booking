@@ -1,0 +1,10 @@
+.sort_select{
+  &_indicator{
+    width: 5px;
+    height: 3px;
+    background-image: url("../../../../assets/svg/icons/arrow-select.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

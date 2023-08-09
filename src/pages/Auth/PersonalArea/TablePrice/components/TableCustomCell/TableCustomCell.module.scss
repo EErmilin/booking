@@ -1,0 +1,87 @@
+@import "../../../../../../commonStyle/variable";
+.cell{
+  padding: 6px 5px;
+  height: 44px;
+  cursor: pointer;
+  &_min{
+    padding: 6px 5px;
+    cursor: pointer;
+  }
+  &_room{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 135%;
+    margin: 0px;
+    &_free{
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 135%;
+      color: $gray400;
+      margin: 0px;
+    }
+  }
+
+  &_price{
+    margin: 0px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 135%;
+  }
+  &_currency{
+    color: $gray300;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 135%;
+  }
+  &_default{
+    padding: 6px 7px 6px 24px;
+    &_noback{
+      display: flex;
+      justify-content: space-between;
+      padding: 6px  6px 7px 24px;
+      background: $background;
+      height: 28px;
+    }
+  }
+}
+.red{
+  background: $red-200;
+}
+.green{
+  background: $green-200;
+}
+.modal{
+  padding: 20px;
+  &_title{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    margin: 0px 0px 8px;
+    color: $red;
+  }
+}
+.meal{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &_icon{
+    width: 20px;
+    height: 20px;
+    background: center/contain no-repeat url("../../../../../../assets/svg/icons/restaurant.svg");
+  }
+}
+.hint {
+  &_text {
+    white-space: normal;
+    width: fit-content;
+    border-radius: 4px;
+    padding: 8px;
+    margin-left: auto;
+    min-width: 135px;
+    max-width: 340px;
+    @media (min-width: 1463px) {
+      margin: 0 auto;
+      transform: translateX(0);
+    }
+  }
+}

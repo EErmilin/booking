@@ -1,0 +1,39 @@
+.last_watch_catalog_slider {
+  width: 100%;
+  position: relative;
+
+  &_title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    margin: 30px 0 20px;
+    @media(min-width: 992px) {
+      font-size: 24px;
+    }
+  }
+
+  &_navigation {
+    position: absolute;
+    left: -18px;
+    right: -18px;
+    top: calc(62% - 36px);
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.slider {
+  overflow: visible;
+  @media(min-width: 1024px) {
+    overflow: hidden;
+  }
+}
+
+.slide {
+  width: 290px;
+  height: auto;
+  @media(min-width: 1024px) {
+    width: auto;
+  }
+}

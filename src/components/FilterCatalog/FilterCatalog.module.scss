@@ -1,0 +1,344 @@
+@import "../../commonStyle/variable";
+
+.city {
+  color: $gray400;
+}
+
+.buttonPreview {
+  width: 100%;
+  min-height: 55px;
+  flex-direction: column;
+  padding: 5px 16px;
+  @media(min-width: 1024px) {
+    margin: 0 0 20px;
+  }
+
+  & > p {
+    margin: 0;
+  }
+}
+
+.default {
+  width: 100%;
+
+  .filter_catalog {
+    &_main {
+      margin: 0 -16px 16px -16px;
+      padding: 16px 16px 12px;
+      @media(min-width: 576px) {
+        border-radius: 20px;
+        padding: 16px;
+        margin: 0 0 20px;
+      }
+      @media(min-width: 1024px) {
+        padding: 20px 16px 16px 16px;
+      }
+    }
+    &_search_btn {
+
+    }
+  }
+
+  .btn {
+    margin-top: 6px;
+    @media(min-width: 1024px) {
+      margin-top: 26px;
+    }
+  }
+}
+
+.map {
+  .buttonPreview {
+    display: none;
+  }
+
+  .filter_catalog {
+    &_main {
+      margin: 0;
+      padding: 16px;
+
+      @media(min-width: 1024px) {
+        border-radius: 20px;
+        padding: 20px 16px 16px 16px;
+        margin: 0 0 20px;
+      }
+    }
+    &_search_btn {
+      height: 40px;
+      @media(min-width: 1024px) {
+        height: 48px;
+      }
+    }
+  }
+  .btn {
+    margin-top: 6px;
+    @media(min-width: 1024px) {
+      margin-top: 26px;
+    }
+  }
+}
+
+.filter_catalog {
+  &_all {
+    margin: 0 0 32px;
+
+    &_checkboxes {
+      margin-top: 19px;
+
+      &_item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 12px;
+      }
+
+      &_result {
+        color: $blue;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        margin: 0;
+      }
+
+      &_check {
+        border: 1px solid #DDE7ED;
+        border-radius: 2px;
+      }
+
+      &_label {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: $black !important;
+      }
+    }
+
+    &_price_range {
+      margin-top: 18px;
+    }
+
+    &_price_min_max {
+      margin-top: 18px
+    }
+
+    &_item {
+      padding: 18px 15px;
+      margin: 0 0 8px;
+      border: 1px solid #DDE7ED;
+      border-radius: 20px;
+
+      &:last-child {
+        margin: 0 0 12px;
+      }
+    }
+
+    &_title {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 160%;
+      color: $black;
+    }
+
+    &_subtitle {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      color: $black;
+      margin: 0;
+    }
+  }
+
+  &_main {
+    background: $gradient-filter;
+    padding: 16px;
+    @media(min-width: 1024px) {
+      border-radius: 20px;
+    }
+
+    &_title {
+      margin: 0 0 10px;
+      color: $white;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 24px;
+      display: none;
+      @media(min-width: 1024px) {
+        display: block;
+      }
+    }
+  }
+
+  &_search {
+    &_error {
+      color: $red !important;
+    }
+
+    &_btn {
+      width: 100%;
+    }
+
+    &_label {
+      display: none;
+      @media(min-width: 1024px) {
+        display: inline-block;
+        color: $white;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+
+    &_field {
+      width: 100%;
+      margin: 0 0 4px;
+      @media(min-width: 576px) {
+        margin: 0 0 10px;
+      }
+
+      &_check {
+        @media(min-width: 1024px) {
+          margin-top: 14px;
+        }
+      }
+
+      &_btn {
+        display: none;
+        @media(min-width: 576px) {
+          display: block;
+        }
+        @media(min-width: 1024px) {
+          margin-top: 26px;
+        }
+      }
+    }
+
+    &_input {
+      height: 40px;
+      border-bottom: none;
+      background: $white;
+      border-radius: 8px;
+      padding: 0 8px 4px 0;
+      column-gap: 5px;
+
+      &_icon {
+        background-image: url("../../assets/svg/icons/search-blue.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 20px;
+        height: 20px;
+        flex-shrink: 0;
+        margin-top: 2px;
+        margin-left: 12px;
+      }
+    }
+
+    &_guest {
+      width: 100%;
+      background: $white;
+      border-radius: 8px !important;
+      margin-left: 0;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      padding: 0 0 0 28px;
+      @media(min-width: 768px) {
+        padding: 0 0 0 18px;
+      }
+
+      &_dropdown {
+        left: 0;
+      }
+
+      &::after {
+        content: ' ';
+        background-image: url("../../assets/svg/icons/arrow-select.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 5px;
+        height: 3px;
+        position: absolute;
+        top: 20px;
+        right: 18px;
+      }
+
+      &::before {
+        content: '';
+        background-image: url("../../assets/svg/icons/guest-blue.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 9px;
+        left: 13px;
+      }
+    }
+  }
+}
+
+.search_panel {
+  margin: -20px -16px 20px -16px;
+  @media(min-width: 576px) {
+    margin: 0 0 20px;
+  }
+}
+
+.modal {
+  position: fixed;
+  width: 100vw;
+  height: calc(var(--vh, 1vh) * 100);
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  z-index: 999;
+  overflow-y: auto;
+  padding: 40px 20px 100px;
+  display: none;
+
+  &_title {
+    font-weight: 600;
+    font-size: 24px;
+    margin: 0 0 15px;
+  }
+
+  &_close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background: center/cover no-repeat url('../../assets/svg/icons/close-icon-blue.svg');
+    display: none;
+  }
+
+  &_show {
+    display: block;
+
+    .modal {
+      &_close {
+        display: block;
+      }
+    }
+  }
+
+  .filter_catalog {
+    &_search {
+
+      &_input {
+        border: 1px solid $gray200;
+      }
+
+      &_label {
+        color: $gray400;
+      }
+
+      &_guest {
+        border: 1px solid $gray200;
+      }
+    }
+  }
+}

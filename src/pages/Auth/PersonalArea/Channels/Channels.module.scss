@@ -1,0 +1,75 @@
+@import "../../../../commonStyle/variable";
+
+.panel {
+  background: #ffffff;
+  padding: 24px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.channels {
+  &_title {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 44px;
+    margin: 0 0 24px;
+  }
+
+  &_btns {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    &_cancel {
+      margin-right: 12px;
+    }
+
+    &_img {
+      min-width: 19px;
+      margin-right: 17px;
+      background: top/contain no-repeat url("../../../../assets/svg/icons/info-blue.svg");
+      display: inline-block;
+    }
+  }
+
+  &_status {
+    padding: 23px;
+    color: $blue-200;
+    font-weight: 500;
+    background-color: #D9F1FF;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  &_info {
+    display: flex;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    padding: 17px;
+    color: $blue-200;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    background-color: #D9F1FF;
+    border-radius: 20px;
+  }
+
+  &_img {
+    min-width: 19px;
+    margin-right: 17px;
+    background: top/contain no-repeat url("../../../../assets/svg/icons/info-blue.svg");
+    display: inline-block;
+  }
+
+  &_select {
+    max-width: 373px;
+  }
+
+  &_checkbox {
+    margin: 0 0 15px;
+    &_label {
+      color: black;
+      font-weight: 400;
+    }
+  }
+}

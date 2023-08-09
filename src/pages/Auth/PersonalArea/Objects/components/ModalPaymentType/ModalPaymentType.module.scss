@@ -1,0 +1,53 @@
+@import "../../../../../../commonStyle/variable";
+
+.modal{
+  padding: 20px;
+
+  &_button {
+    height: 36px;
+    margin-top: 32px;
+  }
+  &_title{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    margin: 0 0 16px;
+  }
+  &_wrap{
+
+  }
+  &_subtitle{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    margin: 0 0 12px;
+  }
+  &_checkbox {
+    border: 1px solid $gray200;
+  }
+
+  &_checkboxes {
+    margin-bottom: 12px;
+  }
+  &_text {
+    color: $black;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+  }
+}
+.modal_success{
+  padding: 28px 37px;
+  &_title{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    margin: 0 0 8px;
+  }
+  &_subtitle{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    margin: 0px;
+  }
+}

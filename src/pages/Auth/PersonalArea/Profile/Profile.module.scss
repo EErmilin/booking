@@ -1,0 +1,234 @@
+@import "../../../../commonStyle/variable";
+
+.wrap {
+  height: 100%;
+}
+
+.modal {
+  border-radius: 20px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.3;
+  margin: 0 0 12px;
+  @media(min-width: 992px) {
+    font-size: 34px;
+    margin: 0 0 34px;
+  }
+}
+
+.delete {
+  &_text {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+   }
+  &_wrap {
+    max-width: 250px;
+   }
+   grid-column: 1/3;
+   margin-top: 20px;
+
+   &_textarea {
+    grid-column: 1/3;
+
+    & textarea {
+      min-height: 150px;
+    }
+  }
+}
+
+.body {
+  background: #FFFFFF;
+  padding: 24px 16px;
+  margin: 0 -16px;
+  @media(min-width: 576px) {
+    margin: 0 -30px;
+    padding: 24px 30px;
+  }
+  @media(min-width: 992px) {
+    border-radius: 20px;
+    margin: 0;
+  }
+  @media(min-width: 1200px) {
+    padding: 32px 24px;
+  }
+}
+
+.container {
+  margin-top: 0;
+}
+
+.profile {
+
+  &_container {
+    margin-top: 34px;
+  }
+
+  &_subtitle {
+    line-height: 1.6;
+    @media(min-width: 992px) {
+      font-size: 20px;
+    }
+
+    &_wrap {
+      justify-content: flex-start;
+      @media(min-width: 992px) {
+        padding-left: 24px;
+      }
+    }
+  }
+}
+
+.personal_data {
+  &_field {
+    margin-top: 16px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  &_label {
+    color: $black;
+    font-weight: 400;
+  }
+
+  &_checkbox {
+    border: 1px solid $gray;
+    &_wrp{
+      display: flex;
+      align-items: center;
+    }
+  }
+  &_form {
+    margin-top: 18px;
+    max-width: 400px;
+  }
+
+  &_title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    margin: 0 0 11px 0;
+  }
+
+  &_radios {
+    & > div {
+      margin: 0;
+      flex-direction: column;
+      row-gap: 8px;
+    }
+  }
+
+  &_btn {
+    margin-top: 32px;
+  }
+}
+
+.account {
+  &_buttons {
+    border: 1px solid $blue-400;
+    height: 36px;
+    padding: 9px 16px;
+    border-radius: 18px;
+
+    &_wrp {
+      @media(min-width: 576px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  &_top {
+    margin: 0 0 12px;
+    flex-wrap: wrap;
+    @media(min-width: 576px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    button {
+      margin-bottom: 12px;
+      width: 100%;
+      @media(min-width: 576px) {
+        width: auto;
+        &:not(:last-child) {
+          margin-right: 12px;
+        }
+      }
+    }
+  }
+
+  &_bottom {
+    margin: 40px 0 0;
+  }
+
+  &_email {
+    // margin-top: 24px;
+    margin-top: 0;
+    display: flex;
+    align-items: flex-end;
+    column-gap: 16px;
+
+    &_input {
+      width: 400px;
+    }
+
+    &_change {
+      color: $blue;
+      text-decoration: underline;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 19px;
+      cursor: pointer;
+      margin-bottom: 8px;
+      @media(min-width: 576px) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &_save {
+    height: 36px;
+    width: 100%;
+    @media(min-width: 768px) {
+      width: auto;
+    }
+  }
+
+  &_modal {
+    &_title {
+      margin: 0;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 150%;
+    }
+
+    &_txt {
+      margin: 8px 0 0 0;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 160%;
+    }
+  }
+}
+.success_modal {
+  &_title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    margin: 0;
+  }
+
+  &_txt {
+    margin: 8px 0 0 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+  }
+}

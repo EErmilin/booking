@@ -1,0 +1,58 @@
+$black: #000000; //Черный
+$background:#F0F6F9; //Серый для бекграунда
+$blue: #56C2FE; //Синий
+$purple: #9D62FD; // фиолетовый
+$purple-dark: #8841ff; // фиолетовый
+$peach: #FF8C39; // оранжевый
+$peach-dark: #fd771f; // темно-оранжевый
+$blue-light: rgba(78, 191, 255, 0.6); //Синий светлый
+$blue-lighter: #D9F1FF; //Синий супер светлый
+$blue-background: #CFE8FF; //Синий для уведомлений
+$blue-200:#19ACFE; //Синий яркий
+$blue-400:#A8E0FF; //Синий 400
+$green: #6DDB6D; //Зеленый
+$orange: #FDB305;
+$green-plus200:#32CA32; //Зеленый +200
+$green-200:#CBF8CB; //Зеленый 200
+$green-400:#99EE99; //Зеленый 400
+$gray: #d3d3d3; //Серый
+$gray100: #F0F6F9; //Серый 200
+$gray200: #DDE7ED; //Серый 200
+$gray300: #B0BEC7; //Серый 300
+$gray400: #778995; //Серый 400
+$gray-dark:#778995; //Серый темный
+$gray-lighter:#B0BEC7; //Серый в футере
+$gray_txt:#82939D; //Серый текст
+$red: #FF4E4E; //Красный
+$red-100:#FFE8E8;
+$red-400:#FF8D8D;//Красный 400
+$red-200:#FFC8C8;//Красный 200
+$white: #FFFFFF; //Белый
+$border-area-focus: #88A5BA; // серый
+$border-area: #DDE7ED; // серый
+$border-area-disabled-background: #DDE7ED; // серый
+$area-font-placeholder: #88A5BA; // серый
+$red-light: #FF7070; //красный светлый
+$orange:#FDB305; //
+$orange400:#FEE082; // Оранжевый 400
+$orange200:#FEECB3; //Оранжевый 200
+$gradient-green:
+        linear-gradient(199.12deg, #4EBFFF 1.56%,                     //
+        rgba(78, 191, 255, 0) 81.37%),                                //
+        radial-gradient(70.14% 70.14% at 14.27% 29.86%, #A2EF73 0%,   //
+        rgba(162, 239, 115, 0) 100%);                                 //Градиент
+$gradient-subscribe:
+        linear-gradient(221.93deg, #4EBFFF 2.87%, rgba(78, 191, 255, 0) 96.6%),
+        radial-gradient(85.25% 123.51% at 8.67% 0%, #A2EF73 0%, rgba(162, 239, 115, 0) 100%); //Градиент сабскрайба
+$gradient-filter:
+        linear-gradient(187.52deg, #4EBFFF 0.71%, rgba(78, 191, 255, 0) 94.59%),
+        radial-gradient(173.74% 95.54% at -12.67% 26.89%, #6DDB6D 0%, #A2EF73 100%); //Градиент фильтров
+$gradient-filter-rooms:
+        linear-gradient(264.63deg, #4EBFFF 12.3%, rgba(78, 191, 255, 0) 67.72%),
+        radial-gradient(151.71% 458.63% at -3.26% -37.97%, #6DDB6D 0%, #A2EF73 100%); //Градиент фильтров номеров
+$gradient-nav-bar:
+        linear-gradient(212.87deg, #4EBFFF 0.5%, rgba(78, 191, 255, 0) 90.64%),
+        radial-gradient(75.86% 89.48% at -4.93% 44.38%, #A2EF73 0%, rgba(162, 239, 115, 0.5) 100%);
+
+$formControlBorder: #DDE7ED;
+$progress:linear-gradient(270deg, #4EBFFF -19.16%, rgba(78, 191, 255, 0) 70.64%), linear-gradient(90deg, #A2EF73 -5.75%, rgba(162, 239, 115, 0) 76.39%);;

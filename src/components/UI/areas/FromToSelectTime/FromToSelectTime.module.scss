@@ -1,0 +1,21 @@
+@import '../../../../commonStyle/variable';
+
+.from_to_select{
+  position: relative;
+  label {
+    display: inline-block;
+    margin-bottom: 4px;
+
+    font-weight: normal;
+    font-size: 14px;
+    color: $black;
+  }
+  &_wrap{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+  &_select{
+    width: 107px;
+  }
+}

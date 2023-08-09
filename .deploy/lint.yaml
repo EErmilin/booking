@@ -1,0 +1,8 @@
+---
+
+.lint_by_eslint:
+  stage: lint
+  image: node:16-alpine
+  script:
+    - npm ci --legacy-peer-deps
+    - npm run lint:fix

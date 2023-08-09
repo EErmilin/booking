@@ -1,0 +1,13 @@
+.modal_politic {
+  border-radius: 20px;
+  padding: 0;
+
+  &_item {
+    box-shadow: none;
+    border-radius: 20px;
+
+    &_div {
+      padding: 40px;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+@import "../../commonStyle/variable";
+
+
+.wrap {
+  background-image: url("../../assets/image/SubscribePhone.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 35px 0;
+  @media(min-width: 992px) {
+    padding: 64px 0;
+  }
+}
+
+.gradient{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $gradient-subscribe;
+}
+
+.error {
+  font-size: 16px;
+  font-weight: 400;
+  color:white;
+  }
+  
+.title{
+  color: $white;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: center;
+  margin: 0 0 12px;
+  @media(min-width: 992px) {
+    font-size: 36px;
+  }
+}
+
+.bar {
+  z-index: 1;
+  max-width: 710px;
+  padding: 0 16px;
+}
+
+.text{
+  margin: 0 0 34px;
+  color: $white;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  @media(min-width: 992px) {
+    font-size: 24px;
+  }
+}

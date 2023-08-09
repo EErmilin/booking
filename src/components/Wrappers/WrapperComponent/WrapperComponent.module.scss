@@ -1,0 +1,7 @@
+@import "../../../commonStyle/variable";
+.background{
+  background: $background;
+  @media(min-width: 576px) {
+    padding-top: 20px;
+  }
+}

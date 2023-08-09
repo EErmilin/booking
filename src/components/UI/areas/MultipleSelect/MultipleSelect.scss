@@ -1,0 +1,95 @@
+@import "../../../../commonStyle/variable";
+
+.multiple_select{
+  background: $white;
+  & .ant-select-selection-overflow{
+    & .ant-select-selection-overflow-item{
+      display: none !important;
+      &:last-child{
+        display: block !important;
+      }
+    }
+  }
+  & .ant-select-selector{
+    border: 1px solid $gray200 !important;
+    border-radius: 4px !important;
+    &:before{
+      content: "Выберите станцию метро";
+      color: $gray400;
+      margin-left: 8px;
+    }
+  }
+  & .ant-select-selection-placeholder{
+    color: $gray400;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+.multiple_select_placeholder_hidden{
+  background: $white;
+  & .ant-select-selection-overflow{
+    & .ant-select-selection-overflow-item{
+      display: none !important;
+      &:last-child{
+        display: block !important;
+      }
+    }
+  }
+  & .ant-select-selector{
+    border: 1px solid $gray200 !important;
+    border-radius: 4px !important;
+    &:before{
+      display: none;
+      color: $gray400;
+      margin-left: 8px;
+    }
+  }
+  & .ant-select-selection-placeholder{
+    color: $gray400;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+.rc-virtual-list-scrollbar-thumb{
+  background: $blue !important;
+  width: 4px !important;
+  border-radius: 2px;
+}
+.ant-select-item{
+  color: $black !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+}
+.ant-select-item-option-active.ant-select-item-option-selected
+{
+  background: $blue-lighter !important;
+  color: $blue-200 !important;
+  .anticon-check{
+    & svg {
+      fill: $blue-200
+    }
+  }
+  
+}
+.ant-select-item-option-active
+{
+  background: $blue-lighter !important;
+  color: $blue-200 !important;
+}
+.ant-select-item-option-selected{
+  background: inherit !important;
+  color: $black !important;
+}
+.ant-tag-close-icon{
+  background: center/cover no-repeat url('../../../../assets/svg/icons/close-icon-blue.svg') !important;
+  width: 9px;
+  height: 9px;
+  & svg{
+    display: none;
+  }
+}
+
+

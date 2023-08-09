@@ -1,0 +1,76 @@
+@import "../../commonStyle/variable";
+
+.catalog_rooms {
+  &_filters {
+    margin-top: 22px;
+  }
+
+  &_same_offer {
+    display: none;
+
+    @media(min-width: 1200px) {
+      display: block;
+      flex: 0 0 277px;
+      width: 277px;
+    }
+  }
+
+  &_title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0 0 18px;
+    width: 200px;
+    text-align: start;
+    &_loading {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      margin: 0 0 18px;
+      width: 200px;
+      text-align: start;
+      color: $gray400;
+    }
+  }
+
+  &_list {
+    margin-top: 25px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 21px;
+
+    &_rooms {
+      flex: 1 1 auto;
+    }
+  }
+}
+
+.noFind {
+  display: flex;
+  flex-direction: row;
+  gap: 21px;
+  margin-top: 30px;
+  align-items: flex-start;
+
+  &_message {
+    width: 100%;
+    border-radius: 25px;
+    padding: 30px;
+    color: #FF4E4E;
+    background-color: #FFE8E8;
+
+    h2 {
+      margin: 0 0 20px;
+      color: #FF4E4E;
+    }
+
+    p {
+      margin: 0 0 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

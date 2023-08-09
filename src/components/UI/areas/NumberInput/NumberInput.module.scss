@@ -1,0 +1,50 @@
+@import "../../../../commonStyle/variable";
+
+.number_input {
+  width: 100%;
+  border: 1px solid #DDE7ED;
+  border-radius: 19px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 32px;
+
+  &_input {
+    outline: none;
+    border: none;
+    border-right: 1px solid $gray;
+    border-left: 1px solid $gray;
+    text-align: center;
+    width: 32px;
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+      -moz-appearance: textfield;
+    }
+  }
+
+  &_btn {
+
+  }
+
+  &_incr {
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $green;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  &_disable {
+    color: $gray;
+    cursor: default;
+  }
+}

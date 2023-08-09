@@ -1,0 +1,49 @@
+@import '../../../../commonStyle/variable';
+
+.Modal {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+
+  height: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+  z-index: 1;
+
+
+  h2 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 160%;
+    color: $white;
+    @media (min-width: 480px) {
+      font-size: 26px;
+    }
+  }
+}
+
+.closeBtn {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  background: rgba(255, 255, 255, 0.2);
+
+  width: 48px;
+  height: 48px;
+  padding: 19px;
+
+  border-radius: 50%;
+  border: none;
+
+
+}
+.icon{
+  display: block;
+  width: 10px;
+  height: 10px;
+  background:center/cover no-repeat url('../../../../assets/svg/icons/close-btn.svg') ;
+}

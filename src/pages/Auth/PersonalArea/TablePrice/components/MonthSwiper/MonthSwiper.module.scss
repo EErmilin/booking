@@ -1,0 +1,57 @@
+@import "../../../../../../commonStyle/variable";
+
+.month_swiper{
+  margin-bottom: 19px;
+  &_swiper{
+    overflow: hidden;
+  }
+  &_slide{
+    margin-right: 4px !important;
+    cursor: pointer;
+  }
+  &_arrow_left{
+    background: center/contain no-repeat url("../../../../../../assets/svg/icons/arrow-gray-right.svg");
+    transform: rotate(180deg);
+    width: 5px;
+    height: 10px;
+    cursor: pointer;
+  }
+  &_arrow_right{
+    background: center/contain no-repeat url("../../../../../../assets/svg/icons/arrow-gray-right.svg");
+    width: 5px;
+    height: 10px;
+    cursor: pointer;
+  }
+  &_wrap {
+    position: relative;
+  }
+  &_navigation {
+    display: flex;
+    z-index: 1;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    right: -10px;
+    left: -10px;
+    bottom: 0px;
+  }
+}
+.month_name{
+  min-width: 77px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $background;
+  border-radius: 4px;
+  z-index: 6;
+  padding: 6px 9px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 135%;
+  &_active{
+    background: $blue;
+    color: $white;
+  }
+}

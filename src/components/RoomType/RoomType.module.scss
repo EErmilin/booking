@@ -1,0 +1,37 @@
+@import "../../commonStyle/variable";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter {
+  margin: 0 0 16px;
+}
+
+.header {
+  padding: 26px 20px;
+}
+
+.message {
+  margin: 0 0 25px;
+}
+
+.body {
+  background: #ffffff;
+  border-radius: 20px;
+}
+
+.list {
+  padding: 20px;
+  &:last-child {
+   border-bottom: none;
+  }
+}
+
+.bed_type {
+  display: flex;
+}
+.room_wrap{
+  border-top: none !important;
+}

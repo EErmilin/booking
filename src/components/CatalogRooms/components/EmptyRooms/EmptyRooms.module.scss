@@ -1,0 +1,45 @@
+@import "../../../../commonStyle/variable";
+
+.empty_rooms{
+  border-radius: 20px;
+  background: $white;
+  padding: 24px;
+  width: 100%;
+  &_title{
+    margin: 0px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+  }
+  &_subTitle{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    margin: 0px;
+  }
+  &_swiper{
+    position: relative;
+    width: 100%;
+    margin-top: 21px;
+  }
+  &_shadow{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    width: 57px;
+  }
+  &_navigation{
+    display: flex;
+    justify-content: space-between;
+    left: 0px;
+    position: absolute;
+    right: 0px;
+    top: 38px;
+  }
+  &_wrap{
+    margin-right: 8px !important;
+    width: 200px !important;
+  }
+}

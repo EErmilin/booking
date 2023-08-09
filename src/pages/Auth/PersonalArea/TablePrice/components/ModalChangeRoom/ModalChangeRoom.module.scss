@@ -1,0 +1,90 @@
+@import "../../../../../../commonStyle/variable";
+
+.modal_change_room{
+  &_week{
+    margin-bottom: 29px;
+    &_wrap{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 18px;
+    }
+    &_checkbox{
+      & span{
+        color: $black;
+      }
+    }
+  }
+  &_tariff{
+    cursor: pointer;
+    & p {
+      margin: 0px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+    }
+    &_text{
+      color: $gray400;
+    }
+  }
+  &_month{
+
+  }
+  &_help{
+    margin-bottom: 17px;
+  }
+  &_mainTitle{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 160%;
+    margin-bottom: 10px;
+  }
+  &_date{
+    width: 250px;
+    display: flex;
+    margin-bottom: 16px;
+  }
+  &_input{
+    height: 36px;
+    & input{
+      padding: 4px 16px;
+      box-sizing: border-box;
+      border-radius: 0%;
+      border: 0px;
+    }
+    & label{
+      margin-bottom: 2px;
+    }
+  }
+  &_modal{
+    padding: 20px;
+  }
+  &_field{
+    display: grid;
+    grid-template-columns: .55fr .45fr;
+    grid-column-gap: 12px;
+  }
+  &_title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    margin: 16px 0px;
+  }
+  &_minStay{
+    display: flex;
+    align-items: flex-end;
+    gap: 9px;
+  }
+  &_label{
+    margin: 0px 0px 4px 0px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 135%;
+  }
+  &_number_inp{
+    width: 136px;
+  }
+  &_notation{
+    margin-bottom: 10px;
+  }
+}

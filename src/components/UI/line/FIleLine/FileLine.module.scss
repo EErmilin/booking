@@ -1,0 +1,55 @@
+@import "../../../../commonStyle/variable";
+
+.file_line{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 16px;
+  &:last-child{
+    margin-bottom: 0px;
+  }
+  &_txt{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    flex: 1 1 20%;
+  }
+  &_size{
+    color: $gray300;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 20px;
+    margin-right: 17px;
+  }
+  &_icon{
+    &:before{
+      content: '';
+      width: 24px;
+      height: 24px;
+      display: inline-block;
+      margin-right: 13px;
+    }
+  }
+  &_button{
+    width: 20px;
+    height: 20px;
+    background: center/cover no-repeat url("../../../../assets/svg/icons/close-icon-blue.svg");
+    cursor: pointer;
+  }
+}
+.docx{
+  &:before{background: center/contain no-repeat url("../../../../assets/svg/icons/doc.svg")};
+}
+.pdf{
+  &:before{background: center/contain no-repeat url("../../../../assets/svg/icons/pdf.svg")};
+}
+.exel{
+  &:before{background: center/contain no-repeat url("../../../../assets/svg/icons/exel.svg")};
+}
+.default{
+  &:before{background: center/contain no-repeat url("../../../../assets/svg/icons/default-file.svg")};
+}

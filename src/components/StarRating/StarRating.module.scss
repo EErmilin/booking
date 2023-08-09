@@ -1,0 +1,32 @@
+.star_rating{
+  display: flex;
+  align-items: center;
+}
+.icon{
+  width: 13px;
+  height: 13px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 3px;
+  &:first-child{
+    margin-left: 0px;
+  }
+}
+.star{
+  color: white;
+  background-image: url("../../assets/svg/icons/star.svg");
+}
+.default_star{
+  color: white;
+  background-image: url("../../assets/svg/icons/star-gray.svg");
+}
+
+.noRating{
+font-size: 14px;
+font-weight: 400;
+color: #56C2FE;
+display:flex;
+align-items: center;
+margin-left: 4px;
+}

@@ -1,0 +1,83 @@
+@import "../../../commonStyle/variable";
+
+.error_fallback {
+  width: 100%;
+  padding: 30px 16px;
+
+  @media(min-width: 576px) {
+    padding: 40px;
+  }
+
+  &_left {
+    width: 670px;
+  }
+
+  &_wrap {
+    background-color: $background;
+    height: 80vh;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    column-gap: 20px;
+
+    @media(min-width: 576px) {
+      padding: 40px;
+    }
+  }
+
+  &_title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+    color: $gray300;
+    margin: 0;
+
+    @media(min-width: 576px) {
+      font-size: 24px;
+    }
+  }
+
+  &_title_big {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 100%;
+    margin: 8px 0 12px;
+
+    @media(min-width: 576px) {
+      font-size: 45px;
+    }
+
+    @media(min-width: 992px) {
+      font-size: 72px;
+    }
+  }
+
+  &_subtitle {
+    margin: 32px 0 32px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 117%;
+    color: $gray400;
+
+    @media(min-width: 576px) {
+      font-size: 20px;
+    }
+
+    @media(min-width: 992px) {
+      font-size: 28px;
+    }
+  }
+
+  &_right {
+    background: center/contain no-repeat url("../../../assets/svg/icons/error-fallback.svg");
+    width: 225px;
+    height: 568px;
+  }
+
+  button {
+    font-weight: 400;
+    border-radius: 29px;
+  }
+}

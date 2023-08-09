@@ -1,0 +1,100 @@
+@import "../../../../commonStyle/variable";
+
+.map {
+  position: relative;
+
+  &_map {
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+  }
+
+  &_close {
+    position: absolute;
+    top: 20px;
+    z-index: 2;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+    &:before {
+      content: '';
+      background-image: url("../../../../assets/svg/icons/close-icon-blue.svg");
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &_hotel {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Inter', Arial, sans-serif;
+
+    &_name {
+      font-weight: 600;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 190px;
+      font-size: 14px;
+      margin: 0 0 3px;
+      line-height: 1.4;
+    }
+
+    &_price {
+      padding-top: 10px;
+      margin: 0;
+
+      &_full {
+        margin: 0;
+        font-size: 14px;
+        color: $gray400;
+        text-decoration: line-through;
+      }
+
+      &_title {
+        font-size: 14px;
+        color: $gray400;
+      }
+
+      &_value {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 500;
+        color: black;
+      }
+    }
+
+    &_img {
+      height: 120px;
+      width: 90px;
+      margin-right: 12px;
+      object-fit: cover;
+    }
+  }
+}
+
+.discount {
+  background: linear-gradient(278.73deg, #FEA786 25.46%, #FF1083 196.76%, #FF4675 196.76%);
+  border-radius: 15px;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 2px 10px;
+  margin: 0;
+  max-height: 23px;
+  margin-left: 4px;
+
+  &_wrp {
+    display: flex;
+
+  }
+}

@@ -1,0 +1,2 @@
+import PartnerBookingCancelModal from "./PartnerBookingCancelModal"
+export default PartnerBookingCancelModal

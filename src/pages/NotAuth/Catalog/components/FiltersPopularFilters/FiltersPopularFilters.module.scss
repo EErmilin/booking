@@ -1,0 +1,236 @@
+@import "../../../../../commonStyle/variable";
+
+.filter_popular_filters{
+  margin-top: 8px;
+  &_checkboxes {
+    margin-top: 13px;
+
+    &_label {
+      &>span {
+        font-weight: 400;
+        font-size: 14px;
+        color: $black !important;
+      }
+    }
+  }
+  &_all {
+    margin: 0 0 32px;
+
+    &_checkboxes {
+      margin-top: 19px;
+
+      &_item {
+        margin-bottom: 12px;
+        width: 100%;
+      }
+
+      &_result {
+        color: $blue;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        margin: 0;
+      }
+
+      &_check {
+        border: 1px solid #DDE7ED;
+        border-radius: 4px;
+      }
+
+      &_label {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: $black !important;
+        white-space: pre-wrap;
+        width: 80%;
+        display: block;
+      }
+    }
+
+    &_price_range {
+      margin-top: 18px;
+    }
+
+    &_price_min_max {
+      margin-top: 18px
+    }
+
+    &_item {
+      &:first-child {
+        margin-top: 3px;
+      }
+
+      padding: 18px 15px;
+      margin-top: 8px;
+      border: 1px solid #DDE7ED;
+      border-radius: 20px;
+    }
+
+    &_title {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 160%;
+      color: $black;
+    }
+
+    &_subtitle {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      color: $black;
+      margin: 0;
+    }
+  }
+
+  &_main {
+    background: $gradient-filter;
+    padding: 16px;
+    @media(min-width: 986px) {
+      border-radius: 20px;
+    }
+
+    &_title {
+      margin: 0 0 10px;
+      color: $white;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 24px;
+      display: none;
+      @media(min-width: 1024px) {
+        display: block;
+      }
+    }
+  }
+
+  &_search {
+    &_error {
+      color: $red !important;
+    }
+
+    &_btn {
+      width: 100%;
+    }
+
+    &_label {
+      display: none;
+      @media(min-width: 1024px) {
+        display: inline-block;
+        color: $white;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+
+    &_field {
+      width: 100%;
+      margin: 0 0 4px;
+      @media(min-width: 576px) {
+        margin: 0 0 10px;
+      }
+
+      &_check {
+        @media(min-width: 1024px) {
+          margin-top: 14px;
+        }
+      }
+
+      &_btn {
+        display: none;
+        @media(min-width: 576px) {
+          display: block;
+        }
+        @media(min-width: 1024px) {
+          margin-top: 26px;
+        }
+      }
+    }
+
+    &_input {
+      height: 40px;
+      border-bottom: none;
+      background: $white;
+      border-radius: 8px;
+      padding: 0 8px 4px 0;
+      column-gap: 5px;
+
+      &_icon {
+        background-image: url("../../../../../assets/svg/icons/search-blue.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 20px;
+        height: 20px;
+        flex-shrink: 0;
+        margin-top: 2px;
+        margin-left: 12px;
+      }
+    }
+
+    &_guest {
+      width: 100%;
+      background: $white;
+      border-radius: 8px !important;
+      margin-left: 0;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      padding: 0 15px 0 38px;
+      @media(min-width: 576px) {
+        padding: 0 15px;
+      }
+
+      &_dropdown {
+        left: 0;
+      }
+
+      &::after {
+        content: ' ';
+        background-image: url("../../../../../assets/svg/icons/arrow-select.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 5px;
+        height: 3px;
+        position: absolute;
+        top: 20px;
+        right: 18px;
+      }
+
+      &::before {
+        content: '';
+        background-image: url("../../../../../assets/svg/icons/guest-blue.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 9px;
+        left: 13px;
+        @media (min-width: 576px) {
+          content: none;
+        }
+      }
+    }
+  }
+  &_hide{
+    display: none;
+  }
+  &_shown{
+
+  }
+}
+.show_all{
+  background: none;
+  color: $blue-200;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  margin-top: 19px;
+  border-radius: 0px;
+  text-decoration: underline;
+  padding: 0px;
+}

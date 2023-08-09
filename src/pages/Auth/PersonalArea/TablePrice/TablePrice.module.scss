@@ -1,0 +1,118 @@
+@import "../../../../commonStyle/variable";
+
+.table_price {
+  margin-bottom: 26px;
+
+  &_wrap {
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 20px 16px;
+    @media(min-width: 576px) {
+      padding: 20px 30px;
+    }
+  }
+
+  &_quanity {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    margin: 8px 0 16px 0;
+  }
+
+  &_title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.4;
+    margin: 0 0 10px;
+    @media(min-width: 1024px) {
+      font-size: 34px;
+    }
+  }
+
+  &_list {
+    margin-top: 16px;
+  }
+
+  &_back {
+    margin: 0 0 10px;
+
+    &_link {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.3;
+      color: $black;
+
+      &::before {
+        content: '';
+        background-image: url("../../../../assets/svg/icons/black-arrow.svg");
+        width: 4px;
+        height: 7px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: inline-block;
+        margin-right: 8px;
+      }
+    }
+  }
+
+  &_hotel_title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 0 0 12px;
+  }
+
+  &_blocks {
+    justify-content: flex-start;
+    border-bottom: 1px solid $gray200;
+
+    &_title {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 160%;
+    }
+  }
+
+  &_legend {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex-direction: column;
+    @media (min-width: 768px) {
+      align-items: center;
+      flex-direction: row;
+    }
+
+    &_block {
+      display: flex;
+      align-items: center;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 140%;
+
+      &:before {
+        content: '';
+        display: block;
+        width: 24px;
+        height: 24px;
+        background: $green-200;
+        margin-right: 8px;
+      }
+
+      &:nth-child(3) {
+        &:before {
+          background: $red !important;
+        }
+      }
+    }
+  }
+
+  &_container {
+    width: 100%;
+  }
+}
+
+.expand_block {
+  border-radius: 0;
+}

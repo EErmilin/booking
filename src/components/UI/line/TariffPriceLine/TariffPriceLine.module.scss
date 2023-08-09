@@ -1,0 +1,82 @@
+@import "../../../../commonStyle/variable";
+
+.tariff_price{
+  &_wrap{
+    border-top: 1px solid $gray200;
+    padding: 16px;
+  }
+  &_item{
+    background: $background;
+    border: 1px solid $gray200;
+    border-radius: 4px;
+    padding: 12px;
+    margin-bottom: 8px;
+    &:last-child{
+      margin-bottom: 0px;
+    }
+    &_check{
+      color: $gray400;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 135%;
+      &_box{
+        border: 1px solid #DCDCE4;
+      }
+    }
+    &_input{
+      & input{
+        padding: 9px;
+      }
+    }
+
+    &_title{
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 160%;
+      margin: 0px 0px 8px;
+    }
+    &_subtitle{
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 135%;
+      color: $gray400;
+    }
+    &_availability{
+      display: grid;
+      grid-template-columns: .3fr repeat(7,.1fr);
+      grid-column-gap: 8px;
+      margin-top: 8px;
+    }
+    &_icon{
+      display: flex;
+      align-items: center;
+      gap: 2px;
+    }
+  }
+  &_buttons{
+    margin-top: 16px;
+    &_save{
+
+    }
+    &_cancel{
+      border: 1px solid $blue-400;
+      height: 36px;
+      padding: 9px 16px 10px;
+      border-radius: 18px;
+      margin-left: 8px;
+    }
+    &_link{
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      text-decoration-line: underline;
+      color: $blue;
+    }
+  }
+  &_title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    margin: 0;
+  }
+}

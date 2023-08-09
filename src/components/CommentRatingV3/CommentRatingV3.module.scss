@@ -1,0 +1,21 @@
+@import "../../commonStyle/variable";
+
+.comment_rating{
+  display: flex;
+  &_number{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  &_txt{
+    padding: 4px 8px;
+    color: $white;
+    background: $green;
+    border-radius: 13px;
+    margin-left: 7px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+

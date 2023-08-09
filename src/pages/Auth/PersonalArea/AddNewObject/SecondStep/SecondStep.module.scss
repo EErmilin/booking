@@ -1,0 +1,91 @@
+@import "../../../../../commonStyle/variable";
+
+.second_step {
+  max-width: 814px;
+  margin: 0 auto;
+
+  &_error {
+    color: $red;
+  }
+
+  &_title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    margin: 0 0 8px;
+
+    @media(min-width: 992px) {
+      font-size: 24px;
+    }
+  }
+
+  &_subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+    margin: 0 0 10px;
+
+    @media(min-width: 992px) {
+      font-size: 16px;
+    }
+  }
+
+  &_form {
+    margin: 24px -16px 0 -16px;
+    background: $white;
+
+    @media(min-width: 576px) {
+      margin: 24px -30px 0 -30px;
+    }
+
+    @media(min-width: 768px) {
+      margin: 28px auto 0 auto;
+      border-radius: 20px;
+    }
+
+    &_text {
+      color: $black;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 140%;
+    }
+
+    &_checkbox {
+      border: 1px solid $gray200;
+    }
+
+    &_checkboxes {
+      display: flex;
+      flex-direction: column;
+      row-gap: 11px;
+    }
+
+    &_sub_title {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 25px;
+      margin: 0 0 13px;
+    }
+
+    &_title {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 150%;
+      margin: 0 0 8px;
+    }
+
+    &_block {
+      border-bottom: 1px solid $gray200;
+      padding: 24px 20px 32px 20px;
+
+      &:last-child {
+        padding: 24px 20px;
+        border-bottom: none;
+      }
+    }
+  }
+
+}
+

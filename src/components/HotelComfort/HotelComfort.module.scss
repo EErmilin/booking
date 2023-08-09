@@ -1,0 +1,47 @@
+@import "../../commonStyle/variable";
+
+.hotel_comfort {
+  width: 100%;
+
+  &_item {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 30px 15px 0;
+  }
+
+  &_icon {
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 8px;
+  }
+
+  &_text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+}
+
+.wifi {
+  background-image: url("../../assets/svg/icons/wifi.svg");
+}
+
+.parking {
+  background-image: url("../../assets/svg/icons/parking.svg");
+}
+
+.headPhone {
+  background-image: url("../../assets/svg/icons/headphones.svg");
+}
+
+.pool {
+  background-image: url("../../assets/svg/icons/water.svg");
+}
+
+.accessible {
+  background-image: url("../../assets/svg/icons/accessible.svg");
+}
+

@@ -1,0 +1,50 @@
+@import "../../../../commonStyle/variable";
+
+.wrap {
+  position: relative;
+
+  &:hover {
+    .text {
+      display: block;
+    }
+  }
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &_default {
+    background-image: url("../../../../assets/svg/icons/question-gray.svg");
+  }
+
+  &_white {
+    background-image: url("../../../../assets/svg/icons/question-white.svg");
+  }
+
+  &_restaurant_green {
+    background-image: url("../../../../assets/svg/icons/restaurant.svg");
+  }
+}
+
+.text {
+  bottom: 100%;
+  padding: 12px;
+  background: $gray-dark;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateX(-50%);
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3;
+  color: $white;
+  display: none;
+  position: absolute;
+  left: 50%;
+  z-index: 2;
+  min-width: 150px;
+}

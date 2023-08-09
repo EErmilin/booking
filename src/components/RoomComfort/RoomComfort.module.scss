@@ -1,0 +1,68 @@
+.list {
+  display: grid;
+  grid-gap: 10px;
+  padding: 25px;
+  border-radius: 20px;
+  background: #ffffff;
+  @media(min-width: 576px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media(min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.item {
+  display: flex;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+
+  &.roomArea {
+    background-image: url("../../assets/svg/icons/ruler.svg");
+  }
+
+  &.wifi {
+    background-image: url("../../assets/svg/icons/wifi.svg");
+  }
+
+  &.coffeeMachine {
+    background-image: url("../../assets/svg/icons/coffee-machine.svg");
+  }
+
+  &.airConditioner {
+    background-image: url("../../assets/svg/icons/temperature.svg");
+  }
+
+  &.flatScreenTV {
+    background-image: url("../../assets/svg/icons/tv.svg");
+  }
+
+  &.miniBar {
+    background-image: url("../../assets/svg/icons/bar-glass.svg");
+  }
+
+  &.bathroom {
+    background-image: url("../../assets/svg/icons/bath.svg");
+  }
+
+  &.soundProofing {
+    background-image: url("../../assets/svg/icons/headphones.svg");
+  }
+
+  &.wakeUpService {
+    background-image: url("../../assets/svg/icons/clock.svg");
+  }
+}
+
+.text {
+  font-size: 16px;
+  padding: 4px 0 0;
+}
+

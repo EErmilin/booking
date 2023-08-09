@@ -1,0 +1,68 @@
+@import "../../commonStyle/variable";
+.swiper_popular_item{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 740px;
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  &_watch_all{
+    display: block;
+    color: $white;
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  &_wrp{
+    height: 740px;
+    width: 100%;
+  }
+  &_title{
+    margin-top: 34px;
+    margin-left: 46px;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 68px;
+    color: $white;
+  }
+}
+.moscow{
+  background-image: url("../../assets/image/Moscaw.webp");
+}
+.simferopol{
+  background-image: url("../../assets/image/simferopol.webp");
+}
+.ekaterinburg{
+  background-image: url("../../assets/image/ekaterinburg.webp");
+}
+.kaliningrad{
+  background-image: url("../../assets/image/kaliningrad.webp");
+}
+.karelia{
+  background-image: url("../../assets/image/karelia.webp");
+}
+.kazan{
+  background-image: url("../../assets/image/kazan.webp");
+}
+.krasnodar{
+  background-image: url("../../assets/image/Krasnodar.webp");
+}
+.saintPeterburg{
+  background-image: url("../../assets/image/Saint-Peterburg.webp");
+}
+.sochi{
+  background-image: url("../../assets/image/Sochi.webp");
+}
+.volgograd{
+  background-image: url("../../assets/image/volgograd.webp");
+}
+.hotels_wrp{
+  margin-left: 30px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}

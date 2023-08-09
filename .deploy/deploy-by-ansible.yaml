@@ -1,0 +1,81 @@
+---
+
+.deploy_by_ansible:
+  stage: deploy
+  image: python:3.9.12-bullseye
+  environment:
+    name: $DEPLOYMENT_ENV
+  cache:
+    paths:
+      - pip-cache/
+
+  script:
+    - mkdir -p ~/.ssh
+    - 'which ssh-agent || ( apk --update add openssh-client bash )'
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+    - eval $(ssh-agent -s)
+    - bash -c 'ssh-add <(echo "$PRIVATE_KEY")'
+    - echo "Use $DEPLOYMENT_BRANCH_NAME on $DEPLOYMENT_REPO"
+    - git clone --depth 1 --branch ${DEPLOYMENT_BRANCH_NAME:-master} $DEPLOYMENT_REPO
+    - cd checkin-ansible
+    - echo "Use ci commit:$CI_COMMIT_REF_SLUG"
+    - echo "Use gitlab environment name:$CI_ENVIRONMENT_NAME $CI_ENVIRONMENT_SLUG"
+    - mkdir .vault && echo $ANSIBLE_VAULT_PASSWORD > .vault/vault.key
+    - python3 -m venv .venv
+    - source .venv/bin/activate
+    - python3 -m pip --cache-dir=$CI_PROJECT_DIR/pip-cache install -r requirements.txt
+    - echo "Start deployment for env:$DEPLOYMENT_ENV, use deployment repo:$DEPLOYMENT_REPO, branch:$DEPLOYMENT_BRANCH_NAME"
+    - ansible-playbook -i inventories/yc/checkin/$DEPLOYMENT_ENV/inventory.yaml --vault-password-file .vault/vault.key -e "ansible_user=$DEPLOYMENT_USER" playbooks/$CI_PROJECT_NAME.yaml $ANSIBLE_PARAMS
+
+.deploy_docker_by_ansible:
+  image: python:3.9.12-bullseye
+  stage: deploy
+  variables:
+    GIT_STRATEGY: none
+    DEPLOYMENT_KEY: $DEV_DEPLOYMENT_KEY
+    DEPLOYMENT_ENV: dev
+    # ANSIBLE_PLAYBOOK: playbooks/deploy/example.yaml
+    ANSIBLE_PARAMS: ""
+    ANSIBLE_TAGS: "$CI_PROJECT_NAME"
+    ANSIBLE_GALAXY_INSTALL: "no"
+  environment:
+    name: $DEPLOYMENT_ENV
+  allow_failure: false
+  cache:
+    paths:
+      - pip-cache/
+  script:
+    - if [ -z "$TAG" ]; then export TAG=$CI_COMMIT_REF_SLUG-$CI_COMMIT_SHORT_SHA; fi
+  
+    - if [ -z "$DOCKER_REGISTRY_IMAGE" ]; then export DOCKER_REGISTRY_IMAGE=$DOCKER_REGISTRY/$DOCKER_REGISTRY_PREFIX/$CI_PROJECT_NAME; fi
+
+    - mkdir -p ~/.ssh/
+    - echo "StrictHostKeyChecking no" >> /etc/ssh/ssh_config
+    - echo "UserKnownHostsFile=/dev/null" >> /etc/ssh/ssh_config
+
+    - echo "$PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_rsa
+    - chmod 600 ~/.ssh/id_rsa
+    - eval $(ssh-agent -s)
+    - ssh-add ~/.ssh/id_rsa
+#    - mkdir -p $ANSIBLE_ROOT_DIR
+#    - git clone --depth 1 -b ${DEPLOYMENT_BRANCH:-master} $DEPLOYMENT_REPO $ANSIBLE_ROOT_DIR
+    - echo "Use $DEPLOYMENT_BRANCH_NAME on $DEPLOYMENT_REPO"
+    - git clone --depth 1 --branch ${DEPLOYMENT_BRANCH_NAME:-master} $DEPLOYMENT_REPO
+    - cd checkin-ansible
+
+    - export ANSIBLE_INVENTORY=inventories/yc/checkin/$DEPLOYMENT_ENV/inventory.yaml
+    - echo $CI_PROJECT_NAMESPACE && echo $(basename $CI_PROJECT_NAMESPACE)
+#    - export ANSIBLE_PLAYBOOK_SNAKE_CASE=playbooks/deploy/docker-$(echo $CI_PROJECT_NAME | sed 's/-/_/g').yaml
+#    - export ANSIBLE_PLAYBOOK=$ANSIBLE_PLAYBOOK_SNAKE_CASE
+    - export ANSIBLE_PLAYBOOK=playbooks/deploy/docker-$CI_PROJECT_NAME.yaml
+    - mkdir .vault && echo $ANSIBLE_VAULT_PASSWORD > .vault/vault.key
+
+    - python3 -m venv .venv
+    - source .venv/bin/activate
+    - python3 -m pip --cache-dir=$CI_PROJECT_DIR/pip-cache install -r requirements.txt
+
+    - export ANSIBLE_TAGS_PARAM="--tags=$ANSIBLE_TAGS"
+    - if [ "$ANSIBLE_TAGS" = "" ]; then export ANSIBLE_TAGS_PARAM=""; fi
+    - echo "Start deployment for env:$DEPLOYMENT_ENV, use deployment repo:$DEPLOYMENT_REPO, branch:$DEPLOYMENT_BRANCH_NAME"
+    - echo "ansible-playbook -i $ANSIBLE_INVENTORY $ANSIBLE_PLAYBOOK $ANSIBLE_TAGS_PARAM $ANSIBLE_PARAMS"
+    - ansible-playbook -i $ANSIBLE_INVENTORY $ANSIBLE_PLAYBOOK $ANSIBLE_TAGS_PARAM $ANSIBLE_PARAMS

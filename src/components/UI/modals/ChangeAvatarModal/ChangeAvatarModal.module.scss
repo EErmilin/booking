@@ -1,0 +1,61 @@
+@import '../../../../commonStyle/variable';
+
+.title {
+  margin-top: 0;
+  margin-bottom: 25px;
+
+  text-align: left;
+}
+
+
+.change_avatar_modal {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+
+  background-color: #c4c4c4;
+  border-radius: 8px;
+}
+
+.btnWrap {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 12px;
+
+  margin-top: 25px;
+
+  @media (min-width: 480px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  button {
+    &:first-child {
+      order: 1;
+
+      @media (min-width: 480px) {
+        order: initial;
+      }
+    }
+
+    &:last-child {
+      order: -1;
+
+      @media (min-width: 480px) {
+        order: initial;
+      }
+    }
+  }
+}
+
+.cancel {
+  border-color: $blue-400;
+  background-color: white;
+
+  color: $blue;
+
+  &:hover {
+    border-color: $blue-200;
+    color: $blue-light;
+  }
+}

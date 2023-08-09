@@ -1,0 +1,102 @@
+@import "../../commonStyle/variable";
+
+.step_by_step {
+  position: relative;
+  background: $gray200;
+  height: 24px;
+  width: 98%;
+  margin: 0 auto;
+  @media(min-width: 992px) {
+    width: 80%;
+  }
+
+  &_bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &_loader {
+    position: absolute;
+    background: $green;
+    height: 24px;
+    transition: 1s;
+  }
+
+  &_item {
+    &:first-child {
+      margin-left: -12px;
+    }
+
+    &:last-child {
+      margin-right: -12px;
+    }
+
+    &_active {
+      & a {
+        color: green;
+      }
+
+      & div {
+        border: 2px solid $green;
+        background: $white;
+        font-size: 14px !important;
+        font-weight: 400;
+
+      }
+
+      & p {
+        color: $black;
+      }
+    }
+
+    position: relative;
+
+    &_circle {
+      border-radius: 50%;
+      background: $white;
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 14px;
+
+      &_success {
+        background: $green;
+        background-image: url("../../assets/svg/icons/vector-white.svg");
+        background-size: 11px 7px;
+        background-position: center;
+        background-repeat: no-repeat;
+        font-size: 0;
+      }
+    }
+
+    &_link {
+      color: $black;
+      cursor: pointer;
+    }
+
+    &_label {
+      white-space: nowrap;
+      position: absolute;
+      color: $gray;
+      top: 100%;
+      left: 50%;
+      font-size: 14px;
+      line-height: 1.5;
+      margin: 0;
+      transform: translate(-50%, 0);
+      padding: 8px 0 0;
+      display: none;
+      @media(min-width: 992px) {
+        display: block;
+      }
+      @media(min-width: 1200px) {
+        font-size: 16px;
+      }
+    }
+  }
+}

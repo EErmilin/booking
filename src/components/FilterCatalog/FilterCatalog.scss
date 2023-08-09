@@ -1,0 +1,188 @@
+@import "../../commonStyle/variable";
+
+.filter-catalog-main-dropdowns {
+  @media(min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  @media(min-width: 1024px) {
+    display: initial;
+    grid-gap: initial;
+  }
+
+  & > div {
+    &:first-child {
+      grid-column: 1/3;
+      margin: 0;
+      @media(min-width: 576px) {
+        margin: 0 0 10px;
+      }
+      @media(min-width: 1024px) {
+        margin: 0 0 4px;
+      }
+    }
+  }
+
+  .CalendarDropDownV2 {
+    margin: 0;
+
+    .DateRangePicker {
+      margin: 0;
+    }
+  }
+
+  .DateRangePickerInput {
+    display: flex !important;
+    margin: 0 0 5px;
+    background: #ffffff !important;
+    border-radius: 8px;
+    padding: 0 0 0 38px;
+    position: relative;
+
+    &::before {
+      content: '';
+      background-image: url("../../assets/svg/icons/calendar-blue.svg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 9px;
+      left: 13px;
+      @media (min-width: 576px) {
+        content: none;
+      }
+    }
+
+    &::after {
+      content: "";
+      background-image: url("../../assets/svg/icons/arrow-select.svg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 5px;
+      height: 3px;
+      position: absolute;
+      top: 20px;
+      right: 18px;
+      pointer-events: none;
+      @media(min-width: 576px) {
+        content: none;
+      }
+    }
+
+    @media(min-width: 576px) {
+      padding: 0;
+      border-radius: 0;
+      background: inherit !important;
+      margin: 0;
+      display: grid !important;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+    }
+    @media(min-width: 1024px) {
+      display: block !important;
+      grid-template-columns: initial;
+    }
+
+    .DateInput {
+      background: none;
+      width: 62px;
+      @media(min-width: 576px) {
+        width: auto;
+      }
+      &::after {
+        content: none;
+        pointer-events: none;
+        @media(min-width: 576px) {
+          content: "";
+        }
+      }
+      &:first-child {
+        margin: 0;
+        flex-shrink: 0;
+        @media(min-width: 576px) {
+          margin: 0;
+        }
+
+        @media(min-width: 1024px) {
+          margin: 0 0 10px;
+        }
+      }
+
+      &:last-child {
+        flex: 1 1 auto;
+        @media(min-width: 576px) {
+          flex: auto;
+        }
+      }
+
+      &_input {
+        @media(max-width: 575px) {
+          border-radius: 0;
+          background: none;
+          padding: 0 !important;
+        }
+      }
+
+      &_screenReaderMessage {
+        &::before {
+          content: none;
+          @media(min-width: 576px) {
+            content: "";
+          }
+        }
+      }
+    }
+  }
+
+  .DateRangePickerInput_arrow {
+    display: inline-flex;
+    margin: 0 5px;
+    flex-shrink: 0;
+    &::before {
+      content: "-";
+      display: flex;
+      align-items: center;
+    }
+    @media(min-width: 576px) {
+      display: none;
+    }
+  }
+}
+
+.filter-catalog-main {
+  .search-async-input-field {
+    &__value-container {
+      padding: 2px 0;
+    }
+    &__placeholder {
+      color: $gray400 !important;
+      font-weight: 400 !important;
+    }
+    &__single-value {
+      font-weight: 500;
+      @media(min-width: 576px) {
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.filter-catalog-modal {
+  .DateInput_input {
+    border: 1px solid $gray200;
+  }
+
+  .CalendarDropDownV2 {
+    .DateInput {
+      &:first-child, &:last-child {
+        &::before {
+          color: $gray400;
+        }
+      }
+    }
+  }
+}

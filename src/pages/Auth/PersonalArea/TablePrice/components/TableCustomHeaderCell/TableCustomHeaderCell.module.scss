@@ -1,0 +1,47 @@
+@import "../../../../../../commonStyle/variable";
+
+.header {
+  height: 40px;
+  padding: 4px 5px;
+  background: $white;
+
+  &_weekend {
+    background: $orange200;
+    .header {
+      &_day {
+        color: #000000;
+      }
+    }
+  }
+
+  &_cell {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 135%;
+    margin: 0;
+  }
+
+  &_day {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 135%;
+    margin: 0;
+    color: $gray300;
+  }
+
+  &_default {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 216px;
+    height: 64px;
+  }
+
+  &_month {
+    display: flex;
+    justify-content: flex-start;
+    background: $white;
+    padding: 4px 5px;
+    height: 24px;
+  }
+}

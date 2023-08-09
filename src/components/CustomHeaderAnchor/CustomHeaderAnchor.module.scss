@@ -1,0 +1,70 @@
+@import "../../commonStyle/variable";
+
+.custom_anchor {
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid $gray200;
+  overflow-x: auto;
+  @media(min-width: 576px) {
+    overflow-x: initial;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &::-webkit-scrollbar-button {
+    display: none;
+  }
+
+  &::-webkit-scrollbar-track-piece {
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $blue;
+    border-radius: 5px;
+  }
+
+  &::-webkit-scrollbar-corner {
+    background-color: transparent;
+  }
+
+  &::-webkit-resizer {
+    display: none;
+  }
+
+  &_title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    cursor: pointer;
+    padding-bottom: 10px;
+    transition: .2s;
+    margin-left: 20px;
+    white-space: nowrap;
+    @media(min-width: 992px) {
+      font-size: 16px;
+      margin-left: 36px;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  &_active {
+    position: relative;
+
+    &:after {
+      content: ' ';
+      background: $blue;
+      border-radius: 2px 2px 0 0;
+      height: 4px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}

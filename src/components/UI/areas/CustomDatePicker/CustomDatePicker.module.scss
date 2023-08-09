@@ -1,0 +1,99 @@
+@import '../../../../commonStyle/variable';
+
+.CustomDatePicker {
+  width: 100%;
+  padding: 6px 44px 6px 12px;
+  background: $white;
+  border: 1px solid $border-area;
+  border-radius: 4px;
+  font-weight: 300;
+  font-size: 14px;
+
+  &:focus {
+    outline: none;
+    background: $white;
+    box-shadow: 0 0 6px rgba(71, 164, 227, 0.08);
+    border: 1px solid $border-area-focus;
+  }
+
+  &::placeholder {
+    color: $area-font-placeholder;
+  }
+
+  &[disabled] {
+    border: 1px solid $border-area;
+    background-color: $border-area-disabled-background;
+  }
+}
+.CustomDatePicker::before{
+  z-index: 0;
+}
+.label {
+  display: inline-flex;
+  margin-bottom: 4px;
+  font-weight: normal;
+  font-size: 12px;
+  color: $black;
+  line-height: 1.3;
+}
+.err_msg{
+  display: inline-block;
+  margin-top: 8px;
+
+  color: $red;
+  font-size: 14px;
+}
+.valid{
+
+  input {
+    position: relative;
+
+    border: 1px solid $border-area-focus;
+    background: $gray;
+  }
+
+  .InputWrap {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 0;
+      bottom: 0;
+      right: 15px;
+      z-index: 1;
+      margin: auto 0;
+
+      width: 13px;
+      height: 9px;
+
+      //background: url('../../../../assets/svg/input/arrow-valid.svg') center/contain no-repeat;
+    }
+  }
+}
+.invalid{
+
+  input {
+    border: 1px solid $red !important;
+    background: $gray;
+  }
+
+  .InputWrap {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 0;
+      bottom: 0;
+      right: 15px;
+      z-index: 1;
+      margin: auto 0;
+
+      width: 10px;
+      height: 10px;
+
+      //background: url('../../../../assets/svg/input/close-invalid.svg') center/contain no-repeat;
+    }
+  }
+}

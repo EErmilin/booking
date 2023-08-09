@@ -1,0 +1,29 @@
+@mixin forBigDesktop{
+  @media screen and (min-width: 1900px) {
+    @content;
+  }
+}
+
+@mixin forMiddleDesktop {
+  @media screen and (min-width: 1360px) {
+    @content;
+  }
+}
+
+@mixin forBigTablet{
+  @media screen and (min-width: 1000px) {
+    @content;
+  }
+}
+
+@mixin forTablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin forPhone {
+  @media screen and (min-width: 480px) {
+    @content;
+  }
+}

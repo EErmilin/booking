@@ -1,0 +1,87 @@
+@import "../../../../../commonStyle/variable";
+
+.FirstStep{
+  .async_city_input{
+    &__control{
+      cursor: pointer;
+      min-height: 34px;
+      background: #FFFFFF;
+      border: 1px solid $border-area;
+      border-radius: 4px;
+
+      font-size: 14px;
+      font-weight: 300;
+
+      &:hover {
+        border: 1px solid $border-area;
+      }
+
+      &--is-focused {
+        outline: none;
+        background: $white;
+        box-shadow: 0 0 6px rgba(71, 164, 227, 0.08);
+        border: 1px solid $border-area-focus;
+      }
+    }
+    &__indicators{
+
+    }
+    &__dropdown-indicator {
+      position: relative;
+      color: #A4C1D6;
+      z-index: 0;
+      &:before{
+        top: 4px;
+        content: '';
+        position: absolute;
+        width: 9px;
+        height: 5px;
+        right: 15px;
+        background:center/cover no-repeat url("../../../../../assets/svg/icons/arrow-select.svg");
+      }
+
+
+      & svg{
+        display: none;
+      }
+      &:hover {
+        color: #A4C1D6;
+      }
+    }
+    &__indicator {
+      padding: 6px;
+    }
+
+    &__indicator-separator {
+      display: none;
+    }
+
+    &__option {
+      font-size: 14px;
+      font-weight: 300;
+
+      &:hover {
+        color: $black;
+        background-color: $gray;
+      }
+
+      &--is-focused {
+        background-color: transparent;
+      }
+
+      &--is-selected {
+        background: $white;
+        color: $black;
+        &:hover {
+          color: $black;
+          background: $gray;
+        }
+      }
+    }
+
+    &__placeholder {
+      display: none;
+    }
+
+  }
+}

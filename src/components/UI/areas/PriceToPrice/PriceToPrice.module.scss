@@ -1,0 +1,35 @@
+@import "../../../../commonStyle/variable";
+
+.price_to_price {
+  background: $white;
+  width: 100%;
+  border: 1px solid $gray200;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  &_wrp {
+    display: flex;
+    padding: 10px 12px;
+    align-items: center;
+
+    &:first-child {
+      border-right: 1px solid $gray200;
+    }
+
+    &:after {
+      content: "₽";
+      color: $blue;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1;
+    }
+  }
+
+  &_input {
+    width: 100%;
+    color: $blue;
+    border: none;
+    outline: none;
+  }
+}

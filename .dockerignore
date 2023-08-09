@@ -1,0 +1,11 @@
+.git/
+.vscode/
+.idea/
+.gitlab-ci.yml
+.dumps/
+var/
+vendor/
+data/
+project/var/
+docker-compose*
+.env.*

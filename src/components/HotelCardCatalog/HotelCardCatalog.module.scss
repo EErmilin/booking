@@ -1,0 +1,439 @@
+@import "../../commonStyle/variable";
+
+.wrap {
+  display: flex;
+  border-radius: 8px;
+  background: $white;
+  margin-bottom: 8px;
+  flex-direction: column;
+  transition: all 0.2s;
+
+  &:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+  }
+
+  @media(min-width: 768px) {
+    flex-direction: row;
+  }
+
+  &_small {
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    flex-direction: column;
+
+    .img_bar {
+      width: 100%;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      border-bottom-left-radius: initial;
+
+    }
+
+    .verified {
+      width: 16px;
+      height: 16px;
+      margin: 8px 5px 0 0;
+
+      &_popup {
+        &::after {
+          left: 8px;
+        }
+      }
+    }
+    .row {
+      flex-direction: column;
+      &:last-child {
+        align-items: flex-start;
+      }
+    }
+    .prices {
+      align-items: flex-start;
+    }
+    .guest {
+      font-size: 12px;
+    }
+    .price {
+      &_full {
+        font-size: 20px;
+      }
+      &_night {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 10px;
+  @media(min-width: 576px) {
+    flex-direction: row;
+    column-gap: 20px;
+  }
+
+  &:not(:last-child) {
+    margin: 0 0 15px;
+  }
+
+  &:last-child {
+    @media(min-width: 576px) {
+      align-items: flex-end;
+    }
+  }
+
+  & > div {
+    &:last-child {
+      flex-shrink: 0;
+    }
+  }
+}
+
+.info {
+  padding: 16px 12px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+
+  @media(min-width: 768px) {
+    flex: 1 1 auto;
+    padding: 20px;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: flex-start;
+  @media(min-width: 768px) {
+    border-bottom: 1px solid #DDE7ED;
+    padding-bottom: 10px;
+  }
+}
+
+.title {
+  margin: 5px 5px 5px 0;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+
+  &_place {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &_wrap {
+    display: flex;
+  }
+}
+
+.verified {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  background-image: url("../../assets/svg/icons/checked_hotel_icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin: 8px 5px 0 0;
+  z-index: 10;
+  cursor: pointer;
+  position: relative;
+  @media(min-width: 576px) {
+    width: 32px;
+    height: 32px;
+    margin: 0 5px 0 0;
+  }
+
+  &_mobile {
+    opacity: 1;
+  }
+
+  &_desktop {
+    opacity: 1;
+
+    &:hover {
+      .verified {
+        &_popup {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &_popup {
+    position: absolute;
+    bottom: 100%;
+    left: -50%;
+    font-size: 14px;
+    padding: 12px 16px;
+    background: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+    min-width: 180px;
+    line-height: 1.4;
+    color: rgba(51, 51, 51, 0.78);
+    margin-bottom: 12px;
+    display: none;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 8px;
+      bottom: -15px;
+      border: 8px solid transparent;
+      border-top: 8px solid white;
+      @media(min-width: 576px) {
+        left: 24px;
+      }
+    }
+
+    &_active {
+      display: block;
+    }
+  }
+}
+
+.img_bar {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: initial;
+  overflow: hidden;
+  &_discond {
+    position: absolute;
+    width: 53px;
+    height: 54px;
+    left: 12px;
+    top: 0;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../assets/svg/icons/discount.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  @media(min-width: 768px) {
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: initial;
+    grid-column: 1/1;
+    width: 220px;
+    flex-shrink: 0;
+  }
+
+  &_btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 10;
+  }
+}
+
+.favorite_btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 10;
+}
+
+.guest {
+  color: $gray-lighter;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  margin: 0;
+  display: flex;
+  column-gap: 12px;
+}
+
+.prices {
+  @media(min-width: 576px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+.price {
+  &_full {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+    white-space: nowrap;
+    text-decoration: line-through;
+    color: $gray400;
+  }
+
+  &_discount {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+
+  &_night {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: $gray400;
+    white-space: nowrap;
+  }
+}
+
+.hotel_card_catalog {
+
+
+  &_compliment {
+    position: absolute;
+    background: $blue;
+    bottom: 14px;
+    left: 12px;
+    padding: 4px 8px;
+    color: $white;
+    border-radius: 14px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 135%;
+  }
+
+  &_btn {
+    border-radius: 18px;
+    height: 36px;
+    margin-top: 13px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    white-space: nowrap;
+    position: relative;
+    z-index: 10;
+    display: none;
+    @media(min-width: 768px) {
+      display: inline-flex;
+    }
+  }
+
+  &_btn_mg {
+    border-radius: 18px;
+    height: 36px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    white-space: nowrap;
+    position: relative;
+    z-index: 10;
+    display: none;
+    @media(min-width: 768px) {
+      display: inline-flex;
+    }
+  }
+
+  &_privilege {
+    margin-top: 14px;
+    display: none;
+
+    @media(min-width: 768px) {
+      display: flex;
+    }
+  }
+
+  &_img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+
+  &_info {
+    &_body {
+      padding-top: 10px;
+      @media(min-width: 768px) {
+        flex-direction: row;
+      }
+
+      &_right {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0 0;
+        @media(min-width: 768px) {
+          margin: 0 0 0 10px;
+          text-align: end;
+        }
+      }
+
+      &_priceSale {
+        text-decoration-line: line-through;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        color: $gray-lighter;
+        margin-top: 5px;
+      }
+
+      &_description {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.35;
+        margin: 0 0 5px;
+        word-wrap: break-word;
+
+        @media(min-width: 1200px) {
+          font-size: 16px;
+        }
+      }
+
+      &_address {
+        color: $gray-lighter;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.2;
+        text-decoration-line: underline;
+        cursor: pointer;
+        position: relative;
+        z-index: 10;
+
+        &:before {
+          content: '';
+          width: 9px;
+          height: 12px;
+          background: center / contain no-repeat url("../../assets/svg/icons/pin-blue.svg");
+          display: inline-block;
+          margin-right: 4px;
+        }
+      }
+    }
+  }
+}
+
+.clickable {
+  z-index: 7;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-decoration: none;
+  pointer-events: auto;
+  cursor: pointer;
+  outline: none;
+}
+
+
+.rating {
+  font-size: 16px;
+  margin-left: 12px;
+  @media(min-width: 768px) {
+    font-size: 24px;
+  }
+}

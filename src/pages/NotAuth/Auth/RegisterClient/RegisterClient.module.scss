@@ -1,0 +1,189 @@
+@import "../../../../commonStyle/variable";
+
+.register_form {
+  margin: 0 auto;
+  background: $white;
+  padding: 32px 16px;
+  width: 100%;
+  @media(min-width: 576px) {
+    margin: 20px auto 20px auto;
+    padding: 35px 40px;
+    border-radius: 20px;
+    max-width: 420px;
+  }
+  @media(min-width: 1400px) {
+    padding: 36px 24px;
+  }
+  &_checkbox{
+    margin-top: 12px;
+  }
+  &_text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: $black;
+  }
+  &_link{
+    margin-left: 5px;
+    font-size: 14px;
+    color: #19ACFE;
+    text-decoration-line: underline;
+  }
+  &_title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.5;
+    text-align: center;
+    margin: 0 0 20px;
+    @media(min-width: 576px) {
+      margin: 0 0 20px;
+    }
+  }
+
+  &_subtitle {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    margin: 0 0 20px;
+    a {
+      color: $blue-200;
+      text-decoration: underline;
+    }
+  }
+
+  &_field {
+    margin-top: 20px;
+
+    &_flex {
+      display: grid;
+      grid-column-gap: 20px;
+      @media(min-width: 576px) {
+        margin-top: 15px;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      & > div {
+        margin-top: 15px;
+        @media(min-width: 576px) {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  &_note {
+    color: $gray400;
+    font-size: 12px;
+  }
+
+  &_sign_in {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: center;
+    margin: 24px 0 0 0;
+
+    &_link {
+      color: $blue;
+      margin-left: 4px;
+      text-decoration: underline;
+    }
+  }
+
+  &_type_org {
+    margin: 24px 0 10px;
+    @media(min-width: 576px) {
+      margin: 16px 0 20px;
+    }
+
+    &_title {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    &_radios {
+      & > div {
+        margin: 0;
+        flex-direction: column;
+      }
+
+      label {
+        padding-left: 0;
+        margin: 0 0 10px;
+      }
+    }
+  }
+
+  &_trouble {
+    padding: 16px;
+    margin-top: 24px;
+    border-radius: 4px;
+    background: $blue-lighter;
+    @media(min-width: 576px) {
+      margin-top: 20px;
+    }
+
+    &_title {
+      color: $blue-200;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.3;
+      margin: 0 0 5px;
+    }
+
+    &_subtitle {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 140%;
+      color: $blue-200;
+      margin: 0;
+    }
+
+    &_email {
+      margin: 12px 0 0 0;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1.4;
+
+      &_link {
+        color: $blue-200;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.4;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &_processing {
+    margin: 16px 0 0 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  &_btn {
+    margin-top: 35px;
+    width: 100%;
+    font-weight: 400;
+  }
+}
+
+.success_modal {
+  &_title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    margin: 0;
+  }
+
+  &_txt {
+    margin: 8px 0 0 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+  }
+}

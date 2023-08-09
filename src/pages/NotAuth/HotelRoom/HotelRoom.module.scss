@@ -1,0 +1,189 @@
+@import "../../../commonStyle/variable";
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1290px;
+  padding: 0 16px;
+  overflow-x: hidden;
+
+  @media(min-width: 576px) {
+    padding: 0 30px;
+  }
+}
+
+.content {
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 24px;
+  margin: 0 0 20px;
+
+  @media(min-width: 576px) {
+    font-size: 28px;
+  }
+
+  @media(min-width: 992px) {
+    font-size: 36px;
+  }
+}
+
+.hotel {
+  margin: 0 0 20px;
+
+  &_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &_name {
+    font-weight: 600;
+    font-size: 16px;
+    @media(min-width: 576px) {
+      font-size: 20px;
+    }
+  }
+
+  &_rating {
+    margin-left: 8px;
+  }
+
+  &_address {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 10px;
+    display: inline-block;
+    color: inherit;
+    //text-decoration: underline;
+    //cursor: pointer;
+    @media(min-width: 576px) {
+      font-size: 13px;
+    }
+
+    &:before {
+      content: ' ';
+      width: 9px;
+      height: 12px;
+      background-image: url("../../../assets/svg/icons/pin-blue.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      display: inline-block;
+      margin-right: 7px;
+    }
+  }
+}
+
+.block_title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 16px;
+  line-height: 1.5;
+
+  @media(min-width: 992px) {
+    font-size: 24px;
+  }
+}
+
+.pictures {
+  margin: 0 0 35px;
+}
+
+.slider {
+  display: block;
+  margin: 0 -16px;
+
+  @media(min-width: 576px) {
+    margin: 0 -30px;
+  }
+
+  @media(min-width: 992px) {
+    display: none;
+  }
+}
+
+.gallery {
+  display: none;
+
+  @media(min-width: 992px) {
+    display: block;
+  }
+}
+
+.comfort {
+  margin: 0 0 40px;
+}
+
+.options {
+  margin: 0 0 15px;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0 0 35px;
+
+  @media(min-width: 992px) {
+    font-size: 16px;
+  }
+}
+
+.services {
+  margin: 0 0 35px;
+}
+
+.reviews {
+  margin: 0 0 15px;
+}
+
+.tariff {
+  margin: 0 0 40px;
+}
+
+.edit {
+  color: #BDBDBD;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+
+  &_btn {
+    height: 36px;
+    margin-right: 36px;
+
+    &:before {
+      content: ' ';
+      width: 17px;
+      height: 17px;
+      background-image: url("../../../assets/svg/icons/pen.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      margin-right: 7px;
+    }
+  }
+
+  &_text {
+    display: flex;
+
+    &:before {
+      content: ' ';
+      margin-right: 12px;
+      width: 20px;
+      height: 15px;
+      background-image: url("../../../assets/svg/icons/eye.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+}
+.comments_wrap{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}

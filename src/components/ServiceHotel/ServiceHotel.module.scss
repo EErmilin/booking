@@ -1,0 +1,97 @@
+.wrap {
+  column-count: 1;
+  @media(min-width: 576px) {
+    column-count: 2;
+  }
+  @media(min-width: 768px) {
+    column-count: 3;
+  }
+}
+
+.item {
+  page-break-inside: avoid;
+  break-inside: avoid;
+  margin: 0 0 35px;
+
+  &_list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-left: 4px;
+  }
+
+  &_title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    margin: 0 0 10px;
+    display: flex;
+    align-items: flex-start;
+
+    &:before {
+      content: ' ';
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      width: 24px;
+      height: 24px;
+      display: inline-block;
+      margin-right: 9px;
+    }
+  }
+}
+
+
+.service_hotel {
+
+
+
+}
+
+.media {
+  &:before {
+    background-image: url("../../assets/svg/icons/rocket.svg");
+  }
+}
+
+.business {
+  &:before {
+    background-image: url("../../assets/svg/icons/watch.svg");
+  }
+}
+
+.heartbeat {
+  &:before {
+    background-image: url("../../assets/svg/icons/heartbeat.svg");
+  }
+}
+
+.eating {
+  &:before {
+    background-image: url("../../assets/svg/icons/restaurant.svg");
+  }
+}
+
+.cleaning {
+  &:before {
+    background-image: url("../../assets/svg/icons/cleaning.svg");
+  }
+}
+
+.general {
+  &:before {
+    background-image: url("../../assets/svg/icons/general.svg");
+  }
+}
+
+.security {
+  &:before {
+    background-image: url("../../assets/svg/icons/unlock.svg");
+  }
+}
+
+.language {
+  &:before {
+    background-image: url("../../assets/svg/icons/dialog.svg");
+  }
+}

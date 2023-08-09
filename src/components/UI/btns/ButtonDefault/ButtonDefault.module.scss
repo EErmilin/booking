@@ -1,0 +1,47 @@
+@import "../../../../commonStyle/variable";
+
+.ButtonDefault {
+  cursor: pointer;
+
+  width: 100%;
+  padding: 10px;
+
+  background-color: $button-active;
+  border: 1px solid $button-active-border;
+  border-radius: 8px;
+
+  font-weight: 500;
+  font-size: 14px;
+  color: $button-active-font-color;
+
+  &:hover {
+    background-color: $button-hover;
+  }
+
+  &:active {
+    background-color: $button-click;
+  }
+
+  &[disabled] {
+    cursor: default;
+    background-color: $button-no-active;
+    border: 1px solid $button-no-active-border;
+    color: #8C8C8C;
+  }
+
+  &.ButtonLight {
+    background-color: $button-light-active;
+    color: $button-light-active-font-color;
+    border: 1px solid $button-light-active-border;
+
+    &:hover {
+      background-color: $button-light-hover;
+      color: $button-light-other-font-color;
+    }
+
+    &:active {
+      background-color: $button-light-click;
+      color: $button-light-other-font-color;
+    }
+  }
+}
